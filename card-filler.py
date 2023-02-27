@@ -6,6 +6,7 @@ import tkinter as tk
 import tkinter.filedialog as fd
 
 filez = []
+backs = False
 if len(sys.argv) == 1:
     # Open file dialog and get 1 to n file paths
     root = tk.Tk()
@@ -42,6 +43,7 @@ else:
     "necro"   : "./backs/back_necromancy.png",
     "trans"   : "./backs/back_transmutation.png",
     }
+    backs = True
     for arg in sys.argv[1:]:
         filez.append(cardBacks[arg])
 
@@ -76,8 +78,12 @@ for i in range(len(filez)):
     img = cv2.resize(img, (cardWidth, cardHeight), interpolation = cv2.INTER_AREA)
 
     # Calculate offsets
-    x = i %  2
     y = i // 2
+    x = 0
+    if backs == False:
+        x = i %  2
+    else:
+        x = (i + 1) % 2
     xOff = firstCardX * (x + 1) + cardWidth  * x
     yOff = firstCardY * (y + 1) + cardHeight * y
     blankImage[yOff:yOff + img.shape[0], xOff:xOff + img.shape[1]] = img

@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=1cm,top=24mm,bottom=10mm,headheight=1cm]{geometry}
+\usepackage{ifxetex}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{ragged2e}
+\usepackage{multicol}
+
+% https://github.com/stephenswat/dnd-spelldeck
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\ifxetex
+\usepackage{fontspec}
+%\setmainfont{Mrs Eaves OT}
+\setmainfont{Priori Serif}
+\fi
+
+\definecolor{headercolor}{RGB}{88,23,13}
+\definecolor{linecolor}{RGB}{201,173,106}
+
+\sloppy
+\setlength{\headsep}{1mm}
+\setlength{\columnsep}{-4mm}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+%\pagestyle{fancy}
+\cfoot{ }
+
+\backgroundsetup{
+    contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/background}}
+}
+
+
+\newcommand\spell[4]
+{
+    \def\herotitle{#1}
+    \def\herotype{#2}
+    \def\herotrigger{#3}
+    \def\description{#4}
+
+    \begin{minipage}[t][1.5cm][t]{\textwidth}
+        \vspace{-13mm}
+        \par\begin{minipage}[t][0mm][t]{\textwidth}
+            \centering
+            \vspace{4mm}
+            \scshape\scriptsize\color{black}Hero Card\\
+            [-1.8mm]
+            \scshape\scriptsize\color{black}\
+            \Large\color{headercolor}\herotitle
+            
+            \vspace{2mm}
+            
+            \scriptsize\herotype
+        \end{minipage}
+        \vspace{hero-spacing}    % 10mm - 16mm
+        \par\rule{\textwidth}{0.5pt}
+        \par
+        \vspace{-2mm}
+        \centering
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}Trigger}
+        
+                \herotrigger
+            \end{minipage}
+        \par
+        \vspace{2mm}    % 2mm - 8mm
+        \rule{\textwidth}{0.5pt}
+    \end{minipage}
+
+    \vspace{hero-spacing-secondary}         % 3mm - 9mm
+    \description
+}
+
+\begin{document}
+\begin{spell}
+{hero-title} % Hero Card Name
+{hero-type} % Card Type
+{hero-trigger} % Trigger
+{
+    \begingroup
+        \par\fontsize{8pt}{10pt}\selectfont
+        \vspace{4mm}   % 4mm - 10mm
+        % Description
+        hero-description
+        
+        \vspace{4mm}
+        
+        hero-fortune
+        
+        \vspace{1.75mm}
+        \rule{\textwidth}{0.5pt}
+    \endgroup
+}
+\end{spell}
+
+\end{document}

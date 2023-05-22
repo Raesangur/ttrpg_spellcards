@@ -1,0 +1,16 @@
+{
+    "cards": [
+        {
+            "hero-title"       : "Critical Moment",
+            "hero-type"        : "Fortune",
+            "hero-trigger"     : "After rolling a check",
+            "hero-description" : "Reroll the check twice, taking the best result of the three.\n\nIf you still fail the check, treat the failure as a Critical Failure."
+        },
+        {
+            "hero-title"       : "Hold the Line",
+            "hero-type"        : "",
+            "hero-trigger"     : "During your turn",
+            "hero-description" : "You can use Attacks of Opportunity at no reaction cost until the beginning of your next turn on a successful Acrobatics or Athletics check against your target's Fortitude DC."
+        }
+    ]
+}

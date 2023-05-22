@@ -11,6 +11,90 @@
             "hero-type"        : "",
             "hero-trigger"     : "During your turn",
             "hero-description" : "You can use Attacks of Opportunity at no reaction cost until the beginning of your next turn on a successful Acrobatics or Athletics check against your target's Fortitude DC."
+        },
+        {
+            "hero-title"       : "Called Foe",
+            "hero-type"        : "",
+            "hero-trigger"     : "During your turn",
+            "hero-description" : "Designate a target.\n\nGain a +2 Status bonus to attack rolls against this target.\n\nTake a -4 Status penalty against everyone else.\n\n\nThis effect lasts for 1 minute. On a Critical Hit dealt on the target, the timer restarts."
+        },
+        {
+            "hero-title"       : "Rending Swipe",
+            "hero-type"        : "",
+            "hero-trigger"     : "After making 2 successful consecutive attacks against the same target",
+            "hero-description" : "The target takes 1d6 persistent bleed damage for 1 minute and is Sickened 1 until the bleeding stops.\n\n\nIf you are 7th level or higher, increase the bleeding damage to 2d6.\n\nIf you are 12th level or higher, increase the bleeding damage to 3d6."
+        },
+        {
+            "hero-title"       : "Impossible Shot",
+            "hero-type"        : "",
+            "hero-trigger"     : "When making a ranged attack\n\n(Either with strike or spell)",
+            "hero-description" : "The range of a ranged weapon becomes 2x for the attack.\n\nThe range of a spell becomes 1.5x for the attack."
+        },
+        {
+            "hero-title"       : "Distract Foe",
+            "hero-type"        : "",
+            "hero-trigger"     : "When an enemy within 30ft makes an attack against another creature",
+            "hero-description" : "The target is fascinated with you, and it can't end this condition until it takes a hostile action against you, or the combat ends.\n\nThis cancels the initial attack."
+        },
+        {
+            "hero-title"       : "Surge of Magic",
+            "hero-type"        : "",
+            "hero-trigger"     : "During your turn",
+            "hero-description" : "Until the end of your next turn, you can Activate one magic item that you have already activated once today.\n\nThis activation doesn't count against the item's frequency limit if the limit is once per day or a shorter increment of time.\n\nIf the item is a wand, activating it this way doesn't overcharge it."
+        },
+        {
+            "hero-title"       : "Catch your Breath",
+            "hero-type"        : "",
+            "hero-trigger"     : "At the end of your turn",
+            "hero-description" : "Select a target within 30ft. The target you choose must have fewer than half their total HP.\n\nThe target gains a number of temporary HP equal to twice your level, which lasts until the end of the encounter."
+        },
+        {
+            "hero-title"       : "Desperate Swing",
+            "hero-type"        : "",
+            "hero-trigger"     : "During your turn",
+            "hero-description" : "Make a Strike, ignoring the multiple attack penalty.\n\nIf the attack kfails, you release your weapon, or drop prone if you were using an unarmed attack."
+        },
+        {
+            "hero-title"       : "Daring Attempt",
+            "hero-type"        : "",
+            "hero-trigger"     : "Anytime",
+            "hero-description" : "Select one untrained skill. You are trained in that skill for 1 minute.\n\nIf during this time, you roll a Failure or Critical Failure in the selected skill, the effect ends."
+        },
+        {
+            "hero-title"       : "Battle Cry",
+            "hero-type"        : "",
+            "hero-trigger"     : "After a successful melee attack",
+            "hero-description" : "You unlease a terrifying battle cry. Attempt an Intimidation check to Demoralize and compare the result against all enemies within 30ft as a Free Action."
+        },
+        {
+            "hero-title"       : "Class Might",
+            "hero-type"        : "",
+            "hero-trigger"     : "During your turn",
+            "hero-description" : "Until the start of your next turn, you gain a +2 Status bonus to checks based on the key ability score of your class.\n\nIf your class grants a choice for its key ability, select one of those ability scores to gain the bonus."
+        },
+        {
+            "hero-title"       : "Ancestral Might",
+            "hero-type"        : "",
+            "hero-trigger"     : "During your turn",
+            "hero-description" : "Until the start of your next turn, you gain a +2 Status bonus to checks based on the ability scores that are boosted by your ancestry (ignoring free boosts).\n\nIf your ancestry only grants free boosts, select one ability score to gain the bonus to instead."
+        },
+        {
+            "hero-title"       : "Cut through the Fog",
+            "hero-type"        : "",
+            "hero-trigger"     : "Play on a Will save",
+            "hero-description" : "You succeed at the saving throw.\n\nYou gain the Stupefied 1 condition, which lasts until the next time you get a full night's rest."
+        },
+        {
+            "hero-title"       : "Dive out of Danger",
+            "hero-type"        : "",
+            "hero-trigger"     : "Play on a Reflex save",
+            "hero-description" : "You succeed at the saving throw.\n\nYou gain the Clumsy 1 condition, which lasts until the next time you get a full night's rest."
+        },
+        {
+            "hero-title"       : "Push through the Pain",
+            "hero-type"        : "",
+            "hero-trigger"     : "Play on a Fortitude save",
+            "hero-description" : "You succeed at the saving throw.\n\nYou gain the Drained 1 condition, which lasts until the next time you get a full night's rest."
         }
     ]
 }

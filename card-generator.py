@@ -11,8 +11,16 @@ with open("hero-template.tex", 'r') as inputF:
 
         for card in cards_dict["cards"]:
             title = card["hero-title"].replace(' ', '_')
-            spacing  = "10mm" if len(title) < 16 else "16mm" if len(title) < 32 else "20mm"
-            spacing2 = "3mm"  if len(title) < 16 else "9mm"  if len(title) < 32 else "13mm"
+
+            if title + ".pdf" in os.listdir("output"):
+                print(title + " already exists, skipping...")
+                continue
+
+            spacing  = "10mm" if len(title) < 20 else "16mm" if len(title) < 35 else "20mm"
+            spacing2 = 3  if len(title) < 16 else 9  if len(title) < 32 else 13
+            spacing2 += 6 if len(card["hero-trigger"]) > 60 else 0
+            spacing2 = str(spacing2) + "mm"
+
 
             text = template.replace("hero-title", card["hero-title"])
             text = text.replace("hero-type", card["hero-type"])

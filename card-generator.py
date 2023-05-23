@@ -3,22 +3,23 @@ import os
 import re
 import subprocess
 
-with open("hero-template.tex", 'r') as inputF:
+with open("hero-template.tex", 'r') as inputF: 
     template = inputF.read()
 
     with open("hero-cards.json", 'r') as cards:
         cards_dict = json.load(cards)
 
         for card in cards_dict["cards"]:
+            spaces = card["hero-title"].count(' ')
             title = card["hero-title"].replace(' ', '_')
 
             if title + ".pdf" in os.listdir("output"):
                 print(title + " already exists, skipping...")
                 continue
 
-            spacing  = "10mm" if len(title) < 20 else "16mm" if len(title) < 35 else "20mm"
-            spacing2 = 3  if len(title) < 16 else 9  if len(title) < 32 else 13
-            spacing2 += 6 if len(card["hero-trigger"]) > 60 else 0
+            spacing  = "10mm" if len(title) < (17 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
+            spacing2 =  3 if len(title) < (13 + spaces) else 9 if len(title) < (29 + spaces) else 13
+            spacing2 += 9 if len(card["hero-trigger"]) > 90 else 6 if len(card["hero-trigger"]) > 60 else 0
             spacing2 = str(spacing2) + "mm"
 
 

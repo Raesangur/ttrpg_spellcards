@@ -1,100 +1,580 @@
 {
-    "cards": [
-        {
-            "hero-title"       : "Critical Moment",
-            "hero-type"        : "Fortune",
-            "hero-trigger"     : "After rolling a check",
-            "hero-description" : "Reroll the check twice, taking the best result of the three.\n\nIf you still fail the check, treat the failure as a Critical Failure."
-        },
-        {
-            "hero-title"       : "Hold the Line",
-            "hero-type"        : "",
-            "hero-trigger"     : "During your turn",
-            "hero-description" : "You can use Attacks of Opportunity at no reaction cost until the beginning of your next turn on a successful Acrobatics or Athletics check against your target's Fortitude DC."
-        },
-        {
-            "hero-title"       : "Called Foe",
-            "hero-type"        : "",
-            "hero-trigger"     : "During your turn",
-            "hero-description" : "Designate a target.\n\nGain a +2 Status bonus to attack rolls against this target.\n\nTake a -4 Status penalty against everyone else.\n\n\nThis effect lasts for 1 minute. On a Critical Hit dealt on the target, the timer restarts."
-        },
-        {
-            "hero-title"       : "Rending Swipe",
-            "hero-type"        : "",
-            "hero-trigger"     : "After making 2 successful consecutive attacks against the same target",
-            "hero-description" : "The target takes 1d6 persistent bleed damage for 1 minute and is Sickened 1 until the bleeding stops.\n\n\nIf you are 7th level or higher, increase the bleeding damage to 2d6.\n\nIf you are 12th level or higher, increase the bleeding damage to 3d6."
-        },
-        {
-            "hero-title"       : "Impossible Shot",
-            "hero-type"        : "",
-            "hero-trigger"     : "When making a ranged attack\n\n(Either with strike or spell)",
-            "hero-description" : "The range of a ranged weapon becomes 2x for the attack.\n\nThe range of a spell becomes 1.5x for the attack."
-        },
-        {
-            "hero-title"       : "Distract Foe",
-            "hero-type"        : "",
-            "hero-trigger"     : "When an enemy within 30ft makes an attack against another creature",
-            "hero-description" : "The target is fascinated with you, and it can't end this condition until it takes a hostile action against you, or the combat ends.\n\nThis cancels the initial attack."
-        },
-        {
-            "hero-title"       : "Surge of Magic",
-            "hero-type"        : "",
-            "hero-trigger"     : "During your turn",
-            "hero-description" : "Until the end of your next turn, you can Activate one magic item that you have already activated once today.\n\nThis activation doesn't count against the item's frequency limit if the limit is once per day or a shorter increment of time.\n\nIf the item is a wand, activating it this way doesn't overcharge it."
-        },
-        {
-            "hero-title"       : "Catch your Breath",
-            "hero-type"        : "",
-            "hero-trigger"     : "At the end of your turn",
-            "hero-description" : "Select a target within 30ft. The target you choose must have fewer than half their total HP.\n\nThe target gains a number of temporary HP equal to twice your level, which lasts until the end of the encounter."
-        },
-        {
-            "hero-title"       : "Desperate Swing",
-            "hero-type"        : "",
-            "hero-trigger"     : "During your turn",
-            "hero-description" : "Make a Strike, ignoring the multiple attack penalty.\n\nIf the attack kfails, you release your weapon, or drop prone if you were using an unarmed attack."
-        },
-        {
-            "hero-title"       : "Daring Attempt",
-            "hero-type"        : "",
-            "hero-trigger"     : "Anytime",
-            "hero-description" : "Select one untrained skill. You are trained in that skill for 1 minute.\n\nIf during this time, you roll a Failure or Critical Failure in the selected skill, the effect ends."
-        },
-        {
-            "hero-title"       : "Battle Cry",
-            "hero-type"        : "",
-            "hero-trigger"     : "After a successful melee attack",
-            "hero-description" : "You unlease a terrifying battle cry. Attempt an Intimidation check to Demoralize and compare the result against all enemies within 30ft as a Free Action."
-        },
-        {
-            "hero-title"       : "Class Might",
-            "hero-type"        : "",
-            "hero-trigger"     : "During your turn",
-            "hero-description" : "Until the start of your next turn, you gain a +2 Status bonus to checks based on the key ability score of your class.\n\nIf your class grants a choice for its key ability, select one of those ability scores to gain the bonus."
-        },
-        {
-            "hero-title"       : "Ancestral Might",
-            "hero-type"        : "",
-            "hero-trigger"     : "During your turn",
-            "hero-description" : "Until the start of your next turn, you gain a +2 Status bonus to checks based on the ability scores that are boosted by your ancestry (ignoring free boosts).\n\nIf your ancestry only grants free boosts, select one ability score to gain the bonus to instead."
-        },
-        {
-            "hero-title"       : "Cut through the Fog",
-            "hero-type"        : "",
-            "hero-trigger"     : "Play on a Will save",
-            "hero-description" : "You succeed at the saving throw.\n\nYou gain the Stupefied 1 condition, which lasts until the next time you get a full night's rest."
-        },
-        {
-            "hero-title"       : "Dive out of Danger",
-            "hero-type"        : "",
-            "hero-trigger"     : "Play on a Reflex save",
-            "hero-description" : "You succeed at the saving throw.\n\nYou gain the Clumsy 1 condition, which lasts until the next time you get a full night's rest."
-        },
-        {
-            "hero-title"       : "Push through the Pain",
-            "hero-type"        : "",
-            "hero-trigger"     : "Play on a Fortitude save",
-            "hero-description" : "You succeed at the saving throw.\n\nYou gain the Drained 1 condition, which lasts until the next time you get a full night's rest."
-        }
-    ]
+  "cards": [
+    {
+      "hero-title": "Critical Moment",
+      "hero-type": "Fortune",
+      "hero-trigger": "After rolling a check",
+      "hero-description": "Reroll the check twice, taking the best result of the three.\n\nIf you still fail the check, treat the failure as a Critical Failure."
+    },
+    {
+      "hero-title": "Hold the Line",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "You can use Attacks of Opportunity at no reaction cost until the beginning of your next turn on a successful Acrobatics or Athletics check against your target's Fortitude DC."
+    },
+    {
+      "hero-title": "Called Foe",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Designate a target.\n\nGain a +2 Status bonus to attack rolls against this target.\n\nTake a -4 Status penalty against everyone else.\n\n\nThis effect lasts for 1 minute. On a Critical Hit dealt on the target, the timer restarts."
+    },
+    {
+      "hero-title": "Rending Swipe",
+      "hero-type": "",
+      "hero-trigger": "After making 2 successful consecutive attacks against the same target",
+      "hero-description": "The target takes 1d6 persistent bleed damage for 1 minute and is Sickened 1 until the bleeding stops.\n\n\nIf you are 7th level or higher, increase the bleeding damage to 2d6.\n\nIf you are 12th level or higher, increase the bleeding damage to 3d6."
+    },
+    {
+      "hero-title": "Impossible Shot",
+      "hero-type": "",
+      "hero-trigger": "When making a ranged attack\n\n(Either with strike or spell)",
+      "hero-description": "The range of a ranged weapon becomes 2x for the attack.\n\nThe range of a spell becomes 1.5x for the attack."
+    },
+    {
+      "hero-title": "Distract Foe",
+      "hero-type": "",
+      "hero-trigger": "When an enemy within 30ft makes an attack against another creature",
+      "hero-description": "The target is fascinated with you, and it can't end this condition until it takes a hostile action against you, or the combat ends.\n\nThis cancels the initial attack."
+    },
+    {
+      "hero-title": "Surge of Magic",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Until the end of your next turn, you can Activate one magic item that you have already activated once today.\n\nThis activation doesn't count against the item's frequency limit if the limit is once per day or a shorter increment of time.\n\nIf the item is a wand, activating it this way doesn't overcharge it."
+    },
+    {
+      "hero-title": "Catch your Breath",
+      "hero-type": "",
+      "hero-trigger": "At the end of your turn",
+      "hero-description": "Select a target within 30ft. The target you choose must have fewer than half their total HP.\n\nThe target gains a number of temporary HP equal to twice your level, which lasts until the end of the encounter."
+    },
+    {
+      "hero-title": "Desperate Swing",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Make a Strike, ignoring the multiple attack penalty.\n\nIf the attack fails, you release your weapon, or drop prone if you were using an unarmed attack."
+    },
+    {
+      "hero-title": "Daring Attempt",
+      "hero-type": "",
+      "hero-trigger": "Anytime",
+      "hero-description": "Select one untrained skill. You are trained in that skill for 1 minute.\n\nIf during this time, you roll a Failure or Critical Failure in the selected skill, the effect ends."
+    },
+    {
+      "hero-title": "Battle Cry",
+      "hero-type": "",
+      "hero-trigger": "After a successful melee attack",
+      "hero-description": "You unleash a terrifying battle cry. Attempt an Intimidation check to Demoralize and compare the result against all enemies within 30ft as a Free Action."
+    },
+    {
+      "hero-title": "Class Might",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Until the start of your next turn, you gain a +2 Status bonus to checks based on the key ability score of your class.\n\nIf your class grants a choice for its key ability, select one of those ability scores to gain the bonus."
+    },
+    {
+      "hero-title": "Ancestral Might",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Until the start of your next turn, you gain a +2 Status bonus to checks based on the ability scores that are boosted by your ancestry (ignoring free boosts).\n\nIf your ancestry only grants free boosts, select one ability score to gain the bonus to instead."
+    },
+    {
+      "hero-title": "Cut through the Fog",
+      "hero-type": "",
+      "hero-trigger": "Play on a Will save",
+      "hero-description": "You succeed at the saving throw.\n\nYou gain the Stupefied 1 condition, which lasts until the next time you get a full night's rest."
+    },
+    {
+      "hero-title": "Dive out of Danger",
+      "hero-type": "",
+      "hero-trigger": "Play on a Reflex save",
+      "hero-description": "You succeed at the saving throw.\n\nYou gain the Clumsy 1 condition, which lasts until the next time you get a full night's rest."
+    },
+    {
+      "hero-title": "Push through the Pain",
+      "hero-type": "",
+      "hero-trigger": "Play on a Fortitude save",
+      "hero-description": "You succeed at the saving throw.\n\nYou gain the Drained 1 condition, which lasts until the next time you get a full night's rest."
+    },
+    {
+      "hero-title": "Shake it off",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play when rolling to get rid of persistent damage",
+      "hero-description": "You get advantage on the roll as well as a +2 Status bonus."
+    },
+    {
+      "hero-title": "I Hope this Works!",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Once during your turn, you can Activate an item to Cast a Spell, even if you can't normally cast spells or don't have that spell on your spell list."
+    },
+    {
+      "hero-title": "Spark of Courage",
+      "hero-type": "",
+      "hero-trigger": "Play at the start of your turn, when you have the frightened condition",
+      "hero-description": "You lose the frightened condition and instead gain a +2 Status bonus to Attack Rolls and Skill checks until the end of your turn."
+    },
+    {
+      "hero-title": "Last Stand",
+      "hero-type": "",
+      "hero-trigger": "Play when you take damage",
+      "hero-description": "Until the start of your next turn, any damage that would reduce you to 0 HP leaves you with 1HP remaining and gives you the Doomed 1 condition, or increases your Doomed value by 1."
+    },
+    {
+      "hero-title": "Make Way!",
+      "hero-type": "",
+      "hero-trigger": "Play at the start of a Stride",
+      "hero-description": "During the Stride, you must move in a straight line, but you can attempt to Shove any creature in your way with a +2 Status bonus, moving it to an adjacent space out of the way of your movement.\n\nThe multiple attack penalty doesn't apply to any of these free Shove attempts, nor do they increase your multiple attack penalty.\n\nIf you fail to Shove a creature out of your way, your movement ends immediately."
+    },
+    {
+      "hero-title": "Tumble Past",
+      "hero-type": "",
+      "hero-trigger": "Play after you end your movement adjacent to a creature at least 2 sizes larger than you",
+      "hero-description": "Move to any space directly around that creature.\n\nThis free movement doesn't trigger any reactions based on movement."
+    },
+    {
+      "hero-title": "Magical Reverberations",
+      "hero-type": "",
+      "hero-trigger": "Play after casting a spell",
+      "hero-description": "The spell's power reverberates in your mind.\n\nYou can Cast this Spell one additional time without having it prepared or expending a spell slot.\n\nIf you don't Cast the Spell by the end of your next turn, it is lost.\n\nAfter Casting the Spell again, you become Stupefied 2 for 1 minute or increase your Stupefied level by 2.\n\nAny material components consumed by the spell are still consumed."
+    },
+    {
+      "hero-title": "Aura of Protection",
+      "hero-type": "",
+      "hero-trigger": "Play after casting a spell",
+      "hero-description": "You surround yourself with an aura of residual magic power.\n\nUntil the start of your next turn, you gain resistance to all damage equal to the level of the spell you just cast."
+    },
+    {
+      "hero-title": "Run-by shooting",
+      "hero-type": "",
+      "hero-trigger": "Play when you take two consecutive Stride actions",
+      "hero-description": "You make a free ranged Strike at any point during this movement.\n\nYour multiple attack penalty doesn't apply to this free Strike, nor does it increase your multiple attack penalty."
+    },
+    {
+      "hero-title": "CHAAAARGE",
+      "hero-type": "",
+      "hero-trigger": "Play when you take two consecutive Stride actions",
+      "hero-description": "You make a free melee Strike at any point during this movement.\n\nYour multiple attack penalty doesn't apply to this free Strike, nor does it increase your multiple attack penalty."
+    },
+    {
+      "hero-title": "Hasty Block",
+      "hero-type": "",
+      "hero-trigger": "Play when you are hit by a physical attack and you have a shield within reach and a free hand",
+      "hero-description": "You Interact to draw and wield the shield, and then use it to Shield Block against the attack.\n\nAfter the attack and block are resolved, the shield is torn from your grip and lands in an adjacent space."
+    },
+    {
+      "hero-title": "Last Stand",
+      "hero-type": "",
+      "hero-trigger": "Play when you take damage",
+      "hero-description": "Until the start of your next turn, any damage that would reduce you to 0 HP leaves you with 1HP remaining and gives you the Doomed 1 condition, or increases your Doomed value by 1."
+    },
+    {
+      "hero-title": "Rage and Fury",
+      "hero-type": "",
+      "hero-trigger": "Play when an ally is knocked unconscious or dies",
+      "hero-description": "At the start of your next turn, you enter a rage*.\n\nAt the end of that turn, if you don't have the rage class feature, the rage ends and you are fatigued.\n\n\n* +2 damage to melee strikes, -1 AC penalty, no concentrate actions (unless you have the Rage trait)."
+    },
+    {
+      "hero-title": "Rampage",
+      "hero-type": "",
+      "hero-trigger": "Play at the start of your turn",
+      "hero-description": "Make a melee Strike against each foe within reach.\n\nThe multiple attack penalty doesn't apply to any of these attacks.\n\nAt the end of these attacks, your turn ends and you are fatigued."
+    },
+    {
+      "hero-title": "Last Ounce of Strength",
+      "hero-type": "",
+      "hero-trigger": "Play at the start of your turn when you are dying",
+      "hero-description": "You regain consciousness and can act normally on your turn, but can't regain HP or remove the dying condition during this turn.\n\nAt the end of your turn, you fall unconscious and your dying condition increases by 1."
+    },
+    {
+      "hero-title": "Misdirected attack",
+      "hero-type": "",
+      "hero-trigger": "Play after an enemy critically fails on a melee Strike against you",
+      "hero-description": "That enemy rerolls that attack, targeting one of its allies within its reach."
+    },
+    {
+      "hero-title": "Opportune Distraction",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Until the end of your turn, you gain the benefits of greater cover after take the Hide or Sneak action, allowing you to Hide or Sneak in the open.\n\nThis effect ends if you do anything other than Hide, Sneak or Step."
+    },
+    {
+      "hero-title": "Channel Life Force",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn, when you are out of Focus Points",
+      "hero-description": "Gain 1 Focus Point that must be spent by the time of your next turn (or be lost).\n\nIf you use this Focus Point, you become Drained 1 or increase your Drained level."
+    },
+    {
+      "hero-title": "Fluid Motion",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "For the rest of your turn, you gain a climb Speed and swim Speed equal to half your Speed.\n\nIf you make a horizontal Leap, increase the distance jumped by 10ft."
+    },
+    {
+      "hero-title": "Shoot Through",
+      "hero-type": "",
+      "hero-trigger": "Play before making an attack roll for a ranged Strike",
+      "hero-description": "If the path of the Strike goes through another creature's space before reaching the target, the target is flat-footed against the attack, and the other creature doesn't provide cover."
+    },
+    {
+      "hero-title": "Grazing Blow",
+      "hero-type": "",
+      "hero-trigger": "Play after an enemy hits you with a ranged or melee Strike",
+      "hero-description": "If the enemy rolled a Critical Success, it gets a regular Success instead.\n\nIf the enemy rolled a success, it deals minimum damage instead of rolling for damage."
+    },
+    {
+      "hero-title": "Pierce Resistance",
+      "hero-type": "",
+      "hero-trigger": "Play after you learn about an enemy's resistance or immunity",
+      "hero-description": "Until the end of your next turn, the enemy loses a resistance of your choice, or turns an immunity into a resistance.\n\nYou must be aware of the resistance either from seeing it shrug off damage from an attack, or due to a successful Recall Knowledge check."
+    },
+    {
+      "hero-title": "Drain Power",
+      "hero-type": "",
+      "hero-trigger": "Play when you Activate a magic item that Casts a Spell",
+      "hero-description": "Heighten the spell by 1 level.\n\nThis can't heighten the item's spell above half your level, rounded up.\n\n\nIf the item wasn't consumed on use, you can't use the item again for 24h."
+    },
+    {
+      "hero-title": "Endure the Onslaught",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Give a creature you can see Resistance 5 to all damage until the start of your next turn.\n\nIf you are 7th level or higher, give Resistance 10 instead.\n\nIf you are 12th level or higher, give Resistance 15 instead."
+    },
+    {
+      "hero-title": "Strike True",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play when you or an ally is about to make a Strike",
+      "hero-description": "The target rolls with advantage.\n\nThis strike deals an extra die of damage on a hit if the attacker has fewer than half their maximum HP, or two extra dice if they have fewer than a quater of their maximum HP."
+    },
+    {
+      "hero-title": "Healing Prayer",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "Select yourself or an ally within 30ft.\n\nThe target regains 1d8+8 HP.\n\nIf you are 7th level or higher, the target regains 2d8+16 HP.\n\nIf you are 12th level or higher, the target regains 3d8+24 HP."
+    },
+    {
+      "hero-title": "Surge of Speed",
+      "hero-type": "",
+      "hero-trigger": "Play at the start of your turn or an ally's turn",
+      "hero-description": "The target is Quickened on its turn and can use the extra action only to take a single action with the Move trait."
+    },
+    {
+      "hero-title": "Rising Magic",
+      "hero-type": "",
+      "hero-trigger": "Play when you or an ally is about to Cast a Spell",
+      "hero-description": "Heighten that spell by 1 level.\n\nThis can't heighten a spell above the highest level of spell you or the ally can cast."
+    },
+    {
+      "hero-title": "Protect the Innocent",
+      "hero-type": "",
+      "hero-trigger": "Play when an incapacitated ally or non-combatant NPC within sight takes damage from an attack or effect",
+      "hero-description": "Prevent all the damage.\n\nYou take half the damage they would have taken, bypassing any Resistances and Immunities you might have.\n\nYou may only use this card to prevent damage to an ally if this ally is unable to act, such as when they are unconscious or paralyzed."
+    },
+    {
+      "hero-title": "The Quickening",
+      "hero-type": "",
+      "hero-trigger": "Play at the start of your turn or an ally's turn",
+      "hero-description": "The target gains 4 actions instead of 3 3for their turn.\n\nThe 4th action can be spent as an extra reaction or be used as a normal action."
+    },
+    {
+      "hero-title": "Inhuman reactions",
+      "hero-type": "",
+      "hero-trigger": "Play as a reaction when out of reactions",
+      "hero-description": "This allows you to use an extra reaction."
+    },
+    {
+      "hero-title": "No, that's not how it happened",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play anytime the GM makes a roll",
+      "hero-description": "The GM must re-roll a single check."
+    },
+    {
+      "hero-title": "Close Call",
+      "hero-type": "",
+      "hero-trigger": "Play when you or an ally just rolled a Critical Failure",
+      "hero-description": "Turns the Critical Failure into a Failure.\n\nThis card can only be played on a Critical Failure not caused by a Natural 1."
+    },
+    {
+      "hero-title": "Exploding Dice",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play when you are about to roll damage",
+      "hero-description": "Each time you roll maximum on a dice, roll another dice and add its value to the previous total.\n\nIf you roll maximum again, continue this effect."
+    },
+    {
+      "hero-title": "Fizzling Dice",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play when you are about to roll damage",
+      "hero-description": "Each time you roll minimum on a dice, roll another dice and add its value to the previous total.\n\nIf you roll minimum again, continue this effect."
+    },
+    {
+      "hero-title": "Wild Control",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play when you roll on the Wild Magic table",
+      "hero-description": "Roll another time on the Wild Magic table, and choose the resulting effect from both rolls."
+    },
+    {
+      "hero-title": "Focus Power",
+      "hero-type": "",
+      "hero-trigger": "Play when casting a Focus Spell",
+      "hero-description": "You can cast a single Focus Spell without needing to spend a Focus Point."
+    },
+    {
+      "hero-title": "Temporary Boost",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "You or an ally within sight gains a number of temporary HP equal to your level."
+    },
+    {
+      "hero-title": "Divine Grace",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after an ally other than you rolls",
+      "hero-description": "The target may reroll any dice they just rolled, and must pick the new result."
+    },
+    {
+      "hero-title": "Martyr's Gift",
+      "hero-type": "",
+      "hero-trigger": "Play during your turn",
+      "hero-description": "You can heal a wounded target by touching them and taking their injuries onto yourself.\n\nYou can transfer a number of HP to the target up to twice your level, at a ration of 1:1.\n\nIf this effect brings you below 0 HP, you instantly die, but the target is fully healed.\n\nThe damage you take from this effect bypass all Resistances and Immunities."
+    },
+    {
+      "hero-title": "Wrath of the Righteous",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after you or an ally miss a Critical Success by 1",
+      "hero-description": "You reduce the level required for a Critical Success by 1 for you or an ally within sight.\n\nEx. A DC 15 check would critically succeed on a 24 or higher, and a Natural 19 would count as a Critical Success."
+    },
+    {
+      "hero-title": "Master of Movement",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after rolling for an Acrobatics or Athletics skill check.",
+      "hero-description": "Your degree of success for that roll increases by 1.\n\nA Critical Failure becomes a Failure, a Failure becomes a Success, and a Success becomes a Critical Success."
+    },
+    {
+      "hero-title": "Master of Knowledge",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after rolling for an Arcana, any Lore, a Medicine, a Nature, an Occultism, a Religion, a Society or a Survival skill check.",
+      "hero-description": "Your degree of success for that roll increases by 1.\n\nA Critical Failure becomes a Failure, a Failure becomes a Success, and a Success becomes a Critical Success."
+    },
+    {
+      "hero-title": "Master of Interactions",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after rolling for a Deception, a Diplomacy, an Intimidation, a Performance or a Society skill check.",
+      "hero-description": "Your degree of success for that roll increases by 1.\n\nA Critical Failure becomes a Failure, a Failure becomes a Success, and a Success becomes a Critical Success."
+    },
+    {
+      "hero-title": "Master of Stealth",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after rolling for a Stealth or Thievery skill check.",
+      "hero-description": "Your degree of success for that roll increases by 1.\n\nA Critical Failure becomes a Failure, a Failure becomes a Success, and a Success becomes a Critical Success."
+    },
+    {
+      "hero-title": "Master of Perception",
+      "hero-type": "Fortune",
+      "hero-trigger": "Play after rolling for a Perception skill check.",
+      "hero-description": "Your degree of success for that roll increases by 1.\n\nA Critical Failure becomes a Failure, a Failure becomes a Success, and a Success becomes a Critical Success."
+    },
+    {
+      "hero-title": "Mystical Thwart",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on a target that cast a spell on their last turn",
+      "hero-description": "The target must succeed on a Fortitude saving throw against your class DC.\n\nOn a Failure, the target can't activate magic items, cast spells, or use Quick Alchemy until the end of its next turn.\n\nOn a Critical Failure, the target can't activate magic items, cast spells or use Quick Alchemy until succeeding a Fortitude saving throw against your class DC as an action on its turn."
+    },
+    {
+      "hero-title": "Stinger",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target takes 1d4 permanent bleed damage and is Sickened 3 until healed."
+    },
+    {
+      "hero-title": "Thwack",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "Triple the damage instead of doubling it."
+    },
+    {
+      "hero-title": "Spun around",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is flat-footed for 1d4 turns."
+    },
+    {
+      "hero-title": "Penetrating attack",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The attack ignores all resistances and immunities."
+    },
+    {
+      "hero-title": "Smack",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target must succeed at a Reflex save against your class DC or drop an item of your choice it is holding."
+    },
+    {
+      "hero-title": "Breathless",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is fatigued."
+    },
+    {
+      "hero-title": "Crumpling Blow",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is knocked prone and Stunned 2."
+    },
+    {
+      "hero-title": "Knockback",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "Push the target up to 5fft times your STR modifier."
+    },
+    {
+      "hero-title": "Vulnerability",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target gains Weakness 5 to any damage type dealt by the attack for 1 minute."
+    },
+    {
+      "hero-title": "Two for One",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "Deal normal damage to one target adjacent to the original target."
+    },
+    {
+      "hero-title": "Full Flurry",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "Roll to hit with the same weapon or Spell.\n\nIf the attack is successful, add the damage of the 2nd attack to the total damage.\n\n\nThis free attack doesn't increase your multiple attack penalty or expend a spell slot.\n\n\nIf the attack roll of the free attack is also a Natural 20, you may apply the effect of this card to the new attack."
+    },
+    {
+      "hero-title": "Team Play",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "Anyone can attempt Attacks of Opportunity on the target until the end of the target's next turn, even if the ally doesn't have the Attack of Opportunity feat."
+    },
+    {
+      "hero-title": "Throat Hit",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target must succeed a DC 5 flat check, or be unable to cast spells with the verbal component until healed."
+    },
+    {
+      "hero-title": "Earth Rumble",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target and each enemy adjacent to it must succeed at a Reflex saving throw against your class DC or be knocked prone."
+    },
+    {
+      "hero-title": "Decapitation",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target must roll a flat d20.\n\nIf the result of the roll is a Natural 1, the target dies instantly if it has less than half it's HP or less than 100 HP, whichever is greater.\n\nIf the result of the roll is a Natural 20, the target takes no damage from the attack."
+    },
+    {
+      "hero-title": "Delayed Wound",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target takes half the inflicted damage at the end of its next turn."
+    },
+    {
+      "hero-title": "Now you see me",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "You become invisible to the target until the end of your next turn, or until you use a hostile action against the target."
+    },
+    {
+      "hero-title": "Petrified",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target must succeed a Fortitude Saving throw against your class DC.\n\n\nOn a Critical Failure: The target is Petrified for 2d4 turns.\n\nOn a Failure: The target is Petrified for 1d4 turns."
+    },
+    {
+      "hero-title": "Momentum",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "You gain a +2 Circumstance bonus to all attack rolls until the end off your next turn."
+    },
+    {
+      "hero-title": "Tangled",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on a melee attack",
+      "hero-description": "You can attempt to Grapple the target as a Free action.\n\nThis ignores the multiple attack penalty and doesn't count toward your multiple attack penalty."
+    },
+    {
+      "hero-title": "Magically Tangled",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on a spell or bomb attack",
+      "hero-description": "The target is restrained, using your class DC as the DC to escape."
+    },
+    {
+      "hero-title": "Life Leech",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "Deal an additional 1d8 damage to the target and heal yourself for the same amount."
+    },
+    {
+      "hero-title": "Wild Spellcasting",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on a spell or bomb attack",
+      "hero-description": "Roll four times on the Wild Magic table, and choose the desired effect."
+    },
+    {
+      "hero-title": "Eyeblast",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is blinded until the end of its next turn."
+    },
+    {
+      "hero-title": "Transposition",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on a spell or bomb attack",
+      "hero-description": "You and the target switch places. This is a teleportation effect."
+    },
+    {
+      "hero-title": "Funny Bone",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target laughs uncontrollably until the end of its next turn.\n\nWhile laughing, it is Slowed 1 and can't use reactions."
+    },
+    {
+      "hero-title": "Otherworldly Selection",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on an Aberration, Celestial, Dragon, Fey, Fiend, Monitor or Undead",
+      "hero-description": "Triple the damage instead of doubling it."
+    },
+    {
+      "hero-title": "Doomed",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is Slowed 1 for 1 round, and is also Doomed 1."
+    },
+    {
+      "hero-title": "Terrifying Display",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is Frightened 3."
+    },
+    {
+      "hero-title": "Returning Spell",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice on a spell attack",
+      "hero-description": "spell or spell slot is not expended unless the spell level was the highest available at your class level."
+    },
+    {
+      "hero-title": "Concussion",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target is confused for 1 minute or until healed."
+    },
+    {
+      "hero-title": "Spontaneous Combustion",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice",
+      "hero-description": "The target must roll a DC15 Reflex save or catch fire, taking 1d6 fire damage instantly, and subsequently at the beginning of each of its turns until he succeeds another Reflex saving throw as an action."
+    },
+    {
+      "hero-title": "Martyr Strike",
+      "hero-type": "Natural 20",
+      "hero-trigger": "Play when you rolled a Critical Success resulting from a Natural 20 roll on the attack dice and you have fewer than half your maximum HP",
+      "hero-description": "You can choose to inflict up to twice your level extra amount of damage equal to the target, that is also inflicted upon yourself."
+    }
+  ]
 }

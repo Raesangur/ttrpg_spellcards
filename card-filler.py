@@ -9,7 +9,7 @@ import tkinter as tk
 import tkinter.filedialog as fd
 
 
-def create_images(files):
+def create_images(files, back_xOffset = 0, back_yOffset = 0):
     # Create blank image of the right size
     blankImage = np.ones((paperHeight, paperWidth, 3), dtype=np.uint8)
     backImage  = np.ones((paperHeight, paperWidth, 3), dtype=np.uint8)
@@ -20,7 +20,7 @@ def create_images(files):
     for i in range(len(files)):
         # Extract image from PDF, convert to cv2 image and scale image
         filename = files[i]
-        img = convert_from_path(filename)[0].convert('RGB')
+        img = convert_from_path(filename, dpi=450)[0].convert('RGB')
         img = np.array(img)[:, :, ::-1].copy()
         img = cv2.resize(img, (cardWidth, cardHeight), interpolation = cv2.INTER_AREA)
 
@@ -53,7 +53,7 @@ def create_images(files):
         xOffb = firstCardX * (xb + 1) + cardWidth  * xb
         yOff  = firstCardY * (y + 1)  + cardHeight * y
         blankImage[yOff:yOff + img.shape[0],  xOff :xOff  + img.shape[1]]  = cv2.add(img, front)
-        backImage [yOff:yOff + back.shape[0], xOffb:xOffb + back.shape[1]] = back
+        backImage [yOff + back_yOffset : yOff + back_yOffset + back.shape[0], xOffb + back_xOffset : xOffb + back_xOffset + back.shape[1]] = back
 
     # Add cutting guides
     lineThickness = 1
@@ -67,10 +67,10 @@ def create_images(files):
         cv2.line(blankImage, (0, yOff2), (paperWidth, yOff2),  lineColor, thickness=lineThickness)
         cv2.line(blankImage, (xOff1, 0), (xOff1, paperHeight), lineColor, thickness=lineThickness)
         cv2.line(blankImage, (xOff2, 0), (xOff2, paperHeight), lineColor, thickness=lineThickness)
-        cv2.line(backImage,  (0, yOff1), (paperWidth, yOff1),  lineColor, thickness=lineThickness)
-        cv2.line(backImage,  (0, yOff2), (paperWidth, yOff2),  lineColor, thickness=lineThickness)
-        cv2.line(backImage,  (xOff1, 0), (xOff1, paperHeight), lineColor, thickness=lineThickness)
-        cv2.line(backImage,  (xOff2, 0), (xOff2, paperHeight), lineColor, thickness=lineThickness)
+        cv2.line(backImage,  (0, yOff1 + back_yOffset), (paperWidth, yOff1 + back_yOffset),  lineColor, thickness=lineThickness)
+        cv2.line(backImage,  (0, yOff2 + back_yOffset), (paperWidth, yOff2 + back_yOffset),  lineColor, thickness=lineThickness)
+        cv2.line(backImage,  (xOff1 + back_xOffset, 0), (xOff1 + back_xOffset, paperHeight), lineColor, thickness=lineThickness)
+        cv2.line(backImage,  (xOff2 + back_xOffset, 0), (xOff2 + back_xOffset, paperHeight), lineColor, thickness=lineThickness)
 
     return blankImage, backImage
 
@@ -112,12 +112,16 @@ paperWidth  = 2550
 paperHeight = 3300
 firstCardX  = 250
 firstCardY  = 100
+paperHeightmm = 279.4
+paperWidthmm  = 215.9
+
+yOffset = int(2 * paperHeight // paperHeightmm)       # There is a 2mm offset between the front and the back, probably caused by the printer itself
 
 images = []
 for i in range(math.ceil(len(filez) / 4)):
-    frontImage, backImage = create_images(filez[i * 4: i * 4 + 4])
+    frontImage, backImage = create_images(filez[i * 4: i * 4 + 4], back_yOffset = yOffset)
     images.append(Image.fromarray(frontImage[...,::-1]))
     images.append(Image.fromarray(backImage[...,::-1]))
 
-images[0].save("output.pdf", "PDF", resolutionm=100.0, save_all=True, append_images=images[1:])
+images[0].save("output.pdf", "PDF", resolutionm=450.0, save_all=True, append_images=images[1:])
 

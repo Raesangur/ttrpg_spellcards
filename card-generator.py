@@ -100,7 +100,36 @@ def make_spell_tags(card):
         card["spell-value1"] = card[tags[1]]
         card["spell-value2"] = card[tags[2]]
 
+def adjust_spell_fontsize(card):
+    equivalentCharacters = len(card["spell-description"]) + 20 * card["spell-description"].count('\n')
 
+    if card["has-heightened0"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description0"]) + 20 + 10
+    if card["has-heightened1"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description1"]) + 20 + 10
+    if card["has-heightened2"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description2"]) + 20 + 10
+    if card["has-heightened3"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description3"]) + 20 + 10
+
+    if card["has-spell-action"] != "%":
+        equivalentCharacters += len(card["spell-action-effect"]) + 40 + 20
+
+    if card["has-saving-cs"] != "%":
+        equivalentCharacters += len(card["spell-saving-critical-success"]) + 20 + 20
+    if card["has-saving-s"] != "%":
+        equivalentCharacters += len(card["spell-saving-success"]) + 20 + 20
+    if card["has-saving-f"] != "%":
+        equivalentCharacters += len(card["spell-saving-failure"]) + 20 + 20
+    if card["has-saving-cf"] != "%":
+        equivalentCharacters += len(card["spell-saving-critical-failure"]) + 20 + 20
+
+    if equivalentCharacters <= 1000:
+        card["spell-font-size"] = "8"
+    elif equivalentCharacters <= 1500:
+        card["spell-font-size"] = "7"
+    else:
+        card["spell-font-size"] = "6"
 
 def process_hero_cards():
     with open("hero-template.tex", 'r') as inputF: 
@@ -145,6 +174,9 @@ def process_spell_cards():
             cards_dict = json.load(cards)
 
             for card in cards_dict["cards"]:
+                def get(string):
+                    return card.get(string, "")
+
                 spaces = card["spell-name"].count(' ')
                 title = card["spell-name"].replace(' ', '_').lower()
 
@@ -152,13 +184,12 @@ def process_spell_cards():
                     print(title + " already exists, skipping...")
                     continue
 
-                spacing  = "10mm" if len(title) < (17 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
-
+                #spacing  = "10mm" if len(title) < (17 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
+                
                 check_spell_components(card)
                 make_spell_tags(card)
+                adjust_spell_fontsize(card)
 
-                def get(string):
-                    return card.get(string, "")
 
                 text = template.replace("spell-name", get("spell-name"))
                 text = text.replace("spell-description", get("spell-description"))
@@ -206,6 +237,8 @@ def process_spell_cards():
                 text = text.replace("spell-saving-success", get("spell-saving-success"))
                 text = text.replace("spell-saving-failure", get("spell-saving-failure"))
                 text = text.replace("spell-saving-critical-failure", get("spell-saving-critical-failure"))
+
+                text = text.replace("spell-font-size", get("spell-font-size"))
 
 
                 outputF = open("output/spell-" + title + ".tex", 'w')

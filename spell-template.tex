@@ -6,6 +6,7 @@
 \usepackage{background}
 \usepackage{ragged2e}
 \usepackage{multicol}
+\usepackage{setspace}
 
 % https://github.com/stephenswat/dnd-spelldeck
 
@@ -125,26 +126,32 @@
 {spell-tag1} {spell-value1}
 {spell-tag2} {spell-value2}
     \begingroup
-        \par\fontsize{8pt}{10pt}\selectfont
+        \SetSinglespace{0.12}\singlespacing
+        \begin{singlespace*}
+        \par\fontsize{spell-font-size}{10pt}\selectfont
         \vspace{7mm}   % 4mm - 10mm
         % Description
-        spell-description\\ has-heightened0 \\
+        spell-description\\
         
+        has-heightened0 \vspace{2mm}
         has-heightened0 \textbf{Heightened spell-heightened-level0 :} spell-heightened-description0\\
         has-heightened1 \textbf{Heightened spell-heightened-level1 :} spell-heightened-description1\\
         has-heightened2 \textbf{Heightened spell-heightened-level2 :} spell-heightened-description2\\
-        has-heightened3 \textbf{Heightened spell-heightened-level3 :} spell-heightened-description3\\ has-spell-action \\
+        has-heightened3 \textbf{Heightened spell-heightened-level3 :} spell-heightened-description3\\
 
+        has-spell-action \vspace{2mm}
         has-spell-action \textbf{spell-action-title :} \includegraphics[width=0.40cm]{img/spell-action-time.png} spell-action-activation\\
         has-spell-action has-spell-action-trigger \textbf{Trigger:} spell-action-trigger\\
-        has-spell-action \textbf{Effect:} spell-action-effect\\ has-saving-cs \\
+        has-spell-action \textbf{Effect:} spell-action-effect\\
 
+        has-saving-cs \vspace{2mm}
         has-saving-cs \textbf{Critical Success :} spell-saving-critical-success\\
         has-saving-s \textbf{Success :} spell-saving-success\\
         has-saving-f \textbf{Failure :} spell-saving-failure\\
         has-saving-cf \textbf{Critical Failure :} spell-saving-critical-failure\\
         %\vspace{1mm}
         \rule{\textwidth}{0.5pt}
+        \end{singlespace*}
     \endgroup
 \end{spell}
 

@@ -1,0 +1,149 @@
+{
+  "cards": [
+    {
+      "spell-name": "Ghost Sound",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory",
+      "spell-source": "CR, 340",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-duration": "Sustained",
+      "spell-description": "You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).",
+    
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "The range increases to 60 feet.",
+      "spell-heightened-level1": "5th",
+      "spell-heightened-description1" : "The range increases to 120 feet."
+    },
+    {
+      "spell-name": "Musical Accompaniment",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory",
+      "spell-source": "FB, 90",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "-",
+      "spell-duration": "1min",
+      "spell-description": "You're surrounded by orchestral music that shifts and changes to match your behavior. This music provides a +1 status bonus to Performance checks.\nAt the GM's discretion, it provides this bonus to Deception, Diplomacy, and Intimidation checks as the music changes to support you in social situations, though some creatures are unaffected by such obvious attempts to use music to illicit specific emotions. This music moves with you and has a maximum volume equal to four humans shouting.\nYou take a -4 penalty to Stealth checks while the music is playing. You can't control the exact music this spell creates. The music doesn't create intelligible words or singing. You can Dismiss this spell.",
+    
+      "spell-heightened-level0": "2nd",
+      "spell-heightened-description0" : "The duration increases to 10 minutes.",
+      "spell-heightened-level1": "3rd",
+      "spell-heightened-description1" : "The duration increases to 1 hour.",
+      "spell-heightened-level2": "5th",
+      "spell-heightened-description2" : "The duration increases to 24 hours."
+    },
+    {
+      "spell-name": "Message",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory, Linguistic, Mental",
+      "spell-source": "CR, 351",
+      "spell-casting-time": "1",
+      "spell-components": "V",
+      "spell-range": "120ft",
+      "spell-targets": "1 creature",
+      "spell-duration": "See below",
+      "spell-description": "You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you.\nThe target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.",
+    
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "The spell's range increases to 500 feet."
+    },
+    {
+      "spell-name": "Bullhorn",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory",
+      "spell-source": "SoM, 93",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "500ft",
+      "spell-duration": "10min",
+      "spell-description": "You amplify your voice, loud enough for you to be heard easily at a great distance. For the duration, your voice can be heard loudly and clearly by all listeners within 500 feet, even if other ambient noise would otherwise block the sound. Despite the volume, this doesn't make your voice jarring or distracting. This doesn't increase the range or area of other auditory or linguistic effects, and physical barriers such as walls and doors still block or muffle your voice as normal.\nYour loud voice makes it easier to Coerce others, and the acoustics assist in Performing at a large venue. You gain a +1 status bonus to checks to Coerce and auditory Performance checks to Perform at a large venue.You can Dismiss the spell.",
+    
+      "spell-heightened-level0": "5th",
+      "spell-heightened-description0" : "Your voice can be heard clearly up to 1200ft away.",
+      "spell-heightened-level1": "7th",
+      "spell-heightened-description1" : "Your voice can be heard clearly up to 1 mile away."
+    },
+    {
+      "spell-name": "Chill Touch",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Necromancy",
+      "spell-traits": "Cantrip, Negative",
+      "spell-source": "CR, 323",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "touch",
+      "spell-targets": "1 creature",
+      "spell-saving-throw": "Fortitude",
+      "spell-description": "Siphoning negative energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.\n- \\textbf{Living Creature:} The spell deals negative damage equal to 1d4 plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also enfeebled 1 for 1 round on a critical failure.\n- \\textbf{Undead Creature:} The target is flat-footed for 1 round on a failed Fortitude save. On a critical failure, the target is also fleeing for 1 round unless it succeeds at a Will save.",
+    
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The negative damage to living creatures increases by 1d4."
+    },
+    {
+      "spell-name": "Dim the Light",
+      "spell-level": "Focus 1",
+      "spell-school": "Evocation",
+      "spell-traits": "Darkness",
+      "spell-source": "APG, 236",
+      "spell-casting-time": "reaction",
+      "spell-components": "S",
+      "spell-range": "Self",
+      "spell-trigger": "You cast a Shadow spell",
+      "spell-description": ".\nYou magnify the darkness from the triggering effect, causing the ambient light level to flicker briefly so you can slip from sight.\nYou can immediately attempt a Stealth check to Hide, and you can become hidden to a creature even if you don't have cover and aren't otherwise concealed from that creature. You cease being hidden at the end of your turn unless you move into cover or become concealed before then."
+    },
+    {
+      "spell-name": "Flashy Disappearance",
+      "spell-level": "Spell 1",
+      "spell-school": "Illusion",
+      "spell-source": "FB, 89",
+      "spell-casting-time": "1",
+      "spell-components": "V",
+      "spell-range": "Self",
+      "spell-description": "You create a puff of colorful smoke that quickly disperses while you become temporarily invisible. You become undetected to all creatures unless they can see invisible creatures.\nYou Stride. At the end of your movement, if you have cover, greater cover, or concealment, attempt a Stealth check to Hide. You gain a +2 status bonus to this Stealth check.\nThe invisibility then ends, and you either become observed or hidden to creatures as determined by your check to Hide, if you made one."
+    },
+    {
+      "spell-name": "Illusory Object",
+      "spell-level": "Spell 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Visual",
+      "spell-source": "CR, 345",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "500ft",
+      "spell-area": "20ft burst",
+      "spell-duration": "10min",
+      "spell-description": "You create an illusory visual image of a stationary object. The entire image must fit within the spell's area. The object appears to animate naturally, but it doesn't make sounds or generate smells. For example, water would appear to pour down an illusory waterfall, but it would be silent.\nAny creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion.",
+
+      "spell-heightened-level0": "2nd",
+      "spell-heightened-description0" : "Your image makes appropriate sounds, generates normal smells, and feels right to the touch. The spell gains the auditory and olfactory traits. The duration increases to 1 hour.",
+      "spell-heightened-level0": "5th",
+      "spell-heightened-description0" : "As the 2nd-level version, but the duration is unlimited."
+    },
+    {
+      "spell-name": "Grim Tendrils",
+      "spell-level": "Spell 1",
+      "spell-school": "Necromancy",
+      "spell-traits": "Negative",
+      "spell-source": "CR, 342",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "20ft line",
+      "spell-saving-throw": "Fortitude",
+      "spell-description": "Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 negative damage and 1 persistent bleed damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.",
+
+      "spell-saving-critical-success": "The creature is unaffected.",
+      "spell-saving-success":"The creature takes half the negative damage and no persistent bleed damage.",
+      "spell-saving-failure":"The creature takes full damage.",
+      "spell-saving-critical-failure":" The creature takes double negative damage and double persistent bleed damage.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The negative damage increases by 2d4, and the persistent bleed damage increases by 1."
+    }
+  ]
+}

@@ -31,6 +31,31 @@ def check_spell_components(card):
     else:
         card["has-heightened3"] = "%"
 
+    if "spell-heightened-level4" in card:
+        card["has-heightened4"] = ""
+    else:
+        card["has-heightened4"] = "%"
+
+    if "spell-heightened-level5" in card:
+        card["has-heightened5"] = ""
+    else:
+        card["has-heightened5"] = "%"
+
+    if "spell-heightened-level6" in card:
+        card["has-heightened6"] = ""
+    else:
+        card["has-heightened6"] = "%"
+
+    if "spell-heightened-level7" in card:
+        card["has-heightened7"] = ""
+    else:
+        card["has-heightened7"] = "%"
+
+    if "spell-heightened-level8" in card:
+        card["has-heightened8"] = ""
+    else:
+        card["has-heightened8"] = "%"
+
     # Check Spell Actions
     if "spell-action-title" in card:
         card["has-spell-action"] = ""
@@ -111,6 +136,17 @@ def adjust_spell_fontsize(card):
         equivalentCharacters += len(card["spell-heightened-description2"]) + 20 + 10
     if card["has-heightened3"] != "%":
         equivalentCharacters += len(card["spell-heightened-description3"]) + 20 + 10
+    if card["has-heightened4"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description4"]) + 20 + 10
+    if card["has-heightened5"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description5"]) + 20 + 10
+    if card["has-heightened6"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description6"]) + 20 + 10
+    if card["has-heightened7"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description7"]) + 20 + 10
+    if card["has-heightened8"] != "%":
+        equivalentCharacters += len(card["spell-heightened-description8"]) + 20 + 10
+
 
     if card["has-spell-action"] != "%":
         equivalentCharacters += len(card["spell-action-effect"]) + 40 + 20
@@ -124,12 +160,16 @@ def adjust_spell_fontsize(card):
     if card["has-saving-cf"] != "%":
         equivalentCharacters += len(card["spell-saving-critical-failure"]) + 20 + 20
 
-    if equivalentCharacters <= 1000:
+    if equivalentCharacters <= 800:
+        card["spell-font-size"] = "9"
+    elif equivalentCharacters <= 1350:
         card["spell-font-size"] = "8"
-    elif equivalentCharacters <= 1500:
-        card["spell-font-size"] = "7"
     else:
-        card["spell-font-size"] = "6"
+        card["spell-font-size"] = "7"
+
+def insert_spell_newlines(card):
+    for k in card.keys():
+        card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
 
 def process_hero_cards():
     with open("hero-template.tex", 'r') as inputF: 
@@ -189,6 +229,7 @@ def process_spell_cards():
                 check_spell_components(card)
                 make_spell_tags(card)
                 adjust_spell_fontsize(card)
+                insert_spell_newlines(card)
 
 
                 text = template.replace("spell-name", get("spell-name"))
@@ -213,14 +254,29 @@ def process_spell_cards():
                 text = text.replace("has-heightened1", get("has-heightened1"))
                 text = text.replace("has-heightened2", get("has-heightened2"))
                 text = text.replace("has-heightened3", get("has-heightened3"))
+                text = text.replace("has-heightened4", get("has-heightened4"))
+                text = text.replace("has-heightened5", get("has-heightened5"))
+                text = text.replace("has-heightened6", get("has-heightened6"))
+                text = text.replace("has-heightened7", get("has-heightened7"))
+                text = text.replace("has-heightened8", get("has-heightened8"))
                 text = text.replace("spell-heightened-level0", get("spell-heightened-level0"))
                 text = text.replace("spell-heightened-level1", get("spell-heightened-level1"))
                 text = text.replace("spell-heightened-level2", get("spell-heightened-level2"))
                 text = text.replace("spell-heightened-level3", get("spell-heightened-level3"))
+                text = text.replace("spell-heightened-level4", get("spell-heightened-level4"))
+                text = text.replace("spell-heightened-level5", get("spell-heightened-level5"))
+                text = text.replace("spell-heightened-level6", get("spell-heightened-level6"))
+                text = text.replace("spell-heightened-level7", get("spell-heightened-level7"))
+                text = text.replace("spell-heightened-level8", get("spell-heightened-level8"))
                 text = text.replace("spell-heightened-description0", get("spell-heightened-description0"))
                 text = text.replace("spell-heightened-description1", get("spell-heightened-description1"))
                 text = text.replace("spell-heightened-description2", get("spell-heightened-description2"))
                 text = text.replace("spell-heightened-description3", get("spell-heightened-description3"))
+                text = text.replace("spell-heightened-description4", get("spell-heightened-description4"))
+                text = text.replace("spell-heightened-description5", get("spell-heightened-description5"))
+                text = text.replace("spell-heightened-description6", get("spell-heightened-description6"))
+                text = text.replace("spell-heightened-description7", get("spell-heightened-description7"))
+                text = text.replace("spell-heightened-description8", get("spell-heightened-description8"))
 
                 text = text.replace("has-spell-action", get("has-spell-action"))
                 text = text.replace("has-spell-action-trigger", get("has-spell-action-trigger"))

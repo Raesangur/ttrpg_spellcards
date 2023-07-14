@@ -27,6 +27,7 @@ def create_images(files, back_xOffset = 0, back_yOffset = 0):
         # Extract school of magic picture
         text        = PdfReader(filename).pages[0].extract_text()
         school      = [word for word in schoolList if word in text]
+        print(school)
         schoolBack  = cardBacks[school[0].lower()]
         schoolFront = cardFronts[school[0].lower()]
         back        = cv2.imread(schoolBack)
@@ -88,7 +89,8 @@ cardBacks = {
 "illusion"      : "./backs/back_illusion.png",
 "necromancy"    : "./backs/back_necromancy.png",
 "transmutation" : "./backs/back_transmutation.png",
-"hero"          : "./backs/back_hero.png"
+"hero"          : "./backs/back_hero.png",
+"barbarian"     : "./backs/back_barbarian.png"
 }
 cardFronts = {
 "abjuration"    : "./backs/front_abjuration.png",
@@ -99,11 +101,12 @@ cardFronts = {
 "illusion"      : "./backs/front_illusion.png",
 "necromancy"    : "./backs/front_necromancy.png",
 "transmutation" : "./backs/front_transmutation.png",
-"hero"          : "./backs/front_hero.png"
+"hero"          : "./backs/front_hero.png",
+"barbarian"     : "./backs/front_barbarian.png"
 }
 
-schoolList = ["Abjuration", "Conjuration", "Divination", "Enchantment", "Evocation", "Illusion", "Necromancy", "Transmutation", "Hero", \
-              "abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation", "hero"]
+schoolList = ["Abjuration", "Conjuration", "Divination", "Enchantment", "Evocation", "Illusion", "Necromancy", "Transmutation", "Hero", "Barbarian" \
+              "abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation", "hero", "barbarian"]
 
 #
 cardWidth   = 900

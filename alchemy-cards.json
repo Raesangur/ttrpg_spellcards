@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "alchemy-title":       "Alchemists Fire (Lesser)",
+      "alchemy-type":        "Bomb, Consumable, Fire, Splash",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Strike",
+      "alchemy-description": "Alchemist’s fire is a combination of volatile liquids that ignite when exposed to air. Alchemist’s fire (lesser) deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage."
+    },
+    {
+      "alchemy-title":       "Eagle Eye Elixir (Lesser)",
+      "alchemy-type":        "Consumable, Elixir",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "After you drink this elixir, you notice subtle visual details. For the next hour, you gain a +1 item bonus to general Perception checks, or a +2 item bonus when attempting to find secret doors and traps."
+    },
+    {
+      "alchemy-title":       "Forensic Dye",
+      "alchemy-type":        "Consumable",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "Activating this vial of colorless liquid requires inserting a small amount of another chemical or material, such as blood or mud. The vial reacts rapidly, transforming into a murky, reddish-brown substance.\n\nOnce activated, the dye remains potent for up to 10 minutes, during which time you can spend 1 minute to brush it onto a single object of up to 1 Bulk or across the ground in a single 5-foot square. Where the dye comes in contact with an exact match for the activating chemical, it takes on a bright blue hue, while staying transparent in areas where there is no activating component present."
+    },
+    {
+      "alchemy-title":       "Blindpepper Tube",
+      "alchemy-type":        "Consumable, Visual",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "\\vspace{-3mm}\nThis single-use pacification device consists of finely ground hot pepper loaded into a sealed, blowgun-style tube with a one-way valve and a range of 5 feet.\n\nTo use it, the wielder must tear open the tube's seal as an Interact action, then spend another action to blow the hot pepper into an adjacent creature's face. These actions don't have to be taken in the same round.\n\nThe target must attempt a DC 15 Reflex save to avoid inhaling the pepper or getting it in their eyes. On a failed save, the creature is blinded for 1 round and then dazzled for 1 round. On a critical failure, the creature is blinded for 1 round, sickened 1, and dazzled until it removes the sickened condition."
+    },
+    {
+      "alchemy-title":       "Elixir of Life (Minor)",
+      "alchemy-type":        "Consumable, Elixir, Healing",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain 1d6 Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes."
+    },
+    {
+      "alchemy-title":       "Giant Centipede Venom",
+      "alchemy-type":        "Consumable, Injury, Poison",
+      "alchemy-activation":  "2.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "2 hands, Interact",
+      "alchemy-description": "Giant centipede venom causes severe muscle stiffness.\n\n\\textbf{Saving Throw:} DC 17 Fortitude\n\n\\textbf{Maximum Duration:} 6 rounds\n\n\\textbf{Stage 1:} 1d6 poison damage (1 round)\n\n\\textbf{Stage 2:} 1d8 poison damage and flat-footed (1 round)\n\n\\textbf{Stage 3:} 1d12 poison damage, clumsy 1 and flat-footed (1 round)"
+    }
+  ]
+}

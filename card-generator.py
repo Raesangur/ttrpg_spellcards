@@ -196,7 +196,6 @@ def process_hero_cards():
                 text = text.replace("hero-trigger", card["hero-trigger"])
                 text = text.replace("hero-description", card["hero-description"])
                 text = text.replace("hero-fortune", "This is a Fortune effect" if "Fortune" in card["hero-type"] else "")
-                #text = text.replace("hero-spacing-secondary", "2mm")
                 text = text.replace("hero-spacing-secondary", spacing2)
                 text = text.replace("hero-spacing",  spacing)
 
@@ -205,6 +204,39 @@ def process_hero_cards():
                 outputF.close()
 
                 subprocess.call("pdflatex output/hero-" + title + ".tex -output-directory=output -job-name=" + title)
+
+def process_alchemy_cards():
+    with open("alchemy-template.tex", 'r') as inputF: 
+        template = inputF.read()
+
+        with open("alchemy-cards.json", 'r') as cards:
+            cards_dict = json.load(cards)
+
+            for card in cards_dict["cards"]:
+                title = card["alchemy-title"].replace(' ', '_').replace('(', '').replace(')', '')
+
+                if title + ".pdf" in os.listdir("output"):
+                    print(title + " already exists, skipping...")
+                    continue
+
+                spaces = card["alchemy-title"].count(' ')
+                spacing  = "10mm" if len(title) < (17 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
+                spacing2 =  str(3 if len(title) < (13 + spaces) else 9 if len(title) < (29 + spaces) else 13) + "mm"
+
+                text = template.replace("alchemy-title", card["alchemy-title"])
+                text = text.replace("alchemy-type", card["alchemy-type"])
+                text = text.replace("alchemy-activation", card["alchemy-activation"])
+                text = text.replace("alchemy-bulk", card["alchemy-bulk"])
+                text = text.replace("alchemy-usage", card["alchemy-usage"])
+                text = text.replace("alchemy-spacing-secondary", spacing2)
+                text = text.replace("alchemy-spacing", spacing)
+                text = text.replace("alchemy-description", card["alchemy-description"])
+
+                outputF = open("output/alchemy-" + title + ".tex", 'w')
+                outputF.write(text)
+                outputF.close()
+
+                subprocess.call("pdflatex output/alchemy-" + title + ".tex -output-directory=output -job-name=alchemy-" + title)
 
 def process_spell_cards():
     with open("spell-template.tex", 'r') as inputF: 
@@ -304,7 +336,9 @@ def process_spell_cards():
                 subprocess.call("pdflatex output/spell-" + title + ".tex -output-directory=output -job-name=spell-" + title)
 
 
-process_spell_cards()
+#process_hero_cards()
+process_alchemy_cards()
+#process_spell_cards()
 
 files = os.listdir("output")
 files = [f for f in files if ".pdf" not in f]

@@ -25,11 +25,11 @@ def create_images(files, back_xOffset = 0, back_yOffset = 0):
         img = cv2.resize(img, (cardWidth, cardHeight), interpolation = cv2.INTER_AREA)
 
         # Extract school of magic picture
-        text        = PdfReader(filename).pages[0].extract_text()
+        text        = PdfReader(filename).pages[0].extract_text().lower()
         school      = [word for word in schoolList if word in text]
         print(school)
-        schoolBack  = cardBacks[school[0].lower()]
-        schoolFront = cardFronts[school[0].lower()]
+        schoolBack  = cardBacksPath + school[0] + ".png" #cardBacks[school[0].lower()]
+        schoolFront = cardFrontsPath + school[0] + ".png" #cardFronts[school[0].lower()]
         back        = cv2.imread(schoolBack)
         front       = cv2.imread(schoolFront, cv2.IMREAD_UNCHANGED)
 
@@ -80,33 +80,9 @@ root = tk.Tk()
 root.withdraw()
 filez = fd.askopenfilenames(parent = root, title = "Cards to load", filetypes=[("Portable Document Format", "*.pdf")])
 
-cardBacks = {
-"abjuration"    : "./backs/back_abjuration.png",
-"conjuration"   : "./backs/back_conjuration.png",
-"divination"    : "./backs/back_divination.png",
-"enchantment"   : "./backs/back_enchantment.png",
-"evocation"     : "./backs/back_evocation.png",
-"illusion"      : "./backs/back_illusion.png",
-"necromancy"    : "./backs/back_necromancy.png",
-"transmutation" : "./backs/back_transmutation.png",
-"hero"          : "./backs/back_hero.png",
-"barbarian"     : "./backs/back_barbarian.png"
-}
-cardFronts = {
-"abjuration"    : "./backs/front_abjuration.png",
-"conjuration"   : "./backs/front_conjuration.png",
-"divination"    : "./backs/front_divination.png",
-"enchantment"   : "./backs/front_enchantment.png",
-"evocation"     : "./backs/front_evocation.png",
-"illusion"      : "./backs/front_illusion.png",
-"necromancy"    : "./backs/front_necromancy.png",
-"transmutation" : "./backs/front_transmutation.png",
-"hero"          : "./backs/front_hero.png",
-"barbarian"     : "./backs/front_barbarian.png"
-}
-
-schoolList = ["Abjuration", "Conjuration", "Divination", "Enchantment", "Evocation", "Illusion", "Necromancy", "Transmutation", "Hero", "Barbarian" \
-              "abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation", "hero", "barbarian"]
+cardBacksPath = "./backs/back_"
+cardFrontsPath = "./backs/front_"
+schoolList = ["abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation", "hero", "barbarian", "loky", "alchemy"]
 
 #
 cardWidth   = 900

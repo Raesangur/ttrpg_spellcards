@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=1cm,top=24mm,bottom=10mm,headheight=1cm]{geometry}
+\usepackage{ifxetex}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{ragged2e}
+\usepackage{multicol}
+
+% https://github.com/stephenswat/dnd-spelldeck
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\ifxetex
+\usepackage{fontspec}
+%\setmainfont{Mrs Eaves OT}
+\setmainfont{Priori Serif}
+\fi
+
+\definecolor{headercolor}{RGB}{88,23,13}
+\definecolor{linecolor}{RGB}{201,173,106}
+
+\sloppy
+\setlength{\headsep}{1mm}
+\setlength{\columnsep}{-4mm}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+%\pagestyle{fancy}
+\cfoot{ }
+
+\backgroundsetup{
+    contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/background}}
+}
+
+
+\newcommand\spell[6]
+{
+    \def\title{#1}
+    \def\type{#2}
+    \def\activation{#3}
+    \def\bulk{#4}
+    \def\usage{#5}
+    \def\description{#6}
+
+    \begin{minipage}[t][1.5cm][t]{\textwidth}
+        \vspace{-18mm}
+        \par\begin{minipage}[t][0mm][t]{\textwidth}
+            \centering
+            \vspace{4mm}
+            \scshape\scriptsize\color{black}Alchemy\\
+            [-1.8mm]
+            \scshape\scriptsize\color{black}\
+            \Large\color{headercolor}\title
+            
+            \vspace{2mm}
+            
+            \scriptsize\type
+        \end{minipage}
+        \vspace{alchemy-spacing}    % 10mm - 16mm
+        \par\rule{\textwidth}{0.5pt}
+        \par
+        \vspace{-5mm}
+        \centering\begin{multicols}{3}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}Activation}
+                \\[0.75mm]
+                \includegraphics[height=0.30cm]{img/\activation}
+            \end{minipage}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}Bulk}
+        
+                \bulk
+            \end{minipage}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}Usage}
+        
+                \usage
+            \end{minipage}
+        \end{multicols}
+        \vspace{-4mm}
+        \rule{\textwidth}{0.5pt}
+    \end{minipage}
+
+    \vspace{alchemy-spacing-secondary}         % 3mm - 9mm
+    \description
+}
+
+\begin{document}
+\begin{spell}
+{alchemy-title} % Formula Name
+{alchemy-type} % Formula Type
+{alchemy-activation} % Activation
+{alchemy-bulk} % Bulk
+{alchemy-usage} % Usage
+{
+    \begingroup
+        \par\fontsize{8pt}{10pt}\selectfont
+        \vspace{-3mm}   % 4mm - 10mm
+        % Description
+        alchemy-description
+        
+        \vspace{1.75mm}
+        \rule{\textwidth}{0.5pt}
+    \endgroup
+}
+\end{spell}
+
+\end{document}

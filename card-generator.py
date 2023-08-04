@@ -182,7 +182,7 @@ def process_hero_cards():
                 spaces = card["hero-title"].count(' ')
                 title = card["hero-title"].replace(' ', '_')
 
-                if title + ".pdf" in os.listdir("output"):
+                if "hero-" + title + ".pdf" in os.listdir("output"):
                     print(title + " already exists, skipping...")
                     continue
 
@@ -215,7 +215,7 @@ def process_alchemy_cards():
             for card in cards_dict["cards"]:
                 title = card["alchemy-title"].replace(' ', '_').replace('(', '').replace(')', '')
 
-                if title + ".pdf" in os.listdir("output"):
+                if "alchemy-" + title + ".pdf" in os.listdir("output"):
                     print(title + " already exists, skipping...")
                     continue
 
@@ -337,8 +337,8 @@ def process_spell_cards():
 
 
 #process_hero_cards()
+process_spell_cards()
 process_alchemy_cards()
-#process_spell_cards()
 
 files = os.listdir("output")
 files = [f for f in files if ".pdf" not in f]

@@ -47,6 +47,22 @@
       "alchemy-bulk":        "L",
       "alchemy-usage":       "2 hands, Interact",
       "alchemy-description": "Giant centipede venom causes severe muscle stiffness.\n\n\\textbf{Saving Throw:} DC 17 Fortitude\n\n\\textbf{Maximum Duration:} 6 rounds\n\n\\textbf{Stage 1:} 1d6 poison damage (1 round)\n\n\\textbf{Stage 2:} 1d8 poison damage and flat-footed (1 round)\n\n\\textbf{Stage 3:} 1d12 poison damage, clumsy 1 and flat-footed (1 round)"
+    },
+    {
+      "alchemy-title":       "Comprehension Elixir (Lesser)",
+      "alchemy-type":        "Consumable, Elixir, Mental",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "This bitter draught opens your mind to the potential of the written word. For 1 minute after drinking this elixir, you can understand any words you read, so long as they are written in a common language. This elixir doesn’t automatically allow you to understand codes or extremely esoteric passages—you still need to attempt a skill check to Decipher Writing."
+    },
+    {
+      "alchemy-title":       "Silversheen",
+      "alchemy-type":        "Consumable",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "2 hand, Interact",
+      "alchemy-description": "You can slather this silvery paste onto one melee weapon, one thrown weapon, or 10 pieces of ammunition. Silversheen spoils quickly, so once you open a vial, you must use it all at once, rather than saving it. For the next hour, the weapon or ammunition counts as silver instead of its normal precious material (such as cold iron) for any physical damage it deals."
     }
   ]
 }

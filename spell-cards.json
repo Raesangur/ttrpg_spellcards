@@ -433,6 +433,37 @@
       "spell-heightened-description0" : "You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.",
       "spell-heightened-level0": "4th",
       "spell-heightened-description0" : "As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that)."
+    },
+    {
+      "spell-name": "Heal",
+      "spell-level": "Spell 1",
+      "spell-school": "Necromancy",
+      "spell-traits": "Healing, Positive",
+      "spell-source": "CR, 343",
+      "spell-casting-time": "1",
+      "spell-components": "varies",
+      "spell-range": "varies",
+      "spell-description": "You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.\n\\includegraphics[height=0.30cm]{img/1.png} \\textbf{(somatic)} The spell has a range of touch.\n\\includegraphics[height=0.30cm]{img/2.png} \\textbf{(somatic, verbal)} The spell has a range of 30fft. If you're healing a living creature, increase the HP restored by 8.\n\\includegraphics[height=0.30cm]{img/3.png} \\textbf{(material, somatic, verbal)} You disperse positive energy in a 30ft emanatino. This targets all living and undead creatures in the burst.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8."
+    },
+    {
+      "spell-name": "Invisible Item",
+      "spell-level": "Spell 1",
+      "spell-school": "Illusion",
+      "spell-source": "APG, 221",
+      "spell-casting-time": "2",
+      "spell-components": "M, S",
+      "spell-range": "touch",
+      "spell-targets": "1 object",
+      "spell-duration": "1 hour",
+      "spell-description": "You make the object invisible. This makes it undetected to all creatures, though the creatures can attempt to find the target, making it hidden to them instead if they succeed.\nIf the item is used as part of a hostile action, the spell ends after that hostile action is completed. Making a weapon invisible typically doesn't give any advantage to the attack, except that an invisible thrown weapon or piece of ammunition can be used for an attack without necessarily giving information about the attacker's hiding place unless the weapon returns to the attacker.",
+
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "The duration is until the next time you make your daily preparations.",
+      "spell-heightened-level1": "7th",
+      "spell-heightened-description1" : "The duration is unlimited."
     }
   ]
 }

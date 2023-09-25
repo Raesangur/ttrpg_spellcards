@@ -464,6 +464,127 @@
       "spell-heightened-description0" : "The duration is until the next time you make your daily preparations.",
       "spell-heightened-level1": "7th",
       "spell-heightened-description1" : "The duration is unlimited."
+    },
+    {
+      "spell-name": "Augury",
+      "spell-level": "Spell 2",
+      "spell-school": "Divination",
+      "spell-traits": "Prediction",
+      "spell-source": "CR, 318",
+      "spell-casting-time": "10min",
+      "spell-components": "M, S, V",
+      "spell-description": "You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:\n$\\bullet$ \\textbf{Weal} The results will be good\\\\$\\bullet$ \\textbf{Woe} The results will be bad\\\\$\\bullet$ \\textbf{Weal and Woe} The results will be a mix off good and bad\\\\$\\bullet$ \\textbf{Nothing} There won't be particularly good or bad results\n The GM rolls a secret DC 6 flat check. On a failure, the result is always 'nothing.' This makes it impossible to tell whether a 'nothing' result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result."
+    },
+    {
+      "spell-name": "Sound Burst",
+      "spell-level": "Spell 2",
+      "spell-school": "Evocation",
+      "spell-traits": "Sonic",
+      "spell-source": "CR, 370",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-area": "10ft burst",
+      "spell-saving-throw": "Fortitude",
+      "spell-description": "A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.",
+
+      "spell-saving-critical-success": "The creature is unnafected.",
+      "spell-saving-success":"The target takes half damage.",
+      "spell-saving-failure":"The target takes full damage and is Deafened for 1 round.",
+      "spell-saving-critical-failure":"The target takes double damage and is Deafened for 1 minute, and Stunned 1.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The damage increases by 1d10"
+    },
+    {
+      "spell-name": "Illusory Creature (1)",
+      "spell-level": "Spell 2",
+      "spell-school": "Illusion",
+      "spell-traits": "Auditory, Olfactory, Visual",
+      "spell-source": "CR, 345",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "500ft",
+      "spell-target": "\\vspace{-5cm}",
+      "spell-description": "You create an illusory image of a Large or smaller creature. It generates the appropriate sounds, smells, and feels believable to the touch. If you and the image are ever farther than 500 feet apart, the spell ends. The image can't speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to mimic the creature, as determined by the GM. This is especially likely if you're trying to imitate a specific person and engage with someone that person knows.\nIn combat, the illusion can use 2 actions per turn, which it uses when you Sustain the Spell. It uses your spell attack roll for attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC - 10. It is substantial enough that it can flank other creatures. If the image is hit by an attack or fails a save, the spell ends.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan)."
+    },
+    {
+      "spell-name": "Illusory Creature (2)",
+      "spell-level": "Spell 2",
+      "spell-school": "Illusion",
+      "spell-traits": "Auditory, Olfactory, Visual",
+      "spell-source": "CR, 345",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "500ft",
+      "spell-description": "The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster—for example, if an illusory Large dragon deals only 5 damage-the GM might allow the target to attempt an immediate Perception check to disbelieve the spell. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.\\\\Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it."
+    },
+    {
+      "spell-name": "Invisibility",
+      "spell-level": "Spell 2",
+      "spell-school": "Illusion",
+      "spell-source": "CR, 347",
+      "spell-casting-time": "2",
+      "spell-components": "M, S",
+      "spell-range": "touch",
+      "spell-targets": "1 creature",
+      "spell-duration": "10min",
+      "spell-description": "Cloaked in illusion, the target becomes invisible. This makes it undetected to all creatures, though the creatures can attempt to find the target, making it hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.",
+
+      "spell-heightened-level0": "4th",
+      "spell-heightened-description0" : "The spell lasts 1 minute, but it doesn't end if the target uses a hostile action."
+    },
+    {
+      "spell-name": "Darkness",
+      "spell-level": "Spell 2",
+      "spell-school": "Evocation",
+      "spell-traits": "Darkness",
+      "spell-source": "CR, 327",
+      "spell-casting-time": "3",
+      "spell-components": "M, S, V",
+      "spell-range": "120ft",
+      "spell-area": "20ft burst",
+      "spell-duration": "1min",
+      "spell-description": "You create a shroud of darkness that prevents light from penetrating or emanating within the area. Light does not enter the area and any non-magical light sources, such as a torch or lantern, do not emanate any light while inside the area, even if their light radius would extend beyond the darkness. This also suppresses magical light of your darkness spell's level or lower. Light can't pass through, so creatures in the area can't see outside. From outside, it appears as a globe of pure darkness.",
+
+      "spell-heightened-level0": "4th",
+      "spell-heightened-description0" : "Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as concealed."
+    },
+    {
+      "spell-name": "Fire Ray",
+      "spell-level": "Focus 1",
+      "spell-school": "Evocation",
+      "spell-traits": "Attack, Fire",
+      "spell-source": "CR, 392",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "60ft",
+      "spell-targets": "1 creature",
+      "spell-description": "A blazing band of fire arcs through the air. Make a spell attack roll. The ray deals 2d6 fire damage.",
+
+      "spell-saving-critical-success": "The ray deals double damage and 1d4 persistent fire damage.",
+      "spell-saving-success":"The ray deals full damage.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The ray's initial damage increases by 2d6, and the persistent fire damage on a critical success increases by 1d4."
+    },
+    {
+      "spell-name": "Incendiary Aura",
+      "spell-level": "Focus 1",
+      "spell-school": "Evocation",
+      "spell-traits": "Cursebound, Fire",
+      "spell-source": "APG, 232",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-area": "10ft emanation",
+      "spell-duration": "1min",
+      "spell-description": "You surround yourself with a combustible aura. Each time a creature within the emanation takes fire damage, it catches on fire, taking 2d4 persistent fire damage.",
+
+      "spell-heightened-level0": "+2",
+      "spell-heightened-description0" : "Increase the persistent damage by 1d4 and the radius of the emanation by 5 feet."
     }
   ]
 }

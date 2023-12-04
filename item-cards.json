@@ -1,0 +1,63 @@
+{
+  "cards": [
+    {
+      "item-title": "Silon's Watch",
+      "item-type": "Loot",
+      "item-level": "Level 3",
+      "item-rarity": "Rare",
+      "item-description": "This timepiece is a marvel of clockwork and miniaturization, immaculately crafted by dwarves hundreds of years ago. Within a small compartment under an intricate latching mechanism, the symbol of the Bronzeson family is carved, sometimes shining faintly.\nThis watch allows you to accurately track time down to the second, also indicating the current date and moons phases. Additional indicator dials tell information such as current humidity and pressure.",
+    
+      "item-action0-title" : "Set Timer",
+      "item-action0-time" : "1",
+      "item-action0-traits" : "[Interact]",
+      "item-action0-description" : "A small brass dial extends on the side of the watch, allowing the user to set a timer lasting up to an hour, with a precision down to the second. A bell mechanism within the watch rings at the end of the timer."
+    },
+    {
+      "item-title": "Silon's Communication Bead",
+      "item-type": "Loot",
+      "item-level": "Level 1",
+      "item-rarity": "Uncommon",
+      "item-description": "This small bead, hanging from a brass necklace, used to be filled with a colorful white cloud swirling within, and allowed you to send one \\textit{Message} to Silon Tybalt. Since his death, the bead is now void of magical energy, the cloud fallen to the bottom as a grey dust, the shine faded from its tarnished surface."
+    },
+    {
+      "item-title": "Santa's Sack",
+      "item-type": "Christmas",
+      "item-level": "Level 4",
+      "item-rarity": "Uncommon",
+
+      "item-description": "A large bright red silk sack, adorned with snow-white patterns, seemingly opening to an extradimensional space larger than its outside dimensions. The Bulk held inside the sack doesn't change the Bulk of the sack itself. The capacity of the sack is of 25 Bulk.Though the sack can hold a great amount of material, an object still needs to be able to fit through the opening of the sack to be stored inside.\\\\If the sack is overloaded or broken, it ruptures and is ruined, causing the items inside to be lost forever. If it's turned inside out, the items inside spill out unharmed, but the sack must be put right before it can be used again. A living creature placed inside the sack has enough air for 10 minutes before it begins to suffocate, and it can attempt to Escape against a DC of 13. An item inside the sack provides no benefits unless it's retrieved first. An item in the sack can't be detected by magic that detects only things on the same plane.",
+
+      "item-action0-title" : "Collect Gift",
+      "item-action0-time" : "2",
+      "item-action0-traits" : "[Interact]",
+      "item-action0-description" : "You reach inside the bag to take out an item previously stored inside, knowing instinctively where to grab to unstow the item, now in a gift box. You must take an action to unwrap the item from its colorful wrappings before using it."
+    },
+    {
+      "item-title": "Grimoire of Artifacts",
+      "item-type": "Christmas",
+      "item-level": "Level 4",
+      "item-rarity": "Rare",
+
+      "item-description": "An old and large leatherbound tome, its ancient pages containing a compendium of known rare and magical items. Information about these items, such as provenance, date of last note and brief description of the items are accompanied with extensive accounting data for taxkeeping purposes. Whenever you open the old book, a few snowflakes inevitably fall to the ground from within, accompanied by a chill breeze.",
+
+      "item-action0-title" : "Identify Magic Item",
+      "item-action0-time" : "10min",
+      "item-action0-traits" : "[Concentrate, Secret]",
+      "item-action0-description" : "When trying to \\textit{Identify Magic} on a magical item, you may treat the item's rarity as one lower (Uncommon items can be treated as Common, Rare items as Uncommon and Unique items as Rare)."
+    },
+    {
+      "item-title": "Portable Smithy",
+      "item-type": "Christmas",
+      "item-level": "Level 3",
+
+      "item-description": "A brand new set of metalworking tools, including a portable anvil and kiln, tongs and a whetstone. The chimney-shaped kiln always emit a pleasant warmth, tempting you to sit on a couch by its side with a good cup of cinnamon eggnog.\nThis kit allows you to forge and repair items with a +1 Item bonus to the Crafting roll."
+    },
+    {
+      "item-title": "Portable Laboratory",
+      "item-type": "Christmas",
+      "item-level": "Level 3",
+
+      "item-description": "A brand new alchemical laboratory, with fancy tools to extract, purify, treat and manipulate alchemical ingredients into various potions and elixirs. When setting up the laboratory for the first time in a day, you might find a plate of cookies and a glass of milk left out for you.\nThis alchemical laboratory grants a +1 Item bonus to Crafting checks to create alchemical items."
+    }    
+  ]
+}

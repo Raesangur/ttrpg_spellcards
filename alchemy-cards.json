@@ -63,6 +63,22 @@
       "alchemy-bulk":        "L",
       "alchemy-usage":       "2 hand, Interact",
       "alchemy-description": "You can slather this silvery paste onto one melee weapon, one thrown weapon, or 10 pieces of ammunition. Silversheen spoils quickly, so once you open a vial, you must use it all at once, rather than saving it. For the next hour, the weapon or ammunition counts as silver instead of its normal precious material (such as cold iron) for any physical damage it deals."
+    },
+    {
+      "alchemy-title":       "Time Scorpion Venom",
+      "alchemy-type":        "Consumable",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "2 hand, Interact",
+      "alchemy-description": "This blue and sticky substance shines softly. Some say staring at your reflexion in it for too long can make you mad, as visions of the past and future you flicker in the mesmerizing liquid. Affects time in a weird way for the victim of the venom.\\\\\n\n\\textbf{Saving Throw:} DC 18 Willpower\n\n\\textbf{Success:} Time stops for everyone except the victim, free to move in stopped time for 1 round.\n\n\\textbf{Failure:} The victim remains frozen in place for 1 full round, whilst time flows as normal for everyone else. The victim is aware of everything happenning. \n\n\\textbf{Critical Failure:} As Failure, but the victim is unaware of their surroundings whilst frozen for 2 rounds."
+    },
+    {
+      "alchemy-title":       "Bottled Lightning (Lesser)",
+      "alchemy-type":        "Consumable, Bomb, Electricity, Splash",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes flat-footed until the start of your next turn."
     }
   ]
 }

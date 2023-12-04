@@ -26,7 +26,7 @@ def create_images(files, back_xOffset = 0, back_yOffset = 0):
 
         # Extract school of magic picture
         text        = PdfReader(filename).pages[0].extract_text().lower()
-        school      = [word for word in schoolList if word in text]
+        school      = sorted([word for word in schoolList if word in text])
         print(school)
         schoolBack  = cardBacksPath + school[0] + ".png" #cardBacks[school[0].lower()]
         schoolFront = cardFrontsPath + school[0] + ".png" #cardFronts[school[0].lower()]
@@ -82,7 +82,8 @@ filez = fd.askopenfilenames(parent = root, title = "Cards to load", filetypes=[(
 
 cardBacksPath = "./backs/back_"
 cardFrontsPath = "./backs/front_"
-schoolList = ["abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation", "hero", "barbarian", "loky", "alchemy", "metamagic"]
+schoolList = ["abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation",
+              "hero", "barbarian", "loky", "alchemy", "metamagic", "adelaide", "loot", "christmas"]
 
 #
 cardWidth   = 900

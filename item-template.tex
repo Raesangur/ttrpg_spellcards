@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=1cm,top=24mm,bottom=1mm,headheight=1cm]{geometry}
+\usepackage{ifxetex}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{ragged2e}
+\usepackage{multicol}
+
+\usepackage{xcolor}
+\usepackage[skins]{tcolorbox}%
+\usepackage{geometry}
+
+% https://github.com/stephenswat/dnd-spelldeck
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\ifxetex
+\usepackage{fontspec}
+%\setmainfont{Mrs Eaves OT}
+\setmainfont{Priori Serif}
+\fi
+
+\definecolor{headercolor}{RGB}{88,23,13}
+\definecolor{linecolor}{RGB}{201,173,106}
+
+\sloppy
+\setlength{\headsep}{1mm}
+\setlength{\columnsep}{-4mm}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+%\pagestyle{fancy}
+\cfoot{ }
+
+\backgroundsetup{
+    contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/background}}
+}
+
+
+\definecolor{maroon}{RGB}{150, 67, 64}
+\definecolor{gold}{RGB}{203, 183, 123}
+
+\newtcbox{\inlinebox}[1][]{enhanced,
+ box align=base,
+ nobeforeafter,
+ colback=maroon,
+ colframe=gold,
+ size=small,
+ left=0pt,
+ right=0pt,
+ boxsep=2pt,
+ #1}
+
+\newcommand*{\desicenteredline}[1]{%
+\ifhmode\expandafter\\\else\noindent\fi
+\hbox to +\linewidth\relax{\hss #1\hss}\hskip0pt\relax}
+
+\begin{document}
+    \begin{minipage}[t][1.5cm][t]{\textwidth}
+        \vspace{-18mm}
+        \par\begin{minipage}[t][0mm][t]{\textwidth}
+            \centering
+            \vspace{4mm}
+            \scshape\scriptsize\textcolor{white}{item-type}\\ 
+            [-1.8mm]
+            \scshape\scriptsize\color{black}\
+            \Large\color{headercolor}item-title
+        \end{minipage}
+        \par
+        \vspace{item-spacing}    % 10mm - 16mm
+        \rule{\textwidth}{0.5pt}
+    \end{minipage}
+    \begingroup
+        \par\fontsize{7pt}{9pt}\selectfont
+        \vspace{-20mm}   % 4mm - 10mm
+        \vspace{item-spacing-secondary}    % 10mm - 16mm
+        \desicenteredline{
+            has-rarity \inlinebox{\textcolor{white}{\textbf{item-rarity}}}
+            \inlinebox{\textcolor{white}{\textbf{item-level}}}
+            has-trait0 \inlinebox{\textcolor{white}{\textbf{item-trait0}}}
+            has-trait1 \inlinebox{\textcolor{white}{\textbf{item-trait1}}}
+            has-trait2 \inlinebox{\textcolor{white}{\textbf{item-trait2}}}
+        }\\
+
+        % Description
+        item-description
+        
+        has-item-action0 \vspace{1.5mm}
+        has-item-action0 \rule{\textwidth}{0.5pt}
+        has-item-action0 \textbf{item-action0-title \includegraphics[height=0.2cm]{img/item-action0-time.png}: item-action0-traits}  
+        has-item-action0 has-trigger-item-action0 \textbf{Trigger:} item-action0-trigger\\
+        item-action0-description
+
+        has-item-action1 \vspace{1.5mm}
+        has-item-action1 \rule{\textwidth}{0.5pt}
+        has-item-action1 \textbf{item-action1-title \includegraphics[height=0.2cm]{img/item-action1-time.png}: item-action1-traits}  
+        has-item-action1 has-trigger-item-action1 \textbf{Trigger:} item-action1-trigger\\
+        item-action1-description
+        
+        \vspace{1.5mm}
+        \rule{\textwidth}{0.5pt}
+
+    \endgroup
+
+\end{document}

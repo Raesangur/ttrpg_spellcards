@@ -88,6 +88,49 @@ def check_spell_components(card):
     else:
         card["has-saving-cf"] = "%"
 
+def check_item_components(card):
+    # Check Rarity
+    if "item-rarity" in card:
+        card["has-rarity"] = ""
+    else:
+        card["has-rarity"] = "%"
+
+    # Check Traits
+    if "item-trait0" in card:
+        card["has-trait0"] = ""
+    else:
+        card["has-trait0"] = "%"
+
+    if "item-trait1" in card:
+        card["has-trait1"] = ""
+    else:
+        card["has-trait1"] = "%"
+
+    if "item-trait2" in card:
+        card["has-trait2"] = ""
+    else:
+        card["has-trait2"] = "%"
+
+    # Check actions
+    if "item-action0-title" in card:
+        card["has-item-action0"] = ""
+    else:
+        card["has-item-action0"] = "%"
+    if "item-action0-trigger" in card:
+        card["has-trigger-item-action0"] = ""
+    else:
+        card["has-trigger-item-action0"] = "%"
+
+    if "item-action1-title" in card:
+        card["has-item-action1"] = ""
+    else:
+        card["has-item-action1"] = "%"
+    if "item-action1-trigger" in card:
+        card["has-trigger-item-action1"] = ""
+    else:
+        card["has-trigger-item-action1"] = "%"
+    
+
 
 def make_spell_tags(card):
     existing_tags = {"spell-duration": "Duration",
@@ -167,7 +210,7 @@ def adjust_spell_fontsize(card):
     else:
         card["spell-font-size"] = "7"
 
-def insert_spell_newlines(card):
+def insert_newlines(card):
     for k in card.keys():
         card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
 
@@ -238,6 +281,67 @@ def process_alchemy_cards():
 
                 subprocess.call("pdflatex output/alchemy-" + title + ".tex -output-directory=output -job-name=alchemy-" + title)
 
+def process_item_cards():
+    with open("item-template.tex", 'r') as inputF: 
+        template = inputF.read()
+
+        with open("item-cards.json", 'r') as cards:
+            cards_dict = json.load(cards)
+
+            for card in cards_dict["cards"]:
+                def get(string):
+                    return card.get(string, "")
+
+                title = card["item-title"].replace(' ', '_').replace('(', '').replace(')', '')
+
+                if "item-" + title + ".pdf" in os.listdir("output"):
+                    print(title + " already exists, skipping...")
+                    continue
+
+                check_item_components(card)
+                insert_newlines(card)
+
+                spaces = card["item-title"].count(' ')
+                spacing  = "10mm" if len(title) < (17 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
+                spacing2 =  str(3 if len(title) < (13 + spaces) else 9 if len(title) < (29 + spaces) else 13) + "mm"
+
+                text = template.replace("item-title", get("item-title"))
+                text = text.replace("item-type", get("item-type"))
+                text = text.replace("item-level", get("item-level"))
+                text = text.replace("item-rarity", get("item-rarity"))
+                text = text.replace("item-spacing-secondary", spacing2)
+                text = text.replace("item-spacing", spacing)
+                text = text.replace("item-description", get("item-description"))
+
+                text = text.replace("has-rarity", get("has-rarity"))
+                text = text.replace("has-trait0", get("has-trait0"))
+                text = text.replace("has-trait1", get("has-trait1"))
+                text = text.replace("has-trait2", get("has-trait2"))
+                text = text.replace("item-trait0", get("item-trait0"))
+                text = text.replace("item-trait1", get("item-trait1"))
+                text = text.replace("item-trait2", get("item-trait2"))
+
+                text = text.replace("has-item-action0", get("has-item-action0"))
+                text = text.replace("has-item-action1", get("has-item-action1"))
+                text = text.replace("has-trigger-item-action0", get("has-trigger-item-action0"))
+                text = text.replace("has-trigger-item-action1", get("has-trigger-item-action1"))
+                text = text.replace("item-action0-title", get("item-action0-title"))
+                text = text.replace("item-action1-title", get("item-action1-title"))
+                text = text.replace("item-action0-traits", get("item-action0-traits"))
+                text = text.replace("item-action1-traits", get("item-action1-traits"))
+                text = text.replace("item-action0-time", get("item-action0-time"))
+                text = text.replace("item-action1-time", get("item-action1-time"))
+                text = text.replace("item-action0-description", get("item-action0-description"))
+                text = text.replace("item-action1-description", get("item-action1-description"))
+                text = text.replace("item-action0-trigger", get("item-action0-trigger"))
+                text = text.replace("item-action1-trigger", get("item-action1-trigger"))
+
+                outputF = open("output/item-" + title + ".tex", 'w')
+                outputF.write(text)
+                outputF.close()
+
+                subprocess.call("pdflatex output/item-" + title + ".tex -output-directory=output -job-name=item-" + title)
+
 def process_spell_cards():
     with open("spell-template.tex", 'r') as inputF: 
         template = inputF.read()
@@ -261,7 +365,7 @@ def process_spell_cards():
                 check_spell_components(card)
                 make_spell_tags(card)
                 adjust_spell_fontsize(card)
-                insert_spell_newlines(card)
+                insert_newlines(card)
 
 
                 text = template.replace("spell-name", get("spell-name"))
@@ -339,6 +443,7 @@ def process_spell_cards():
 #process_hero_cards()
 process_spell_cards()
 process_alchemy_cards()
+process_item_cards()
 
 files = os.listdir("output")
 files = [f for f in files if ".pdf" not in f]

@@ -585,6 +585,89 @@
 
       "spell-heightened-level0": "+2",
       "spell-heightened-description0" : "Increase the persistent damage by 1d4 and the radius of the emanation by 5 feet."
+    },
+    {
+      "spell-name": "Mage Hand",
+      "spell-level": "Cantrip",
+      "spell-school": "Evocation",
+      "spell-source": "CR, 349",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-targets": "1 object",
+      "spell-duration": "sustained",
+      "spell-description": "You create a single magical hand, either invisible or ghostlike, that grasps the target object and moves it slowly up to 20 feet. Because you're levitating the object, you can move it in any direction. When you Sustain the Spell, you can move the object an additional 20 feet. If the object is in the air when the spell ends, the object falls.",
+
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "You can target an unattended object with a Bulk of 1 or less.",
+      "spell-heightened-level1": "5th",
+      "spell-heightened-description1" : "The range increases to 60 feet, and you can target an unattended object with a Bulk of 1 or less.",
+      "spell-heightened-level2": "7th",
+      "spell-heightened-description2" : " The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less."
+    },
+    {
+      "spell-name": "Join Pasts",
+      "spell-level": "Cantrip",
+      "spell-school": "Divination",
+      "spell-source": "PF-147 TMB, 74",
+      "spell-casting-time": "1",
+      "spell-components": "S",
+      "spell-range": "touch",
+      "spell-targets": "2 creatures",
+      "spell-duration": "1 round",
+      "spell-description": "With touches to the willing targets' foreheads, you bring them into mental communion. The targets can share thoughts and experiences, but not words. When one target attempts to Recall Knowledge, the other can Aid the first target’s skill check, using any Lore skill (even if that Lore wouldn’t normally apply) without having made any preparations to Aid.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "You can touch one additional willing target to include them in the spell’s effects. Multiple targets can attempt checks to Aid the target who is attempting to Recall Knowledge."
+    },
+    {
+      "spell-name": "Silence",
+      "spell-level": "Spell 2",
+      "spell-school": "Illusion",
+      "spell-traits": "Auditory",
+      "spell-source": "CR, 369",
+      "spell-casting-time": "2",
+      "spell-components": "M, S",
+      "spell-range": "touch",
+      "spell-targets": "1 creature",
+      "spell-duration": "1 minute",
+      "spell-description": "The willing target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.",
+
+      "spell-heightened-level0": "4th",
+      "spell-heightened-description0" : "The spell effect emanates from the touched creature, silencing all sound in or passing through a 10ft radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example)."
+    },
+    {
+      "spell-name": "Blood Vandetta",
+      "spell-level": "Spell 2",
+      "spell-school": "Necromancy",
+      "spell-traits": "Curse",
+      "spell-source": "APG, 216",
+      "spell-casting-time": "reaction",
+      "spell-components": "V",
+      "spell-range": "30ft",
+      "spell-targets": "1 creature",
+      "spell-saving-throw": "Willpower",
+      "spell-duration": "Varies",
+      "spell-description": "\\textbf{Trigger}: A creature deals piercing, slashing, or persistent bleed damage to you.\nYou curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.",
+
+      "spell-saving-critical-success": "The target is unaffected.",
+      "spell-saving-success": "The target takes half the persistent bleed damage.",
+      "spell-saving-failure": "The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage.",
+      "spell-saving-critical-failure": "As failure, but the target takes double the persistent bleed damage.",
+
+      "spell-heightened-level0": "+2",
+      "spell-heightened-description0" : "The persistent bleed damage increases by 2d6."
+    },
+    {
+      "spell-name": "Vision of Weakness",
+      "spell-level": "Focus 2",
+      "spell-school": "Divination",
+      "spell-traits": "Cursebound",
+      "spell-source": "APG, 234",
+      "spell-casting-time": "1",
+      "spell-components": "S",
+      "spell-targets": "1 creature",
+      "spell-description": "You focus your gaze on a creature and gain a flash of divine insight into its nature. If the creature has any weaknesses, you learn them, as well as which of its three saving throw modifiers is lowest. You also learn an inherent understanding of its movements and gain a +2 status bonus to your next attack roll (or skill check made as part of an attack action) against that foe before the end of your turn. The target is then temporarily immune to vision of weakness for 1 day."
     }
   ]
 }

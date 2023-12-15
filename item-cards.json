@@ -57,7 +57,22 @@
       "item-type": "Christmas",
       "item-level": "Level 3",
 
-      "item-description": "A brand new alchemical laboratory, with fancy tools to extract, purify, treat and manipulate alchemical ingredients into various potions and elixirs. When setting up the laboratory for the first time in a day, you might find a plate of cookies and a glass of milk left out for you.\nThis alchemical laboratory grants a +1 Item bonus to Crafting checks to create alchemical items."
-    }    
+      "item-description": "A brand new alchemical laboratory, with fancy tools to extract, purify, treat and manipulate alchemical ingredients into various potions and elixirs. When setting up the laboratory for the first time in a day, you might find a plate of cookies and a glass of milk left out for you.\nThis alchemical laboratory grants a +1 Item bonus to Crafting checks to create alchemical items.\nWhen drinking an elixir crafted from this Alchemical kit, you gain Resistance 3 to Cold damage for 10 minutes, in addition to feeling suddenly more festive."
+    },
+    {
+      "item-title": "Critical Dice",
+      "item-type": "Christmas",
+      "item-level": "Level 4",
+      "item-trait0": "Magical",
+      "item-trait1": "Fortune",
+
+      "item-description": "A 20-sided dice made of gingerbread, smelling of peppermint and hot cocoa. In a festive font, numbers 2 to 19 are engraved in its sides, whilst in the place of the 1 and the 20, a piece of charcoal and a snowflake are carved respectively.",
+
+      "item-action0-title" : "Critical Gamble",
+      "item-action0-time" : "1",
+      "item-action0-traits" : "[Fortune]",
+      "item-action0-trigger" : "You rolled a Critical Success on an attack roll.",
+      "item-action0-description" : "You may roll this dice.\\\\On a Natural 20, the damage from the Critical Success triple instead of doubling.\\\\On a Natural 1, the damage from the Critical Success are halved instead of doubling."
+    }
   ]
 }

@@ -73,6 +73,47 @@
       "item-action0-traits" : "[Fortune]",
       "item-action0-trigger" : "You rolled a Critical Success on an attack roll.",
       "item-action0-description" : "You may roll this dice.\\\\On a Natural 20, the damage from the Critical Success triple instead of doubling.\\\\On a Natural 1, the damage from the Critical Success are halved instead of doubling."
+    },
+    {
+      "item-title": "Inquisitive Quill",
+      "item-type": "Loot",
+      "item-level": "Level 4",
+      "item-rarity": "Rare",
+      "item-trait0": "Magical",
+      "item-trait1": "Divination",
+      "item-trait2": "Intelligent",
+      "item-description": "A colorful feather adorns an inquisitive quill, which never runs out of ink. Essentially a Tiny construct, an inquisitive quill can stand on its own when given a surface, balancing as it writes or stands. (Drawing a line gives it an effective Speed of 5ft.) It has strong curiosity, eagerly writing any information offered to it, often acting as a scribe for its partner. The quill copies text and drawings it can see or transcribes dictation it hears. It writes at a rate that rivals that of an expert scribe.\n\\textbf{Perception:} +11, precise vision 30ft, imprecise hearing 30ft.\\\\\\textbf{Int:} +4, \\textbf{Wis:} +3, \\textbf{Cha:} +1"
+    },
+    {
+      "item-title": "Star of Bethlehem",
+      "item-type": "Christmas",
+      "item-level": "Level 4",
+      "item-rarity": "Rare",
+      "item-trait0": "Magical",
+      "item-description": "A star ornament, once on top a wonderfully decorated tree, shining a pale light.\nThis star acts like a range extender for spells. As long as the Star is within range of your spell, you may use it as the starting location for the spell and reach further, up to a maximum of twice the original spell range.\nThis effect can stack with Metamagic such as Reach Spell (for up to 4x the original spell's reach) or with other Stars, chaining them."
+    },
+    {
+      "item-title": "Star of Bethlehem",
+      "item-type": "Christmas",
+      "item-level": "Level 4",
+      "item-rarity": "Rare",
+      "item-trait0": "Magical",
+      "item-description": "A star ornament, once on top a wonderfully decorated tree, shining a pale light.\nThis star acts like a range extender for spells. As long as the Star is within range of your spell, you may use it as the starting location for the spell and reach further, up to a maximum of twice the original spell range.\nThis effect can stack with Metamagic such as Reach Spell (for up to 4x the original spell's reach) or with other Stars, chaining them."
+    },
+    {
+      "item-title": "Reindeer's Red Nose",
+      "item-type": "Christmas",
+      "item-level": "Level 3",
+      "item-rarity": "Rare",
+      "item-trait0": "Companion",
+      "item-trait1": "Magical",
+      "item-trait2": "Transmutation",
+      "item-description": "A slightly shining spherical red nose, once belonging to Santa's yougest reindeer, allowing it to fly.\nThis companion item can be equipped on an animal companion, giving it a limited Fly Speed of 30ft and access to this Fly action:",
+
+      "item-action0-title" : "Fly",
+      "item-action0-time" : "1",
+      "item-action0-traits" : "[Move]",
+      "item-action0-description" : "You move through the air up to 30ft.\\\\Moving upwards uses the rules for moving through difficult terrain and you can only go up 30ft from the ground at all times.\\\\You can move straight down 10ft for every 5ft of movement you spend.\\\\You can use an action to Fly 0ft to hover in place. If you're airborne at the end of your turn and didn't use a Fly action, you fall."
     }
   ]
 }

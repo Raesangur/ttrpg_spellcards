@@ -129,7 +129,26 @@ def check_item_components(card):
         card["has-trigger-item-action1"] = ""
     else:
         card["has-trigger-item-action1"] = "%"
+
+
+def check_traits_length(card, threshold = 20):
+    length = 0
     
+    if card["has-trait0"] == "":
+        length = length + len(card["item-trait0"])
+
+    if card["has-trait1"] == "":
+        length = length + len(card["item-trait1"])
+
+    if card["has-trait2"] == "":
+        length = length + len(card["item-trait2"])
+
+    if length > threshold:
+        card["has-short-traits"] = "%"
+        card["has-long-traits"] = ""
+    else:
+        card["has-short-traits"] = ""
+        card["has-long-traits"] = "%"
 
 
 def make_spell_tags(card):
@@ -300,10 +319,11 @@ def process_item_cards():
 
                 check_item_components(card)
                 insert_newlines(card)
+                check_traits_length(card)
 
                 spaces = card["item-title"].count(' ')
-                spacing  = "10mm" if len(title) < (17 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
-                spacing2 =  str(3 if len(title) < (13 + spaces) else 9 if len(title) < (29 + spaces) else 13) + "mm"
+                spacing  = "10mm" if len(title) < (20 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
+                spacing2 =  str(3 if len(title) < (20 + spaces) else 9 if len(title) < (32 + spaces) else 13) + "mm"
 
                 text = template.replace("item-title", get("item-title"))
                 text = text.replace("item-type", get("item-type"))
@@ -320,6 +340,8 @@ def process_item_cards():
                 text = text.replace("item-trait0", get("item-trait0"))
                 text = text.replace("item-trait1", get("item-trait1"))
                 text = text.replace("item-trait2", get("item-trait2"))
+                text = text.replace("has-short-traits", get("has-short-traits"))
+                text = text.replace("has-long-traits", get("has-long-traits"))
 
                 text = text.replace("has-item-action0", get("has-item-action0"))
                 text = text.replace("has-item-action1", get("has-item-action1"))

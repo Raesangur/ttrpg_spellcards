@@ -41,6 +41,11 @@
 \definecolor{maroon}{RGB}{150, 67, 64}
 \definecolor{gold}{RGB}{203, 183, 123}
 
+
+\newcommand{\traitbox}[1]{
+\inlinebox{\textcolor{maroon}{[}\hspace{-2pt}\textcolor{white}{\textbf{#1}}}
+}
+
 \newtcbox{\inlinebox}[1][]{enhanced,
  box align=base,
  nobeforeafter,
@@ -52,9 +57,11 @@
  boxsep=2pt,
  #1}
 
+
 \newcommand*{\desicenteredline}[1]{%
 \ifhmode\expandafter\\\else\noindent\fi
 \hbox to +\linewidth\relax{\hss #1\hss}\hskip0pt\relax}
+
 
 \begin{document}
     \begin{minipage}[t][1.5cm][t]{\textwidth}
@@ -76,12 +83,17 @@
         \vspace{-20mm}   % 4mm - 10mm
         \vspace{item-spacing-secondary}    % 10mm - 16mm
         \desicenteredline{
-            has-rarity \inlinebox{\textcolor{white}{\textbf{item-rarity}}}
-            \inlinebox{\textcolor{white}{\textbf{item-level}}}
-            has-trait0 \inlinebox{\textcolor{white}{\textbf{item-trait0}}}
-            has-trait1 \inlinebox{\textcolor{white}{\textbf{item-trait1}}}
-            has-trait2 \inlinebox{\textcolor{white}{\textbf{item-trait2}}}
+            has-rarity \traitbox{item-rarity}
+            \traitbox{item-level}
+            has-short-traits has-trait0 \traitbox{item-trait0}
+            has-short-traits has-trait1 \traitbox{item-trait1}
+            has-short-traits has-trait2 \traitbox{item-trait2}
         }\\
+        has-long-traits \desicenteredline{
+        has-long-traits     has-trait0 \traitbox{item-trait0}
+        has-long-traits     has-trait1 \traitbox{item-trait1}
+        has-long-traits     has-trait2 \traitbox{item-trait2}
+        has-long-traits }\\
 
         % Description
         item-description

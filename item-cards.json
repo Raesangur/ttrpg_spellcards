@@ -49,6 +49,7 @@
       "item-title": "Portable Smithy",
       "item-type": "Christmas",
       "item-level": "Level 3",
+      "item-rarity": "Uncommon",
 
       "item-description": "A brand new set of metalworking tools, including a portable anvil and kiln, tongs and a whetstone. The chimney-shaped kiln always emit a pleasant warmth, tempting you to sit on a couch by its side with a good cup of cinnamon eggnog.\nThis kit allows you to forge and repair items with a +1 Item bonus to the Crafting roll."
     },
@@ -56,6 +57,7 @@
       "item-title": "Portable Laboratory",
       "item-type": "Christmas",
       "item-level": "Level 3",
+      "item-rarity": "Uncommon",
 
       "item-description": "A brand new alchemical laboratory, with fancy tools to extract, purify, treat and manipulate alchemical ingredients into various potions and elixirs. When setting up the laboratory for the first time in a day, you might find a plate of cookies and a glass of milk left out for you.\nThis alchemical laboratory grants a +1 Item bonus to Crafting checks to create alchemical items.\nWhen drinking an elixir crafted from this Alchemical kit, you gain Resistance 3 to Cold damage for 10 minutes, in addition to feeling suddenly more festive."
     },
@@ -63,6 +65,7 @@
       "item-title": "Critical Dice",
       "item-type": "Christmas",
       "item-level": "Level 4",
+      "item-rarity": "Rare",
       "item-trait0": "Magical",
       "item-trait1": "Fortune",
 
@@ -83,14 +86,6 @@
       "item-trait1": "Divination",
       "item-trait2": "Intelligent",
       "item-description": "A colorful feather adorns an inquisitive quill, which never runs out of ink. Essentially a Tiny construct, an inquisitive quill can stand on its own when given a surface, balancing as it writes or stands. (Drawing a line gives it an effective Speed of 5ft.) It has strong curiosity, eagerly writing any information offered to it, often acting as a scribe for its partner. The quill copies text and drawings it can see or transcribes dictation it hears. It writes at a rate that rivals that of an expert scribe.\n\\textbf{Perception:} +11, precise vision 30ft, imprecise hearing 30ft.\\\\\\textbf{Int:} +4, \\textbf{Wis:} +3, \\textbf{Cha:} +1"
-    },
-    {
-      "item-title": "Star of Bethlehem",
-      "item-type": "Christmas",
-      "item-level": "Level 4",
-      "item-rarity": "Rare",
-      "item-trait0": "Magical",
-      "item-description": "A star ornament, once on top a wonderfully decorated tree, shining a pale light.\nThis star acts like a range extender for spells. As long as the Star is within range of your spell, you may use it as the starting location for the spell and reach further, up to a maximum of twice the original spell range.\nThis effect can stack with Metamagic such as Reach Spell (for up to 4x the original spell's reach) or with other Stars, chaining them."
     },
     {
       "item-title": "Star of Bethlehem",

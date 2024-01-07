@@ -41,6 +41,14 @@
       "alchemy-description": "Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain 1d6 Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes."
     },
     {
+      "alchemy-title":       "Elixir of Life (Lesser)",
+      "alchemy-type":        "Consumable, Elixir, Healing",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain 3d6+6 Hit Points and gain a +1 item bonus to saving throws against diseases and poisons for 10 minutes."
+    },
+    {
       "alchemy-title":       "Giant Centipede Venom",
       "alchemy-type":        "Consumable, Injury, Poison",
       "alchemy-activation":  "2.png",
@@ -79,6 +87,14 @@
       "alchemy-bulk":        "L",
       "alchemy-usage":       "1 hand, Interact",
       "alchemy-description": "Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes flat-footed until the start of your next turn."
+    },
+    {
+      "alchemy-title":       "Undead Detection Dye",
+      "alchemy-type":        "Consumable, Alchemical",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "1 hand, Interact",
+      "alchemy-description": "The liquid in this test tube is as clear as water. You can drop in a sample collected from the environment or a creature to reveal what kind of undead has been in contact with the sample in the past 24 hours. The water changes color, as seen on the table, or remains clear if it doesn't detect any traces of undead. The higher the undead's level or number of undead in contact with the sample, the more intense the color. This isn't a foolproof way to identify a disguised creature as undead, since any contact with undead causes the sample to change colors. If an undead has been disguising its undead nature or its presence in an area, the GM can roll a secret DC 20 Deception or Stealth check for the creature when the dye is activated. On a success, the creature avoided leaving traces. This can't protect the undead from discovery if it actively uses its undead abilities on an area or creature, though it can attempt to remove any evidence with activities like Cover Tracks and Conceal an Object."
     }
   ]
 }

@@ -338,24 +338,6 @@
       "spell-heightened-description0" : "The damage increases by 2d6."
     },
     {
-      "spell-name": "Purifying Icicle",
-      "spell-level": "Spell 1",
-      "spell-school": "Evocation",
-      "spell-traits": "Cold, Positive",
-      "spell-source": "KoL, 94",
-      "spell-casting-time": "2",
-      "spell-components": "S, V",
-      "spell-range": "60ft",
-      "spell-targets": "1 creature",
-      "spell-description": "You evoke life essence into the form of water and freeze it, then launch the icicle at a foe. Make a spell attack roll. On a success, the icicle deals 2d6 piercing damage and 1d6 cold damage, and if the target is undead, the icicle deals an additional 1d4 positive damage. On a critical success, the target takes double damage and takes a -10-foot circumstance penalty to its Speeds for 1 round as the icicle lodges inside them before melting away.",
-
-      "spell-saving-critical-success": "The target takes double damage and a -10ft Speed circumstance penalty for 1 round.",
-      "spell-saving-success":"The target takes full damage.",
-
-      "spell-heightened-level0": "+1",
-      "spell-heightened-description0" : "The piercing damage and cold damage each increase by 1d6. The positive damage increases by 1d4."
-    },
-    {
       "spell-name": "Animate Dead",
       "spell-level": "Spell 1",
       "spell-school": "Necromancy",
@@ -474,27 +456,6 @@
       "spell-casting-time": "10min",
       "spell-components": "M, S, V",
       "spell-description": "You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:\n$\\bullet$ \\textbf{Weal} The results will be good\\\\$\\bullet$ \\textbf{Woe} The results will be bad\\\\$\\bullet$ \\textbf{Weal and Woe} The results will be a mix off good and bad\\\\$\\bullet$ \\textbf{Nothing} There won't be particularly good or bad results\n The GM rolls a secret DC 6 flat check. On a failure, the result is always 'nothing.' This makes it impossible to tell whether a 'nothing' result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result."
-    },
-    {
-      "spell-name": "Sound Burst",
-      "spell-level": "Spell 2",
-      "spell-school": "Evocation",
-      "spell-traits": "Sonic",
-      "spell-source": "CR, 370",
-      "spell-casting-time": "2",
-      "spell-components": "S, V",
-      "spell-range": "30ft",
-      "spell-area": "10ft burst",
-      "spell-saving-throw": "Fortitude",
-      "spell-description": "A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.",
-
-      "spell-saving-critical-success": "The creature is unnafected.",
-      "spell-saving-success":"The target takes half damage.",
-      "spell-saving-failure":"The target takes full damage and is Deafened for 1 round.",
-      "spell-saving-critical-failure":"The target takes double damage and is Deafened for 1 minute, and Stunned 1.",
-
-      "spell-heightened-level0": "+1",
-      "spell-heightened-description0" : "The damage increases by 1d10"
     },
     {
       "spell-name": "Illusory Creature (1)",
@@ -668,6 +629,141 @@
       "spell-components": "S",
       "spell-targets": "1 creature",
       "spell-description": "You focus your gaze on a creature and gain a flash of divine insight into its nature. If the creature has any weaknesses, you learn them, as well as which of its three saving throw modifiers is lowest. You also learn an inherent understanding of its movements and gain a +2 status bonus to your next attack roll (or skill check made as part of an attack action) against that foe before the end of your turn. The target is then temporarily immune to vision of weakness for 1 day."
-    }
+    },
+    {
+      "spell-name": "Moonlight Ray",
+      "spell-level": "Spell 3",
+      "spell-school": "Evocation",
+      "spell-traits": "Cold, Good, Light",
+      "spell-source": "APG, 172",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-targets": "1 creature",
+      "spell-range": "120ft",
+
+      "spell-description": "You focus your gaze on a creature and gain a flash of divine insight into its nature. If the creature has any weaknesses, you learn them, as well as which of its three saving throw modifiers is lowest. You also learn an inherent understanding of its movements and gain a +2 status bonus to your next attack roll (or skill check made as part of an attack action) against that foe before the end of your turn. The target is then temporarily immune to vision of weakness for 1 day.\nIf the light passes through an area of magical darkness or targets a creature affected by magical darkness, moonlight ray attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0": "The cold damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.",
+
+      "spell-saving-critical-success": "The target takes double cold damage, as well as double good damage if a fiend or undead.",
+      "spell-saving-success": "The ray deals full damage."
+    },
+    {
+      "spell-name": "Crisis of Faith",
+      "spell-level": "Spell 3",
+      "spell-school": "Enchantment",
+      "spell-traits": "Mental",
+      "spell-source": "CR, p.326",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-targets": "1 creature",
+      "spell-range": "30ft",
+      "spell-saving-throw": "Willpower",
+
+      "spell-description": "You assault the target's faith, riddling the creature with doubt and mental turmoil that deal 6d6 mental damage, or 6d8 mental damage if it can cast divine spells. The effects are determined by its Will save. To many deities, casting this spell on a follower of your own deity without significant cause is anathema.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0": "The damage increases by 2d6 (or by 2d8 if the target is a divine spellcaster).",
+
+      "spell-saving-critical-success": "The target is unaffected.",
+      "spell-saving-success": "The target takes half damage.",
+      "spell-saving-failure": "The target takes full damage; if the target can cast divine spells, it's stupefied 1 for 1 round.",
+      "spell-saving-critical-failure": "The target takes double damage, is stupefied 1 for 1 round, and can't cast divine spells for 1 round."
+    },
+    {
+      "spell-name": "Sound Burst",
+      "spell-level": "Spell 2 (+1)",
+      "spell-school": "Evocation",
+      "spell-traits": "Sonic",
+      "spell-source": "CR, 370",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-area": "10ft burst",
+      "spell-saving-throw": "Fortitude",
+      "spell-description": "A cacophonous noise blasts out, dealing 3d10 sonic damage. Each creature must attempt a Fortitude save.",
+
+      "spell-saving-critical-success": "The creature is unnafected.",
+      "spell-saving-success":"The target takes half damage.",
+      "spell-saving-failure":"The target takes full damage and is Deafened for 1 round.",
+      "spell-saving-critical-failure":"The target takes double damage and is Deafened for 1 minute, and Stunned 1.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The damage increases by 1d10"
+    },
+    {
+      "spell-name": "Purifying Icicle",
+      "spell-level": "Spell 1 (+2)",
+      "spell-school": "Evocation",
+      "spell-traits": "Cold, Positive",
+      "spell-source": "KoL, 94",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "60ft",
+      "spell-targets": "1 creature",
+      "spell-description": "You evoke life essence into the form of water and freeze it, then launch the icicle at a foe. Make a spell attack roll. On a success, the icicle deals 4d6 piercing damage and 3d6 cold damage, and if the target is undead, the icicle deals an additional 3d4 positive damage.",
+
+      "spell-saving-critical-success": "The target takes double damage and a -10ft Speed circumstance penalty for 1 round.",
+      "spell-saving-success": "The target takes full damage.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The piercing damage and cold damage each increase by 1d6. The positive damage increases by 1d4."
+    },
+    {
+      "spell-name": "Zone of Truth",
+      "spell-level": "Spell 3",
+      "spell-school": "Enchantment",
+      "spell-traits": "Mental",
+      "spell-source": "CR, 385",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-area": "20ft burst",
+      "spell-saving-throw": "Willpower",
+      "spell-duration": "10min",
+
+      "spell-description": "You designate an area in which creatures are compelled to speak only truth. Creatures within or entering the area have difficulty lying. Each potentially affected creature must attempt a Will save when the spell is cast or when the creature first enters the area. It uses the results of this initial save if it leaves and reenters the area. Affected creatures are aware of this enchantment; therefore, they can avoid answering questions to which they would normally respond with a lie, or they can be evasive as long as they remain within the boundaries of the truth.",
+
+      "spell-saving-critical-success": "The target is unaffected.",
+      "spell-saving-success": "The target takes a –2 status penalty to Deception checks.",
+      "spell-saving-failure": "The target can't speak any deliberate and intentional lies, and it takes a –2 status penalty to Deception checks.",
+      "spell-saving-critical-failure": "The target can't speak any deliberate and intentional lies and takes a –4 status penalty to Deception checks."
+    },
+    {
+      "spell-name": "Haste",
+      "spell-level": "Spell 3",
+      "spell-school": "Transmutation",
+      "spell-source": "CR, 343",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-targets": "1 creature",
+      "spell-duration": "1min",
+
+      "spell-description": "Magic empowers the target to act faster. It gains the quickened condition and can use the extra action each round only for Strike and Stride actions.",
+
+      "spell-heightened-level0": "(7th)",
+      "spell-heightened-description0" : "You can target up to 6 creatures."
+    },
+    {
+      "spell-name": "Chilling Darkness",
+      "spell-level": "Spell 3",
+      "spell-school": "Evocation",
+      "spell-traits": "Darkness, Evil, Evocation",
+      "spell-source": "CR, 323",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "120ft",
+      "spell-targets": "1 creature",
+
+      "spell-description": "You shoot an utterly cold ray of darkness tinged with unholy energy. Make a ranged spell attack against the target. You deal 5d6 cold damage, plus 5d6 evil damage if the target is a celestial.\nIf the ray passes through an area of magical light or targets a creature affected by magical light, chilling darkness attempts to counteract the light. If you need to determine whether the ray passes through an area of light, draw a line between yourself and the spell's target.",
+
+      "spell-saving-critical-success": "The target takes double damage.",
+      "spell-saving-success": "The target takes full damage.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The cold damage increases by 2d6, and the evil damage against celestials increases by 2d6."
+    },
   ]
 }

@@ -38,24 +38,29 @@
 }
 
 
-\definecolor{maroon}{RGB}{150, 67, 64}
 \definecolor{gold}{RGB}{203, 183, 123}
+\definecolor{maroon}{RGB}{150, 67, 64}
+\definecolor{common-color}{RGB}{150, 67, 64}
+\definecolor{uncommon-color}{RGB}{196, 85, 0}
+\definecolor{rare-color}{RGB}{12, 20, 102}
+\definecolor{unique-color}{RGB}{128, 0, 128}
 
-
-\newcommand{\traitbox}[1]{
-\inlinebox{\textcolor{maroon}{[}\hspace{-2pt}\textcolor{white}{\textbf{#1}}}
+\newcommand{\traitbox}[2][maroon]{
+    \textcolor{#1}{[}\hspace{-2pt}\inlinebox{#1}
+    {\textcolor{white}{\textbf{#2}}}\hspace{-6pt}
 }
 
-\newtcbox{\inlinebox}[1][]{enhanced,
- box align=base,
- nobeforeafter,
- colback=maroon,
- colframe=gold,
- size=small,
- left=0pt,
- right=0pt,
- boxsep=2pt,
- #1}
+\newtcbox{\inlinebox}[2][]{enhanced,
+     box align=base,
+     nobeforeafter,
+     colback=#2,
+     colframe=gold,
+     size=small,
+     left=0pt,
+     right=0pt,
+     boxsep=2pt,
+     #1
+}
 
 
 \newcommand*{\desicenteredline}[1]{%
@@ -83,8 +88,10 @@
         \vspace{-20mm}   % 4mm - 10mm
         \vspace{item-spacing-secondary}    % 10mm - 16mm
         \desicenteredline{
-            has-rarity \traitbox{item-rarity}
-            \traitbox{item-level}
+            has-rarity \traitbox
+            has-rarity [rarity-color]
+            has-rarity {item-rarity}
+            has-level \traitbox{item-level}
             has-short-traits has-trait0 \traitbox{item-trait0}
             has-short-traits has-trait1 \traitbox{item-trait1}
             has-short-traits has-trait2 \traitbox{item-trait2}

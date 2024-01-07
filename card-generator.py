@@ -89,6 +89,12 @@ def check_spell_components(card):
         card["has-saving-cf"] = "%"
 
 def check_item_components(card):
+    # Check Level
+    if "item-level" in card:
+        card["has-level"] = ""
+    else:
+        card["has-level"] = "%"
+
     # Check Rarity
     if "item-rarity" in card:
         card["has-rarity"] = ""
@@ -149,6 +155,18 @@ def check_traits_length(card, threshold = 20):
     else:
         card["has-short-traits"] = ""
         card["has-long-traits"] = "%"
+
+
+def check_item_rarity(card):
+    card["rarity-color"] = "common-color"
+
+    if card["has-rarity"] == "":
+        if card["item-rarity"].lower() == "uncommon":
+            card["rarity-color"] = "uncommon-color"
+        if card["item-rarity"].lower() == "rare":
+            card["rarity-color"] = "rare-color"
+        if card["item-rarity"].lower() == "unique":
+            card["rarity-color"] = "unique-color"
 
 
 def make_spell_tags(card):
@@ -320,6 +338,7 @@ def process_item_cards():
                 check_item_components(card)
                 insert_newlines(card)
                 check_traits_length(card)
+                check_item_rarity(card)
 
                 spaces = card["item-title"].count(' ')
                 spacing  = "10mm" if len(title) < (20 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
@@ -333,7 +352,9 @@ def process_item_cards():
                 text = text.replace("item-spacing", spacing)
                 text = text.replace("item-description", get("item-description"))
 
+                text = text.replace("has-level", get("has-level"))
                 text = text.replace("has-rarity", get("has-rarity"))
+                text = text.replace("rarity-color", get("rarity-color"))
                 text = text.replace("has-trait0", get("has-trait0"))
                 text = text.replace("has-trait1", get("has-trait1"))
                 text = text.replace("has-trait2", get("has-trait2"))

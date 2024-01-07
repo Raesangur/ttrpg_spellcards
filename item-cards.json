@@ -109,6 +109,20 @@
       "item-action0-time" : "1",
       "item-action0-traits" : "[Move]",
       "item-action0-description" : "You move through the air up to 30ft.\\\\Moving upwards uses the rules for moving through difficult terrain and you can only go up 30ft from the ground at all times.\\\\You can move straight down 10ft for every 5ft of movement you spend.\\\\You can use an action to Fly 0ft to hover in place. If you're airborne at the end of your turn and didn't use a Fly action, you fall."
-    }
+    },
+    {
+     "item-title": "Mysterious Key",
+      "item-type": "Loot",
+      "item-level": "Level 0",
+      "item-rarity": "Common",
+      "item-description": "A mysterious key that was found in Sergeil's office in the temple repurposed as the Cult of the Burned One's base of operations."
+    },
+    {
+     "item-title": "Mythril Ingot",
+      "item-type": "Loot",
+      "item-level": "Level 0+",
+      "item-rarity": "Uncommon",
+      "item-description": "Mithryl is renowned for its lightness, durability, and effectiveness against a range of creatures including devils and lycanthropes. It has the same sheen as silver but a slightly lighter hue. Mithryl weapons and armor are treated as if they were silver for the purpose of damaging creatures with weakness to silver. A metal item made of mithryl is lighter than one made of iron or steel: the item’s Bulk is reduced by 1 (reduced to light Bulk if its normal Bulk is 1, with no effect on an item that normally has light Bulk)."
+    },
   ]
 }

@@ -726,9 +726,9 @@
       "spell-description": "You designate an area in which creatures are compelled to speak only truth. Creatures within or entering the area have difficulty lying. Each potentially affected creature must attempt a Will save when the spell is cast or when the creature first enters the area. It uses the results of this initial save if it leaves and reenters the area. Affected creatures are aware of this enchantment; therefore, they can avoid answering questions to which they would normally respond with a lie, or they can be evasive as long as they remain within the boundaries of the truth.",
 
       "spell-saving-critical-success": "The target is unaffected.",
-      "spell-saving-success": "The target takes a –2 status penalty to Deception checks.",
-      "spell-saving-failure": "The target can't speak any deliberate and intentional lies, and it takes a –2 status penalty to Deception checks.",
-      "spell-saving-critical-failure": "The target can't speak any deliberate and intentional lies and takes a –4 status penalty to Deception checks."
+      "spell-saving-success": "The target takes a -2 status penalty to Deception checks.",
+      "spell-saving-failure": "The target can't speak any deliberate and intentional lies, and it takes a -2 status penalty to Deception checks.",
+      "spell-saving-critical-failure": "The target can't speak any deliberate and intentional lies and takes a -4 status penalty to Deception checks."
     },
     {
       "spell-name": "Haste",
@@ -764,6 +764,6 @@
 
       "spell-heightened-level0": "+1",
       "spell-heightened-description0" : "The cold damage increases by 2d6, and the evil damage against celestials increases by 2d6."
-    },
+    }
   ]
 }

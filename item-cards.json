@@ -123,6 +123,18 @@
       "item-level": "Level 0+",
       "item-rarity": "Uncommon",
       "item-description": "Mithryl is renowned for its lightness, durability, and effectiveness against a range of creatures including devils and lycanthropes. It has the same sheen as silver but a slightly lighter hue. Mithryl weapons and armor are treated as if they were silver for the purpose of damaging creatures with weakness to silver. A metal item made of mithryl is lighter than one made of iron or steel: the item’s Bulk is reduced by 1 (reduced to light Bulk if its normal Bulk is 1, with no effect on an item that normally has light Bulk)."
+    },
+    {
+      "item-title": "Bronzeson Battle Spork",
+      "item-type": "barbarian",
+      "item-level": "Level 5",
+      "item-rarity": "Unique",
+      "item-description": "A unique, non-fungible mix of a spoon and a fork, combining offense with utility. This utencil is crafted from fairy dust and instilled with ideas against a former master. When wielded by a creature with the Fey trait, it gains the following ability:",
+
+      "item-action0-title" : "Weaken Undead",
+      "item-action0-time" : "1",
+      "item-action0-traits" : "[Attack]",
+      "item-action0-description" : "You hit a creature with the Undead trait with the utencil, lodging it through the heart. For 1min, the Undead creature gains Weakness 5 against Cold Iron weapons."
     }
   ]
 }

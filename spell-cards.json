@@ -1027,15 +1027,6 @@
       "spell-heightened-level0": "8th",
       "spell-heightened-description0" : "The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures."
     },
-
-
-
-
-
-
-
-
-
     {
       "spell-name": "Invisibility",
       "spell-level": "Spell 2",
@@ -1098,13 +1089,6 @@
       "spell-saving-failure":"The target is slowed 1 and can't use reactions.",
       "spell-saving-critical-failure":"The target falls prone and can't use actions or reactions for 1 round. It then suffers the failure effects."
     },
-
-
-
-
-
-
-
     {
       "spell-name": "Fireball",
       "spell-level": "Spell 3",

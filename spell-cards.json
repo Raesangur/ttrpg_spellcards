@@ -764,6 +764,21 @@
 
       "spell-heightened-level0": "+1",
       "spell-heightened-description0" : "The cold damage increases by 2d6, and the evil damage against celestials increases by 2d6."
+    },
+    {
+      "spell-name": "Sign of Conviction",
+      "spell-level": "Spell 3",
+      "spell-school": "Conjuration",
+      "spell-traits": "",
+      "spell-source": "KoL, 95",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-duration": "1 minute",
+      "spell-target": "1 creature",
+      "spell-range": "100ft",
+      "spell-description": "You conjure a magical, immobile, symbol of a 6-sided dice into the air above you, wielding the power of your luck to smite your foes. This symbol can't be damaged. As long as you Sustain sign of conviction, you gain a +1 status bonus to AC and saving throws and are immobilized. The DC for any effect to force you to move out of your space (such as the Shove action) is equal to your spell DC or the normal DC, whichever is higher. If you stop being immobilized or are moved out of your space, sign of conviction immediately ends.\nWhen you Cast the Spell and each time you Sustain the Spell, the religious symbol emits a blast of energy at a target within 100 feet. Make a spell attack roll that emits bright light in a 20ft burst, and deals 1d10 Fire damage on a success and double damage on a critical success. On a success, you and the target must roll on the Wild Magic Table. You can Sustain the Spell multiple times in the same round to emit an array of blasts.",
+      "spell-heightened-level0": "+2",
+      "spell-heightened-description0": "The damage increases by 1d10."
     }
   ]
 }

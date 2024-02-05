@@ -779,6 +779,394 @@
       "spell-description": "You conjure a magical, immobile, symbol of a 6-sided dice into the air above you, wielding the power of your luck to smite your foes. This symbol can't be damaged. As long as you Sustain sign of conviction, you gain a +1 status bonus to AC and saving throws and are immobilized. The DC for any effect to force you to move out of your space (such as the Shove action) is equal to your spell DC or the normal DC, whichever is higher. If you stop being immobilized or are moved out of your space, sign of conviction immediately ends.\nWhen you Cast the Spell and each time you Sustain the Spell, the religious symbol emits a blast of energy at a target within 100 feet. Make a spell attack roll that emits bright light in a 20ft burst, and deals 1d10 Fire damage on a success and double damage on a critical success. On a success, you and the target must roll on the Wild Magic Table. You can Sustain the Spell multiple times in the same round to emit an array of blasts.",
       "spell-heightened-level0": "+2",
       "spell-heightened-description0": "The damage increases by 1d10."
+    },
+    {
+      "spell-name": "Needle Darts",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Transmutation",
+      "spell-traits": "Attack, Cantrip, Concentrate, Manipulate, Metal",
+      "spell-source": "RoE, 144",
+      "spell-casting-time": "2",
+      "spell-range": "60ft",
+      "spell-targets": "1 creature",
+      "spell-description": "You shape needles out of a piece of metal in your possession and send them flying in a tight group toward one target. Make a spell attack roll against your target's AC. The needles deal 5d4 piercing damage and might cause bleeding. The needles impart any special properties of the metal that forms them; for instance, cold iron needles deal additional damage to creatures with weakness to cold iron. All the needles are made of the same metal, and the metal returns to you after the attack.",
+      "spell-saving-critical-success": "The target takes double damage and 1 persistent bleed damage.",
+      "spell-saving-success": "The target takes full damage.",
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0": "You send one additional needle, increasing the regular damage by 1d4 and increasing the persistent bleed damage on a critical hit by 1."
+    },
+    {
+      "spell-name": "Magic Weapon",
+      "spell-level": "Spell 1",
+      "spell-school": "Transmutation",
+      "spell-traits": "Attack, Cantrip, Concentrate, Manipulate, Metal",
+      "spell-source": "CR, 349",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "touch",
+      "spell-targets": "1 weapon that is unattended or wielded by you or a willing ally",
+      "spell-description": "The weapon glimmers with magic and energy. The target becomes a +1 striking weapon, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two."
+    },
+    {
+      "spell-name": "Tempt Fate",
+      "spell-level": "Focus 2",
+      "spell-school": "Divination",
+      "spell-traits": "Fortune",
+      "spell-source": "CR, 397",
+      "spell-casting-time": "reaction",
+      "spell-components": "S",
+      "spell-range": "120 ft",
+      "spell-trigger":"You or an ally within range attempts a saving throw",
+      "spell-targets": "the triggering creature",
+      "spell-description": "You twist the forces of fate to make a moment dire or uneventful, with no in-between. The target gains a +1 status bonus to the triggering saving throw. If the saving throw's result is a success, it becomes a critical success. If it's a failure, it becomes a critical failure, and the critical failure can't be reduced by abilities that usually reduce critical failure, such as improved evasion.\nIf the triggering ability did not have both a critical success and critical failure condition, tempt fate fails, but you don't expend the Focus Point for Casting this Spell.",
+      "spell-heightened-level0": "(8th)",
+      "spell-heightened-description0": "The bonus on the saving throw is +2."
+    },
+    {
+      "spell-name": "Approximate",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Divination",
+      "spell-traits": "Cantrip, Detection, Divination",
+      "spell-source": "SoM, 90",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "10ft",
+      "spell-area" : "1 cubic foot",
+      "spell-duration": "See below",
+      "spell-description": "Your magic quickly flows over an area to help you count and catalog. Name a particular type of object you are looking for within the area. You gain an instant estimate of the quantity of the chosen objects that are clearly visible within the target area. The number is rounded to the largest digit. For example, you could look at a pile of 180 copper coins, and you would learn that it held about 200 coins, but you couldn't determine there were exactly 180 coins. \nThe type of object you name can be as specific or general as you like—dented copper coins is as viable as coins—but the distinguishing features must be obvious at a glance, and the spell is automatically fooled by objects disguised as other objects. For instance, the spell would register copper coins plated in gold as gold coins, not copper coins."
+    },
+    {
+      "spell-name": "Guidance",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Divination",
+      "spell-traits": "Cantrip, Divination",
+      "spell-source": "CR, 342",
+      "spell-casting-time": "1",
+      "spell-components": "V",
+      "spell-range": "30ft",
+      "spell-targets": "1 creature",
+      "spell-duration": "until the start of your next turn",
+      "spell-description": "You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour."
+    },
+    {
+      "spell-name": "Musical Accompaniment",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory",
+      "spell-source": "FB, 90",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "-",
+      "spell-duration": "1min",
+      "spell-description": "You're surrounded by orchestral music that shifts and changes to match your behavior. This music provides a +1 status bonus to Performance checks.\nAt the GM's discretion, it provides this bonus to Deception, Diplomacy, and Intimidation checks as the music changes to support you in social situations, though some creatures are unaffected by such obvious attempts to use music to illicit specific emotions. This music moves with you and has a maximum volume equal to four humans shouting.\nYou take a -4 penalty to Stealth checks while the music is playing. You can't control the exact music this spell creates. The music doesn't create intelligible words or singing. You can Dismiss this spell.",
+
+      "spell-heightened-level0": "2nd",
+      "spell-heightened-description0" : "The duration increases to 10 minutes.",
+      "spell-heightened-level1": "3rd",
+      "spell-heightened-description1" : "The duration increases to 1 hour.",
+      "spell-heightened-level2": "5th",
+      "spell-heightened-description2" : "The duration increases to 24 hours."
+    },
+    {
+      "spell-name": "Message",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory, Linguistic, Mental",
+      "spell-source": "CR, 351",
+      "spell-casting-time": "1",
+      "spell-components": "V",
+      "spell-range": "120ft",
+      "spell-targets": "1 creature",
+      "spell-duration": "See below",
+      "spell-description": "You mouth words quietly, but instead of coming out of your mouth, they're transferred directly to the ears of the target. While others can't hear your words any better than if you normally mouthed them, the target can hear your words as if they were standing next to you.\nThe target can give a brief response as a reaction, or as a free action on their next turn if they wish, but they must be able to see you and be within range to do so. If they respond, their response is delivered directly to your ear, just like the original message.",
+
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "The spell's range increases to 500 feet."
+    },
+    {
+      "spell-name": "Electric Arc",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Evocation",
+      "spell-traits": "Cantrip, Electricity, Evocation",
+      "spell-source": "CR, 335",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-targets": "1 or 2 creatures",
+      "spell-saving-throw": "basic Reflex",
+      "spell-description": "An arc of lightning leaps from one target to another. You deal electricity damage equal to 1d4 plus your spellcasting ability modifier.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The damage increase by 1d4."
+    },
+    {
+      "spell-name": "Detect Metal",
+      "spell-level": "Cantrip 1",
+      "spell-school": "''Divination''",
+      "spell-traits": "Cantrip, Cancentrate, Detection, Manipulate, Metal",
+      "spell-source": "Rage of Elements, 142",
+      "spell-casting-time": "2",
+      "spell-components": "",
+      "spell-area": "30-foot emanation",
+      "spell-saving-throw": "basic Reflex",
+      "spell-description": "You attune yourself to magnetic fields, becoming aware of the presence or absence of metallic objects, veins, and deposits within the area. You can choose to ignore metal you're fully aware of, such as the gear you and your allies wear and carry.\n\nYou detect metal hidden by illusions (such as invisibility) only if the illusion has a lower rank than your detect metal spell. Against deceptive illusions, detect metal always notices an absence of metal when a non-metallic object is disguised as metallic. However, if the deception involves disguising one metallic object as another, such as pretending a copper coin is made of gold, detect metal registers only the presence of metal, not its type, even if the rank of your detect metal spell exceeds that of the illusion effect.",
+
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your detect metal spell."
+    },
+    {
+      "spell-name": "Ghost Sound",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Illusion",
+      "spell-traits": "Cantrip, Auditory",
+      "spell-source": "CR, 340",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-duration": "Sustained",
+      "spell-description": "You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).",
+
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "The range increases to 60 feet.",
+      "spell-heightened-level1": "5th",
+      "spell-heightened-description1" : "The range increases to 120 feet."
+    },
+    {
+      "spell-name": "Join Pasts [Heightened Rank 3]",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Divination",
+      "spell-traits": "Uncommon, Cantrip, Divination, Mental",
+      "spell-source": "Tomorrow must burn, 74",
+      "spell-casting-time": "1",
+      "spell-components": "S",
+      "spell-range": "touch",
+      "spell-duration": "1 round",
+      "spell-description": "With touches to the targets’ foreheads, you bring them into mental communion. The targets can share thoughts and experiences, but not words. When one target attempts to Recall Knowledge, the other can Aid the first target’s skill check, using any Lore skill (even if that Lore wouldn’t normally apply) without having made any preparations to Aid.",
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "You can touch one additional target to include them in the spell’s effects. Multiple targets can attempt checks to Aid the target who is attempting to Recall Knowledge."
+    },
+    {
+      "spell-name": "Read the air [Heightened Rank 3]",
+      "spell-level": "Cantrip 1",
+      "spell-school": "Divination",
+      "spell-traits": "Cantrip, Divination",
+      "spell-source": "SoM, 125",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-duration": "1 minute",
+      "spell-description": "You take a deep breath as you survey a social situation, showing courtesy to all around you as your intuition swiftly picks up clues about social contexts and unspoken assumptions of behavior. Your body language subconsciously changes to take advantage of this information and use it in your own interactions with those creatures. \n\nAs part of Casting this Spell, you Recall Knowledge using Society to gain information about the immediate social situation. You also gain a +1 status bonus on your next Diplomacy check to Make an Impression on those creatures present when you cast this spell, as long as the check occurs during the duration of the spell. You can read the air only once in a given social situation; casting it again has no effect."
+    },
+    {
+      "spell-name": "Longstrider",
+      "spell-level": "Spell 1",
+      "spell-school": "Transmutation",
+      "spell-source": "CR, 348",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-duration": "1 hour",
+      "spell-targets": "Up to 200 unattended objects in range, each of light Bulk or less",
+      "spell-duration": "up to 1 minute",
+      "spell-description": "You lengthen your stride beyond what should be possible. You gain a +10-foot status bonus to your Speed.",
+
+      "spell-heightened-level0": "2nd",
+      "spell-heightened-description0" : "The duration increases to 8 hours."
+    },
+    {
+      "spell-name": "Quick Sort",
+      "spell-level": "Spell 1",
+      "spell-school": "Transmutation",
+      "spell-source": "SoM, 124",
+      "spell-casting-time": "3",
+      "spell-components": "M, S, V",
+      "spell-range": "10ft",
+      "spell-targets": "Up to 200 unattended objects in range, each of light Bulk or less",
+      "spell-duration": "up to 1 minute",
+      "spell-description": "You magically sort a group of objects into neat stacks or piles. You can sort the objects in two different ways. The first option is to separate them into different piles depending on an easily observed factor, such as color or shape. Alternatively, you can sort the objects into ordered stacks depending on a clearly indicated notation, such as a page number, title, or date. The objects sort themselves throughout the duration, though it takes less time per object to sort a smaller number of objects, down to a single round for 30 or fewer objects.",
+
+      "spell-heightened-level0": "3rd",
+      "spell-heightened-description0" : "The spell can sort up to 400 objects in a minute, or 60 objects in around",
+      "spell-heightened-level1": "5th",
+      "spell-heightened-description1" : "The spell can sort up to 800 objects in a minute, or 120 objects in a round."
+    },
+{
+      "spell-name": "Heal",
+      "spell-level": "Spell 1",
+      "spell-school": "Necromancy",
+      "spell-traits": "Healing, Necromancy, Positive",
+      "spell-source": "CR, 343",
+      "spell-casting-time": "1 to 3",
+      "spell-components": "See below",
+      "spell-range": "varies",
+      "spell-targets": "1 willing living creature or 1 undead",
+      "spell-description": "You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.\n\n[one-action] (somatic) The spell has a range of touch.\n[two-actions] (somatic, verbal) The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8. \n[three-actions] (material, somatic, verbal) You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.",
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8."
+    },
+    {
+      "spell-name": "Charm",
+      "spell-level": "Spell 1",
+      "spell-school": "Enchantment",
+      "spell-traits": "Emotion, Enchantment, Incapacitation, Mental",
+      "spell-source": "CR, 322",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-target": "1 creature",
+      "spell-saving-throw": "Will",
+      "spell-duration":"1 hour",
+      "spell-description": "To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.\nYou can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means."
+,
+"spell-saving-critical-success": " The target is unaffected and aware you tried to charm it.",
+      "spell-saving-success":"The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell (see Identifying Spells).",
+      "spell-saving-failure":"The target's attitude becomes friendly toward you. If it was friendly, it becomes helpful. It can't use hostile actions against you.",
+      "spell-saving-critical-failure":"The target's attitude becomes helpful toward you, and it can't use hostile actions against you.",
+
+
+      "spell-heightened-level0": "4th",
+      "spell-heightened-description0" : "The duration lasts until the next time you make your daily preparations.",
+      "spell-heightened-level0": "8th",
+      "spell-heightened-description0" : "The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures."
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "spell-name": "Invisibility",
+      "spell-level": "Spell 2",
+      "spell-school": "Illusion",
+      "spell-traits": "Illusion",
+      "spell-source": "CR, 347",
+      "spell-casting-time": "2",
+      "spell-components": "M, S",
+      "spell-range": "touch",
+      "spell-target": "1 creature",
+      "spell-duration": "10 minutes",
+      "spell-description": "Cloaked in illusion, the target becomes invisible. This makes it undetected to all creatures, though the creatures can attempt to find the target, making it hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.",
+      "spell-heightened-level0": "4th",
+      "spell-heightened-description0": "The spell lasts 1 minute, but it doesn't end if the target uses a hostile action."
+    },
+    {
+      "spell-name": "Heat Metal",
+      "spell-level": "Spell 2",
+      "spell-school": "Evocation",
+      "spell-traits": "Evocation, Fire",
+      "spell-source": "APG, 220",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-targets": "1 metal item or metal creature",
+      "spell-description": "This spell heats the targeted metal to become red-hot for a moment. This is usually harmless to an unattended metal item, which doesn't get a saving throw, though the GM might rule that flammable materials connected to the object catch fire or melt. If you target an item worn or carried by a creature, or you target a creature made primarily of metal, the heat deals 4d6 fire damage and 2d4 persistent fire damage to the creature, which must attempt a Reflex saving throw.\n\nIf you target an item held by the creature, the creature can Release the item to improve their degree of success by one step from the result of their saving throw. The persistent damage is associated with the object and damages whichever creature is holding or wearing it. It has no effect if no one is holding the item, but you continue to attempt flat checks to end the persistent damage as normal, since the item remains hot and can sear someone who picks it up.",
+
+"spell-saving-critical-success": "  The creature is unaffected.",
+      "spell-saving-success":"The creature takes half damage and the object deals no persistent fire damage.",
+      "spell-saving-failure":"The creature takes full damage and the object deals full persistent damage.",
+      "spell-saving-critical-failure":"As failure, but the creature takes double damage and the object deals double persistent damage.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The initial damage increases by 2d6 and the persistent damage increases by 1d4."
+    },
+    {
+      "spell-name": "One with plants",
+      "spell-level": "Spell 2",
+      "spell-traits": "Concentrate, Manipulate, Plant, Polymorph, Wood",
+      "spell-source": "RoE",
+      "spell-duration": "10 minutes or 8 hours",
+      "spell-description": "You can either transform into a plant or merge with plant matter. While transformed, you can’t move or affect anything outside the plant, but you can cast spells as long as they don’t require line of effect beyond the plant. You can Dismiss this spell.\n\n\textbff{Merge with Plants} The spell’s duration is 10 minutes. While casting the spell, you must touch a plant with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what’s going on outside the plant. If the plant takes damage while you’re inside it, you’re expelled from the plant and take 10d6 damage. Magic passage expels you without dealing damage. The spell ends if you’re ever outside the plant.\n\n\textbff{Turn into a Plant} The spell’s duration is 8 hours. You become a Large plant—typically a tree. Perception checks don’t reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a plant that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a plant, your AC is 20, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures."
+    },
+    {
+      "spell-name": "Hideous Laughter",
+      "spell-level": "Spell 2",
+      "spell-school": "Enchantment",
+      "spell-traits": "Emotion, Enchantment, Mental",
+      "spell-source": "CR, 343",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-targets": "1 living creature",
+      "spell-saving-throw": "Will",
+      "spell-duration": "sustained",
+      "spell-description": "The target is overtaken with uncontrollable laughter. It must attempt a Will save.",
+
+"spell-saving-critical-success": "The target is unaffected.",
+      "spell-saving-success":"The target is plagued with uncontrollable laugher. It can't use reactions.",
+      "spell-saving-failure":"The target is slowed 1 and can't use reactions.",
+      "spell-saving-critical-failure":"The target falls prone and can't use actions or reactions for 1 round. It then suffers the failure effects."
+    },
+
+
+
+
+
+
+
+    {
+      "spell-name": "Fireball",
+      "spell-level": "Spell 3",
+      "spell-school": "Evocation",
+      "spell-traits": "Evocation, Fire",
+      "spell-source": "CR, 338",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "500ft",
+      "spell-area": "20ft burst",
+      "spell-saving-throw": "basic Reflex",
+      "spell-description": "A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.",
+
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0" : "The damage increases by 2d6."
+    },
+    {
+      "spell-name": "Haste",
+      "spell-level": "Spell 3",
+      "spell-school": "Transmutation",
+      "spell-source": "CR, 343",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "30ft",
+      "spell-targets": "1 creature",
+      "spell-duration": "1 minute",
+      "spell-description": "Magic empowers the target to act faster. It gains the quickened condition and can use the extra action each round only for Strike and Stride actions.",
+
+      "spell-heightened-level0": "7th",
+      "spell-heightened-description0" : "You can target up to 6 creatures."
+    },
+    {
+      "spell-name": "Life Pact",
+      "spell-level": "Spell 3",
+      "spell-school": "Necromancy",
+      "spell-traits": "Uncommon, Healing, Necromancy",
+      "spell-source": "Knight of Lastwall, 94",
+      "spell-casting-time": "1 minute",
+      "spell-components": "M, S, V",
+      "spell-range": "touch",
+      "spell-targets": "up to 6 willing creatures",
+      "spell-duration": "10 minutes",
+      "spell-description": "Using your life force or spirit as a conduit, you bind the targets in a mystical pact. If one of the targets is about to take damage that would reduce it to 0 Hit Points, all other targets immediately lose 3 Hit Points and the triggering target regains a number of Hit Points equal to the Hit Points lost this way, just before taking the damage. If this healing is enough that the triggering target is no longer reduced to 0 Hit Points, they remain conscious. Once the triggering target has regained Hit Points from the other targets, the spell ends.",
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0": "Increase the number of Hit Points lost by 1 for each target other than the one reduced to 0 Hit Points. The target reduced to 0 Hit Points regains that many additional Hit Points."
+    },
+    {
+      "spell-name": "Enthrall",
+      "spell-level": "Spell 3",
+      "spell-school": "Enchantment",
+      "spell-source": "CR, 336",
+      "spell-casting-time": "2",
+      "spell-components": "S, V",
+      "spell-range": "120ft",
+      "spell-targets": "all creatures in range",
+      "spell-saving-throw": "Will",
+      "spell-duration": "sustained",
+      "spell-description": "Your words fascinate your targets. You speak or sing without interruption throughout the casting and duration. Targets who notice your speech or song might give their undivided attention; each target must attempt a Will save. The GM might grant a circumstance bonus (to a maximum of +4) if the target is of an opposing religion, ancestry, or political leaning, or is otherwise unlikely to agree with what you're saying.\n\nEach creature that comes within range has to attempt a save when you Sustain the Spell. If you're speaking, enthrall gains the linguistic trait.",
+"spell-saving-critical-success": "The target is unaffected and notices that you tried to use magic.",
+      "spell-saving-success":"The target needn't pay attention but doesn't notice you tried to use magic (it might notice others are enthralled).",
+      "spell-saving-failure":"The target is fascinated with you. It can attempt another Will save if it witnesses actions or speech with which it disagrees. If it succeeds, it's no longer fascinated and is temporarily immune for 1 hour. If the target is subject to a hostile act, or if another creature succeeds at a Diplomacy or Intimidation check against it, the fascination ends immediately.",
+      "spell-saving-critical-failure":"As failure, but the target can't attempt a save to end the fascination if it disagrees with you."
     }
   ]
 }

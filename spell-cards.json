@@ -635,13 +635,13 @@
       "spell-level": "Spell 3",
       "spell-school": "Evocation",
       "spell-traits": "Cold, Good, Light",
-      "spell-source": "APG, 172",
+      "spell-source": "SoTC, 77",
       "spell-casting-time": "2",
       "spell-components": "S, V",
       "spell-targets": "1 creature",
       "spell-range": "120ft",
 
-      "spell-description": "You focus your gaze on a creature and gain a flash of divine insight into its nature. If the creature has any weaknesses, you learn them, as well as which of its three saving throw modifiers is lowest. You also learn an inherent understanding of its movements and gain a +2 status bonus to your next attack roll (or skill check made as part of an attack action) against that foe before the end of your turn. The target is then temporarily immune to vision of weakness for 1 day.\nIf the light passes through an area of magical darkness or targets a creature affected by magical darkness, moonlight ray attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.",
+      "spell-description": "You unleash a holy beam of freezing moonlight. Make a ranged spell attack. The ray deals 5d6 cold damage; if the target is a fiend or undead, you deal an extra 5d6 good damage. Moonlight ray's cold damage is Silver damage for the purposes of weaknesses, resistances, and the like.",
 
       "spell-heightened-level0": "+1",
       "spell-heightened-description0": "The cold damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.",

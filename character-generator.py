@@ -1,3 +1,4 @@
+import json
 import tkinter as tk
 import tkinter.filedialog as fd
 from pathlib import Path
@@ -12,6 +13,10 @@ for cs in filez:
     characterName = Path(cs).stem
     print(characterName)
     newName = cs.replace(".pdf", "-new.pdf")
+
+    with open("character-sheets/" + characterName + ".json", 'r') as charJson:
+        charDict = json.load(charJson)
+        print(charDict)
     
-    fillpdfs.get_form_fields(cs)
-    fillpdfs.write_fillable_pdf(cs, newName, data_dict)
+        fillpdfs.get_form_fields(cs)
+        fillpdfs.write_fillable_pdf(cs, newName, data_dict)

@@ -1,8 +1,50 @@
 import json
 import tkinter as tk
 import tkinter.filedialog as fd
-from pathlib import Path
+from enum import Enum
 from fillpdf import fillpdfs
+from pathlib import Path
+
+
+abbrevs = {
+    "Willpower" : "Will",
+    "Reflex"    : "Ref",
+    "Fortitude" : "Fort",
+
+    "Acrobatics"   : "Accro",
+    "Arcana"       : "Arcana",
+    "Crafting"     : "Craft",
+    "Deception"    : "Decept",
+    "Diplomacy"    : "Diplo",
+    "Intimidation" : "Intim",
+    "Lore1"        : "Lore1",
+    "Lore2"        : "Lore2",
+    "Medicine"     : "Med",
+    "Nature"       : "Nature",
+    "Occultism"    : "Occult",
+    "Performance"  : "Perf",
+    "Religion"     : "Religion",
+    "Society"      : "Society",
+    "Stealth"      : "Stealth",
+    "Survival"     : "Survival",
+    "Thievery"     : "Thievery"
+}
+
+class Proficiency(Enum):
+    UNTRAINED = 0
+    TRAINED = 2
+    EXPERT = 4
+    MASTER = 6
+    LEGENDARY = 8
+
+def get_proficiency_bonus(charDict, proficiencyLevel):
+    if proficiencyLevel == Proficiency.UNTRAINED:
+        return 0
+
+    level = int(charDict["level"])
+
+    return level + proficiencyLevel.value
+
 
 # Open file dialog and get 1 to n file paths
 root = tk.Tk()
@@ -22,7 +64,7 @@ for cs in filez:
     
         # Get values currently in PDF
         ogCharDict = fillpdfs.get_form_fields(cs)
-        # print(ogCharDict)
+        print(ogCharDict)
 
         # Iterate over changes
         newCharDict = {}

@@ -1,12 +1,12 @@
- {
-   "Changes": [
-      {
-         "Mode": "Edit",
-         "CharacterName": "Bon matin"
-      },
-      {
-         "Mode": "Add",
-         "Level": "1"
-      }
-   ]
- }
+{
+"Changes": [
+   {
+      "Mode": "Edit",
+      "CharacterName": "Bon matin"
+   },
+   {
+      "Mode": "Add",
+      "Level": "1"
+   }
+]
+}

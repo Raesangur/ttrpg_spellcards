@@ -99,7 +99,7 @@ filez = fd.askopenfilenames(parent = root, title = "Cards to load", filetypes=[(
 cardBacksPath = "./backs/back_"
 cardFrontsPath = "./backs/front_"
 schoolList = ["abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation",
-              "hero", "barbarian", "-loky-", "alchemy", "metamagic", "-adelaide-", "loot", "christmas", "scintilla"]
+              "hero", "barbarian", "-loky-", "alchemy", "metamagic", "-adelaide-", "adelaide2", "loot", "christmas", "scintilla"]
 
 
 # Card dimensions depending on the card type

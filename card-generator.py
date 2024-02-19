@@ -391,7 +391,7 @@ def process_item_cards():
                 outputF.write(text)
                 outputF.close()
 
-                # subprocess.call("pdflatex output/item-" + title + ".tex -output-directory=output -job-name=item-" + title)
+                subprocess.call("pdflatex output/item-" + title + ".tex -output-directory=output -job-name=item-" + title)
 
 def process_spell_cards():
     with open("spell-template.tex", 'r') as inputF: 
@@ -488,7 +488,7 @@ def process_spell_cards():
                 outputF.write(text)
                 outputF.close()
 
-                # subprocess.call("pdflatex output/spell-" + title + ".tex -output-directory=output -job-name=spell-" + title)
+                subprocess.call("pdflatex output/spell-" + title + ".tex -output-directory=output -job-name=spell-" + title)
 
 
 #process_hero_cards()
@@ -498,5 +498,5 @@ process_item_cards()
 
 files = os.listdir("output")
 files = [f for f in files if ".pdf" not in f]
-# for f in files:
-    # os.remove("output/" + f)
+for f in files:
+    os.remove("output/" + f)

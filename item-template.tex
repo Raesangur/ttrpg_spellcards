@@ -44,6 +44,7 @@
 \definecolor{uncommon-color}{RGB}{196, 85, 0}
 \definecolor{rare-color}{RGB}{12, 20, 102}
 \definecolor{unique-color}{RGB}{128, 0, 128}
+\definecolor{damage-color}{RGB}{72, 72, 72}
 
 \newcommand{\traitbox}[2][maroon]{
     \textcolor{#1}{[}\hspace{-2pt}\inlinebox{#1}
@@ -101,6 +102,11 @@
         has-long-traits     has-trait1 \traitbox{item-trait1}
         has-long-traits     has-trait2 \traitbox{item-trait2}
         has-long-traits }\\
+
+        is-weapon \desicenteredline{
+        is-weapon      \traitbox[damage-color]{item-damage}
+        is-weapon      \traitbox[damage-color]{item-wield}
+        is-weapon  }\\
 
         % Description
         item-description

@@ -135,6 +135,18 @@
       "item-action0-time" : "1",
       "item-action0-traits" : "[Attack]",
       "item-action0-description" : "You hit a creature with the Undead trait with the utencil, lodging it through the heart. For 1min, the Undead creature gains Weakness 5 against Cold Iron weapons."
+    },
+    {
+      "item-title": "Defensive Blade",
+      "item-type": "Loot",
+      "item-level": "Level 5",
+      "item-rarity": "Uncommon",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Finesse",
+      "item-trait3": "Parry",
+      "item-damage": "1d8 Slashing",
+      "item-wield": "2-hand sword",
+      "item-description": "A long, thin scimitar-like elven-forged blade. Its guard inscribed with old elven glyphs, warding you against magic.\\\\\\rule{\\textwidth}{0.5pt}\\\\\\textbf{Spellguard Blade:} When you are benefiting from the +1 circumstance bonus to AC from this weapon's parry trait, you also apply that circumstance bonus to your saving throws against spells that target you.\\\\\\rule{\\textwidth}{0.5pt}\\\\\\textbf{Elven Grace:} As you build momentum from wielding this weapon, it becomes more dangerous. When you attack with it more than once on your turn, the second attack gains a +1 Item bonus to its damage, and each subsequent attack increases its damage by +1."
     }
   ]
 }

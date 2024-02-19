@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=0.45cm,top=24mm,bottom=10mm,headheight=1cm]{geometry}
+\usepackage{ifxetex}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{setspace}
+
+% https://github.com/stephenswat/dnd-spelldeck
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\ifxetex
+\usepackage{fontspec}
+%\setmainfont{Mrs Eaves OT}
+\setmainfont{Priori Serif}
+\fi
+
+\definecolor{headercolor}{RGB}{88,23,13}
+\definecolor{linecolor}{RGB}{201,173,106}
+
+\sloppy
+\setlength{\headsep}{1mm}
+\setlength{\columnsep}{-4mm}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+%\pagestyle{fancy}
+\cfoot{ }
+
+\backgroundsetup{
+    contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/background}}
+}
+
+
+\newcommand\spell[6]
+{
+    \def\spelltitle{#1}
+    \def\spellheader{#2}
+    \def\spellschool{#3}
+    \def\spellsource{#4}
+    \def\casttime{#5}
+    \def\components{#6}
+    \continued
+}
+
+\newcommand\continued[8]
+{
+    \def\typea{#1}
+    \def\vala{#2}
+    \def\typeb{#3}
+    \def\valb{#4}
+    \def\typec{#5}
+    \def\valc{#6}
+    \def\typed{#7}
+    \def\vald{#8}
+    
+    \begin{minipage}[t][1.5cm][t]{\textwidth}
+        \vspace{-14mm}
+        \par\begin{minipage}[t][0mm][t]{\textwidth}
+            \tiny\color{linecolor}\RaggedLeft\spellsource\\
+            [-1.8mm]
+            \centering
+            \scshape\scriptsize\color{black}\spellheader\\
+            [-1.8mm]
+            \Large\color{headercolor}\spelltitle\\
+            [1mm]
+            \scriptsize\spellschool
+        \end{minipage}
+        \vspace{6mm}    % 6mm - 12mm
+        \par\rule{\textwidth}{0.5pt}
+        \par
+        \vspace{-6mm}
+        \centering\begin{multicols}{3}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}Casting time}
+                \\[0.75mm]
+                \includegraphics[height=0.4cm]{img/\casttime}
+            \end{minipage}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}Components}
+        
+                \components
+            \end{minipage}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}\typea}
+        
+                \vala
+            \end{minipage}
+        \end{multicols}
+        \vspace{-8mm}
+        \centering\begin{multicols}{3}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}\typeb}
+        
+                \valb
+            \end{minipage}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}\typec}
+        
+                \valc
+            \end{minipage}
+            \begin{minipage}[t]{0.49\textwidth}
+                \centering\footnotesize\scshape{\color{headercolor}\typed}
+        
+                \vald
+            \end{minipage}
+        \end{multicols}
+        %\vspace{-4mm} % Removing 2nd bar of vals
+        \vspace{-4mm}
+        \rule{\textwidth}{0.5pt}
+    \end{minipage}
+}
+
+\begin{document}
+\begin{spell}
+{Moonlight Ray} % Spell Name
+{Spell 3} % Spell Level
+{Evocation - Cold, Good, Light} % Spell School
+{SoTC, 77} % Spell Source
+{2} % Casting Time (1, 2, 3, reaction, free, bonus, 1min, 10min)
+{S, V} % Spell Components (S, V, M)
+{Range} {120ft}
+{} {}
+{Target} {1 creature}
+{} {}
+    \begingroup
+        \SetSinglespace{0.12}\singlespacing
+        \begin{singlespace*}
+        \par\fontsize{9}{10pt}\selectfont
+        \vspace{7mm}   % 4mm - 10mm
+        %\vspace{-8mm} % Removing 2nd bar of vals
+        % Description
+        You unleash a holy beam of freezing moonlight. Make a ranged spell attack. The ray deals 5d6 cold damage; if the target is a fiend or undead, you deal an extra 5d6 good damage. Moonlight ray's cold damage is Silver damage for the purposes of weaknesses, resistances, and the like.\\
+        
+         \vspace{2mm}
+         \textbf{Heightened +1 :} The cold damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.\\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+        % \textbf{Heightened  :} \\
+
+        % \vspace{2mm}
+        % \textbf{ :} \includegraphics[width=0.40cm]{img/.png} spell-action-activation\\
+        % %-trigger \textbf{Trigger:} \\
+        % \textbf{Effect:} \\
+
+         \vspace{2mm}
+         \textbf{Critical Success :} The target takes double cold damage, as well as double good damage if a fiend or undead.\\
+         \textbf{Success :} The ray deals full damage.\\
+        % \textbf{Failure :} \\
+        % \textbf{Critical Failure :} \\
+        %\vspace{1mm}
+        \rule{\textwidth}{0.5pt}
+        \end{singlespace*}
+    \endgroup
+\end{spell}
+
+\end{document}

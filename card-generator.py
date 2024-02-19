@@ -136,6 +136,11 @@ def check_item_components(card):
     else:
         card["has-trigger-item-action1"] = "%"
 
+    if "item-damage" in card:
+        card["is-weapon"] = ""
+    else:
+        card["is-weapon"] = "%"
+
 
 def check_traits_length(card, threshold = 20):
     length = 0
@@ -363,6 +368,9 @@ def process_item_cards():
                 text = text.replace("item-trait2", get("item-trait2"))
                 text = text.replace("has-short-traits", get("has-short-traits"))
                 text = text.replace("has-long-traits", get("has-long-traits"))
+                text = text.replace("is-weapon", get("is-weapon"))
+                text = text.replace("item-damage", get("item-damage"))
+                text = text.replace("item-wield", get("item-wield"))
 
                 text = text.replace("has-item-action0", get("has-item-action0"))
                 text = text.replace("has-item-action1", get("has-item-action1"))
@@ -383,7 +391,7 @@ def process_item_cards():
                 outputF.write(text)
                 outputF.close()
 
-                subprocess.call("pdflatex output/item-" + title + ".tex -output-directory=output -job-name=item-" + title)
+                # subprocess.call("pdflatex output/item-" + title + ".tex -output-directory=output -job-name=item-" + title)
 
 def process_spell_cards():
     with open("spell-template.tex", 'r') as inputF: 
@@ -480,7 +488,7 @@ def process_spell_cards():
                 outputF.write(text)
                 outputF.close()
 
-                subprocess.call("pdflatex output/spell-" + title + ".tex -output-directory=output -job-name=spell-" + title)
+                # subprocess.call("pdflatex output/spell-" + title + ".tex -output-directory=output -job-name=spell-" + title)
 
 
 #process_hero_cards()
@@ -490,5 +498,5 @@ process_item_cards()
 
 files = os.listdir("output")
 files = [f for f in files if ".pdf" not in f]
-for f in files:
-    os.remove("output/" + f)
+# for f in files:
+    # os.remove("output/" + f)

@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "spell-name": "Ghost Sound",
+      "spell-title": "Ghost Sound",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory",
@@ -18,7 +18,7 @@
       "spell-heightened-description1" : "The range increases to 120 feet."
     },
     {
-      "spell-name": "Musical Accompaniment",
+      "spell-title": "Musical Accompaniment",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory",
@@ -37,7 +37,7 @@
       "spell-heightened-description2" : "The duration increases to 24 hours."
     },
     {
-      "spell-name": "Message",
+      "spell-title": "Message",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory, Linguistic, Mental",
@@ -53,7 +53,7 @@
       "spell-heightened-description0" : "The spell's range increases to 500 feet."
     },
     {
-      "spell-name": "Bullhorn",
+      "spell-title": "Bullhorn",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory",
@@ -70,7 +70,7 @@
       "spell-heightened-description1" : "Your voice can be heard clearly up to 1 mile away."
     },
     {
-      "spell-name": "Chill Touch",
+      "spell-title": "Chill Touch",
       "spell-level": "Cantrip 1",
       "spell-school": "Necromancy",
       "spell-traits": "Cantrip, Negative",
@@ -86,7 +86,7 @@
       "spell-heightened-description0" : "The negative damage to living creatures increases by 1d4."
     },
     {
-      "spell-name": "Dim the Light",
+      "spell-title": "Dim the Light",
       "spell-level": "Focus 1",
       "spell-school": "Evocation",
       "spell-traits": "Darkness",
@@ -98,7 +98,7 @@
       "spell-description": ".\nYou magnify the darkness from the triggering effect, causing the ambient light level to flicker briefly so you can slip from sight.\nYou can immediately attempt a Stealth check to Hide, and you can become hidden to a creature even if you don't have cover and aren't otherwise concealed from that creature. You cease being hidden at the end of your turn unless you move into cover or become concealed before then."
     },
     {
-      "spell-name": "Flashy Disappearance",
+      "spell-title": "Flashy Disappearance",
       "spell-level": "Spell 1",
       "spell-school": "Illusion",
       "spell-source": "FB, 89",
@@ -108,7 +108,7 @@
       "spell-description": "You create a puff of colorful smoke that quickly disperses while you become temporarily invisible. You become undetected to all creatures unless they can see invisible creatures.\nYou Stride. At the end of your movement, if you have cover, greater cover, or concealment, attempt a Stealth check to Hide. You gain a +2 status bonus to this Stealth check.\nThe invisibility then ends, and you either become observed or hidden to creatures as determined by your check to Hide, if you made one."
     },
     {
-      "spell-name": "Illusory Object",
+      "spell-title": "Illusory Object",
       "spell-level": "Spell 1",
       "spell-school": "Illusion",
       "spell-traits": "Visual",
@@ -126,7 +126,7 @@
       "spell-heightened-description0" : "As the 2nd-level version, but the duration is unlimited."
     },
     {
-      "spell-name": "Grim Tendrils",
+      "spell-title": "Grim Tendrils",
       "spell-level": "Spell 1",
       "spell-school": "Necromancy",
       "spell-traits": "Negative",
@@ -146,7 +146,7 @@
       "spell-heightened-description0" : "The negative damage increases by 2d4, and the persistent bleed damage increases by 1."
     },
     {
-      "spell-name": "Guidance",
+      "spell-title": "Guidance",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Cantrip",
@@ -159,7 +159,7 @@
       "spell-description": "You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends.\nThe target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour."
     },
     {
-      "spell-name": "Shield",
+      "spell-title": "Shield",
       "spell-level": "Cantrip 1",
       "spell-school": "Abjuration",
       "spell-traits": "Cantrip, Force",
@@ -184,7 +184,7 @@
       "spell-heightened-description3" : "The shield has Hardness 25."
     },
     {
-      "spell-name": "Forbidding Ward",
+      "spell-title": "Forbidding Ward",
       "spell-level": "Cantrip 1",
       "spell-school": "Abjuration",
       "spell-traits": "Cantrip",
@@ -200,7 +200,7 @@
       "spell-heightened-description0" : "The status bonus increases to +2."
     },
     {
-      "spell-name": "Light",
+      "spell-title": "Light",
       "spell-level": "Cantrip 1",
       "spell-school": "Evocation",
       "spell-traits": "Cantrip, Light",
@@ -216,7 +216,7 @@
       "spell-heightened-description0" : "The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet)."
     },
     {
-      "spell-name": "Read the Air",
+      "spell-title": "Read the Air",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Cantrip",
@@ -228,7 +228,7 @@
       "spell-description": "You take a deep breath as you survey a social situation, showing courtesy to all around you as your intuition swiftly picks up clues about social contexts and unspoken assumptions of behavior. Your body language subconsciously changes to take advantage of this information and use it in your own interactions with those creatures.\\\\\n\nAs part of Casting this Spell, you Recall Knowledge using Society to gain information about the immediate social situation. You also gain a +1 status bonus on your next Diplomacy check to Make an Impression on those creatures present when you cast this spell, as long as the check occurs during the duration of the spell. You can read the air only once in a given social situation; casting it again has no effect."
     },
     {
-      "spell-name": "Daze",
+      "spell-title": "Daze",
       "spell-level": "Cantrip 1",
       "spell-school": "Enchantment",
       "spell-traits": "Cantrip, Mental, Nonlethal",
@@ -245,7 +245,7 @@
       "spell-heightened-description0" : "The damage increases by 1d6."
     },
     {
-      "spell-name": "Wash your Luck",
+      "spell-title": "Wash your Luck",
       "spell-level": "Cantrip 1",
       "spell-school": "Abjuration",
       "spell-traits": "Cantrip, Fortune",
@@ -257,7 +257,7 @@
       "spell-description": "Some practitioners argue this spell literally washes your fortunes of all influences, malign or benign, while others claim it simply cleanses your mind of obsessions about luck and destiny. You adjust your garments, change the posture of your chair, fidget with a religious symbol, or make some other innocuous and personally significant action to wash away bad luck.\nOnce during the spell's duration, before rolling a check, you can cancel out a misfortune effect on that roll, as normal when a fortune and misfortune effect apply to the same roll. After canceling out the misfortune effect, the spell ends, and you are then temporarily immune to wash your luck for 10 minutes."
     },
     {
-      "spell-name": "Acid Splash",
+      "spell-title": "Acid Splash",
       "spell-level": "Cantrip 1",
       "spell-school": "Evocation",
       "spell-traits": "Cantrip, Acid, Attack",
@@ -279,7 +279,7 @@
       "spell-heightened-description3" : "The initial damage increases to 4d6 + your spellcasting ability modifier, the persistent damage increases to 5, and the splash damage increases to 4."
     },
     {
-      "spell-name": "Electric Arc",
+      "spell-title": "Electric Arc",
       "spell-level": "Cantrip 1",
       "spell-school": "Evocation",
       "spell-traits": "Cantrip, Electricity",
@@ -295,7 +295,7 @@
       "spell-heightened-description0" : "The damage increases by 1d4."
     },
     {
-      "spell-name": "Bit of Luck",
+      "spell-title": "Bit of Luck",
       "spell-level": "Focus 1",
       "spell-school": "Divination",
       "spell-traits": "Fortune",
@@ -308,7 +308,7 @@
       "spell-description": "You tilt the scales of luck slightly to protect a creature from disaster. When the target would attempt a saving throw, it can roll twice and use the better result. Once it does this, the spell ends.\nIf you cast bit of luck again, any previous bit of luck you cast that's still in effect ends. After a creature has been targeted with bit of luck, it becomes temporarily immune for 24 hours."
     },
     {
-      "spell-name": "Read Fate",
+      "spell-title": "Read Fate",
       "spell-level": "Focus 1",
       "spell-school": "Divination",
       "spell-traits": "Prediction",
@@ -320,7 +320,7 @@
       "spell-description": "You attempt to learn more about the target's fate in the short term, usually within the next day for most prosaic creatures, or the next hour or less for someone likely to have multiple rapid experiences, such as someone actively adventuring.\nYou learn a single enigmatic word connected to the creature's fate in that time frame. Fate is notoriously inscrutable, and the word isn't necessarily meant to be taken at face value, so the meaning is often clear only in hindsight. The GM rolls a secret DC 6 flat check. If the creature's fate is too uncertain, or on a failed flat check, the spell yields the word 'inconclusive'. Either way, the creature is then temporarily immune for 24 hours."
     },
     {
-      "spell-name": "Admonishing Ray",
+      "spell-title": "Admonishing Ray",
       "spell-level": "Spell 1",
       "spell-school": "Necromancy",
       "spell-traits": "Attack, Nonlethal",
@@ -338,7 +338,7 @@
       "spell-heightened-description0" : "The damage increases by 2d6."
     },
     {
-      "spell-name": "Animate Dead",
+      "spell-title": "Animate Dead",
       "spell-level": "Spell 1",
       "spell-school": "Necromancy",
       "spell-source": "APG, 214",
@@ -368,7 +368,7 @@
       "spell-heightened-description8" : "Level 15"
     },
     {
-      "spell-name": "Lay on Hands",
+      "spell-title": "Lay on Hands",
       "spell-level": "Focus 1",
       "spell-school": "Necromancy",
       "spell-traits": "Healing, Positive",
@@ -383,7 +383,7 @@
       "spell-heightened-description0" : "The amount of healing increases by 6, and the damage to an undead target increases by 1d6."
     },
     {
-      "spell-name": "Produce Flame",
+      "spell-title": "Produce Flame",
       "spell-level": "Cantrip 1",
       "spell-school": "Evocation",
       "spell-traits": "Attack, Fire",
@@ -401,7 +401,7 @@
       "spell-heightened-description0" : "Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4."
     },
     {
-      "spell-name": "Detect Magic",
+      "spell-title": "Detect Magic",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Detection",
@@ -417,7 +417,7 @@
       "spell-heightened-description0" : "As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that)."
     },
     {
-      "spell-name": "Heal",
+      "spell-title": "Heal",
       "spell-level": "Spell 1",
       "spell-school": "Necromancy",
       "spell-traits": "Healing, Positive",
@@ -431,7 +431,7 @@
       "spell-heightened-description0" : "The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8."
     },
     {
-      "spell-name": "Invisible Item",
+      "spell-title": "Invisible Item",
       "spell-level": "Spell 1",
       "spell-school": "Illusion",
       "spell-source": "APG, 221",
@@ -448,7 +448,7 @@
       "spell-heightened-description1" : "The duration is unlimited."
     },
     {
-      "spell-name": "Augury",
+      "spell-title": "Augury",
       "spell-level": "Spell 2",
       "spell-school": "Divination",
       "spell-traits": "Prediction",
@@ -458,7 +458,7 @@
       "spell-description": "You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:\n$\\bullet$ \\textbf{Weal} The results will be good\\\\$\\bullet$ \\textbf{Woe} The results will be bad\\\\$\\bullet$ \\textbf{Weal and Woe} The results will be a mix off good and bad\\\\$\\bullet$ \\textbf{Nothing} There won't be particularly good or bad results\n The GM rolls a secret DC 6 flat check. On a failure, the result is always 'nothing.' This makes it impossible to tell whether a 'nothing' result is accurate. If anyone asks about the same topic as the first casting of augury during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result."
     },
     {
-      "spell-name": "Illusory Creature (1)",
+      "spell-title": "Illusory Creature (1)",
       "spell-level": "Spell 2",
       "spell-school": "Illusion",
       "spell-traits": "Auditory, Olfactory, Visual",
@@ -473,7 +473,7 @@
       "spell-heightened-description0" : "The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan)."
     },
     {
-      "spell-name": "Illusory Creature (2)",
+      "spell-title": "Illusory Creature (2)",
       "spell-level": "Spell 2",
       "spell-school": "Illusion",
       "spell-traits": "Auditory, Olfactory, Visual",
@@ -484,7 +484,7 @@
       "spell-description": "The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster—for example, if an illusory Large dragon deals only 5 damage-the GM might allow the target to attempt an immediate Perception check to disbelieve the spell. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.\\\\Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it."
     },
     {
-      "spell-name": "Invisibility",
+      "spell-title": "Invisibility",
       "spell-level": "Spell 2",
       "spell-school": "Illusion",
       "spell-source": "CR, 347",
@@ -499,7 +499,7 @@
       "spell-heightened-description0" : "The spell lasts 1 minute, but it doesn't end if the target uses a hostile action."
     },
     {
-      "spell-name": "Darkness",
+      "spell-title": "Darkness",
       "spell-level": "Spell 2",
       "spell-school": "Evocation",
       "spell-traits": "Darkness",
@@ -515,7 +515,7 @@
       "spell-heightened-description0" : "Even creatures with darkvision (but not greater darkvision) can barely see through the darkness. They treat targets seen through the darkness as concealed."
     },
     {
-      "spell-name": "Fire Ray",
+      "spell-title": "Fire Ray",
       "spell-level": "Focus 1",
       "spell-school": "Evocation",
       "spell-traits": "Attack, Fire",
@@ -533,7 +533,7 @@
       "spell-heightened-description0" : "The ray's initial damage increases by 2d6, and the persistent fire damage on a critical success increases by 1d4."
     },
     {
-      "spell-name": "Incendiary Aura",
+      "spell-title": "Incendiary Aura",
       "spell-level": "Focus 1",
       "spell-school": "Evocation",
       "spell-traits": "Cursebound, Fire",
@@ -548,7 +548,7 @@
       "spell-heightened-description0" : "Increase the persistent damage by 1d4 and the radius of the emanation by 5 feet."
     },
     {
-      "spell-name": "Mage Hand",
+      "spell-title": "Mage Hand",
       "spell-level": "Cantrip",
       "spell-school": "Evocation",
       "spell-source": "CR, 349",
@@ -567,7 +567,7 @@
       "spell-heightened-description2" : " The range increases to 60 feet, and you can target an unattended object with a Bulk of 2 or less."
     },
     {
-      "spell-name": "Join Pasts",
+      "spell-title": "Join Pasts",
       "spell-level": "Cantrip",
       "spell-school": "Divination",
       "spell-source": "PF-147 TMB, 74",
@@ -582,7 +582,7 @@
       "spell-heightened-description0" : "You can touch one additional willing target to include them in the spell’s effects. Multiple targets can attempt checks to Aid the target who is attempting to Recall Knowledge."
     },
     {
-      "spell-name": "Silence",
+      "spell-title": "Silence",
       "spell-level": "Spell 2",
       "spell-school": "Illusion",
       "spell-traits": "Auditory",
@@ -598,7 +598,7 @@
       "spell-heightened-description0" : "The spell effect emanates from the touched creature, silencing all sound in or passing through a 10ft radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example)."
     },
     {
-      "spell-name": "Blood Vandetta",
+      "spell-title": "Blood Vandetta",
       "spell-level": "Spell 2",
       "spell-school": "Necromancy",
       "spell-traits": "Curse",
@@ -620,7 +620,7 @@
       "spell-heightened-description0" : "The persistent bleed damage increases by 2d6."
     },
     {
-      "spell-name": "Vision of Weakness",
+      "spell-title": "Vision of Weakness",
       "spell-level": "Focus 2",
       "spell-school": "Divination",
       "spell-traits": "Cursebound",
@@ -631,7 +631,7 @@
       "spell-description": "You focus your gaze on a creature and gain a flash of divine insight into its nature. If the creature has any weaknesses, you learn them, as well as which of its three saving throw modifiers is lowest. You also learn an inherent understanding of its movements and gain a +2 status bonus to your next attack roll (or skill check made as part of an attack action) against that foe before the end of your turn. The target is then temporarily immune to vision of weakness for 1 day."
     },
     {
-      "spell-name": "Moonlight Ray",
+      "spell-title": "Moonlight Ray",
       "spell-level": "Spell 3",
       "spell-school": "Evocation",
       "spell-traits": "Cold, Good, Light",
@@ -650,7 +650,7 @@
       "spell-saving-success": "The ray deals full damage."
     },
     {
-      "spell-name": "Crisis of Faith",
+      "spell-title": "Crisis of Faith",
       "spell-level": "Spell 3",
       "spell-school": "Enchantment",
       "spell-traits": "Mental",
@@ -672,7 +672,7 @@
       "spell-saving-critical-failure": "The target takes double damage, is stupefied 1 for 1 round, and can't cast divine spells for 1 round."
     },
     {
-      "spell-name": "Sound Burst",
+      "spell-title": "Sound Burst",
       "spell-level": "Spell 2 (+1)",
       "spell-school": "Evocation",
       "spell-traits": "Sonic",
@@ -693,7 +693,7 @@
       "spell-heightened-description0" : "The damage increases by 1d10"
     },
     {
-      "spell-name": "Purifying Icicle",
+      "spell-title": "Purifying Icicle",
       "spell-level": "Spell 1 (+2)",
       "spell-school": "Evocation",
       "spell-traits": "Cold, Positive",
@@ -711,7 +711,7 @@
       "spell-heightened-description0" : "The piercing damage and cold damage each increase by 1d6. The positive damage increases by 1d4."
     },
     {
-      "spell-name": "Zone of Truth",
+      "spell-title": "Zone of Truth",
       "spell-level": "Spell 3",
       "spell-school": "Enchantment",
       "spell-traits": "Mental",
@@ -731,7 +731,7 @@
       "spell-saving-critical-failure": "The target can't speak any deliberate and intentional lies and takes a -4 status penalty to Deception checks."
     },
     {
-      "spell-name": "Haste",
+      "spell-title": "Haste",
       "spell-level": "Spell 3",
       "spell-school": "Transmutation",
       "spell-source": "CR, 343",
@@ -747,7 +747,7 @@
       "spell-heightened-description0" : "You can target up to 6 creatures."
     },
     {
-      "spell-name": "Chilling Darkness",
+      "spell-title": "Chilling Darkness",
       "spell-level": "Spell 3",
       "spell-school": "Evocation",
       "spell-traits": "Darkness, Evil, Evocation",
@@ -766,7 +766,7 @@
       "spell-heightened-description0" : "The cold damage increases by 2d6, and the evil damage against celestials increases by 2d6."
     },
     {
-      "spell-name": "Sign of Conviction",
+      "spell-title": "Sign of Conviction",
       "spell-level": "Spell 3",
       "spell-school": "Conjuration",
       "spell-traits": "",
@@ -781,7 +781,7 @@
       "spell-heightened-description0": "The damage increases by 1d10."
     },
     {
-      "spell-name": "Needle Darts",
+      "spell-title": "Needle Darts",
       "spell-level": "Cantrip 1",
       "spell-school": "Transmutation",
       "spell-traits": "Attack, Cantrip, Concentrate, Manipulate, Metal",
@@ -796,7 +796,7 @@
       "spell-heightened-description0": "You send one additional needle, increasing the regular damage by 1d4 and increasing the persistent bleed damage on a critical hit by 1."
     },
     {
-      "spell-name": "Magic Weapon",
+      "spell-title": "Magic Weapon",
       "spell-level": "Spell 1",
       "spell-school": "Transmutation",
       "spell-traits": "Attack, Cantrip, Concentrate, Manipulate, Metal",
@@ -808,7 +808,7 @@
       "spell-description": "The weapon glimmers with magic and energy. The target becomes a +1 striking weapon, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two."
     },
     {
-      "spell-name": "Tempt Fate",
+      "spell-title": "Tempt Fate",
       "spell-level": "Focus 2",
       "spell-school": "Divination",
       "spell-traits": "Fortune",
@@ -823,7 +823,7 @@
       "spell-heightened-description0": "The bonus on the saving throw is +2."
     },
     {
-      "spell-name": "Approximate",
+      "spell-title": "Approximate",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Cantrip, Detection, Divination",
@@ -836,7 +836,7 @@
       "spell-description": "Your magic quickly flows over an area to help you count and catalog. Name a particular type of object you are looking for within the area. You gain an instant estimate of the quantity of the chosen objects that are clearly visible within the target area. The number is rounded to the largest digit. For example, you could look at a pile of 180 copper coins, and you would learn that it held about 200 coins, but you couldn't determine there were exactly 180 coins. \nThe type of object you name can be as specific or general as you like-dented copper coins is as viable as coins—but the distinguishing features must be obvious at a glance, and the spell is automatically fooled by objects disguised as other objects. For instance, the spell would register copper coins plated in gold as gold coins, not copper coins."
     },
     {
-      "spell-name": "Guidance",
+      "spell-title": "Guidance",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Cantrip, Divination",
@@ -849,7 +849,7 @@
       "spell-description": "You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour."
     },
     {
-      "spell-name": "Musical Accompaniment",
+      "spell-title": "Musical Accompaniment",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory",
@@ -868,7 +868,7 @@
       "spell-heightened-description2" : "The duration increases to 24 hours."
     },
     {
-      "spell-name": "Message",
+      "spell-title": "Message",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory, Linguistic, Mental",
@@ -884,7 +884,7 @@
       "spell-heightened-description0" : "The spell's range increases to 500 feet."
     },
     {
-      "spell-name": "Electric Arc",
+      "spell-title": "Electric Arc",
       "spell-level": "Cantrip 1",
       "spell-school": "Evocation",
       "spell-traits": "Cantrip, Electricity, Evocation",
@@ -900,7 +900,7 @@
       "spell-heightened-description0" : "The damage increase by 1d4."
     },
     {
-      "spell-name": "Detect Metal",
+      "spell-title": "Detect Metal",
       "spell-level": "Cantrip 1",
       "spell-school": "''Divination''",
       "spell-traits": "Cantrip, Cancentrate, Detection, Manipulate, Metal",
@@ -915,7 +915,7 @@
       "spell-heightened-description0" : "You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your detect metal spell."
     },
     {
-      "spell-name": "Ghost Sound",
+      "spell-title": "Ghost Sound",
       "spell-level": "Cantrip 1",
       "spell-school": "Illusion",
       "spell-traits": "Cantrip, Auditory",
@@ -932,7 +932,7 @@
       "spell-heightened-description1" : "The range increases to 120 feet."
     },
     {
-      "spell-name": "Join Pasts [Heightened Rank 3]",
+      "spell-title": "Join Pasts [Heightened Rank 3]",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Uncommon, Cantrip, Divination, Mental",
@@ -946,7 +946,7 @@
       "spell-heightened-description0" : "You can touch one additional target to include them in the spell's effects. Multiple targets can attempt checks to Aid the target who is attempting to Recall Knowledge."
     },
     {
-      "spell-name": "Read the air [Heightened Rank 3]",
+      "spell-title": "Read the air [Heightened Rank 3]",
       "spell-level": "Cantrip 1",
       "spell-school": "Divination",
       "spell-traits": "Cantrip, Divination",
@@ -957,7 +957,7 @@
       "spell-description": "You take a deep breath as you survey a social situation, showing courtesy to all around you as your intuition swiftly picks up clues about social contexts and unspoken assumptions of behavior. Your body language subconsciously changes to take advantage of this information and use it in your own interactions with those creatures. \n\nAs part of Casting this Spell, you Recall Knowledge using Society to gain information about the immediate social situation. You also gain a +1 status bonus on your next Diplomacy check to Make an Impression on those creatures present when you cast this spell, as long as the check occurs during the duration of the spell. You can read the air only once in a given social situation; casting it again has no effect."
     },
     {
-      "spell-name": "Longstrider",
+      "spell-title": "Longstrider",
       "spell-level": "Spell 1",
       "spell-school": "Transmutation",
       "spell-source": "CR, 348",
@@ -971,7 +971,7 @@
       "spell-heightened-description0" : "The duration increases to 8 hours."
     },
     {
-      "spell-name": "Quick Sort",
+      "spell-title": "Quick Sort",
       "spell-level": "Spell 1",
       "spell-school": "Transmutation",
       "spell-source": "SoM, 124",
@@ -988,7 +988,7 @@
       "spell-heightened-description1" : "The spell can sort up to 800 objects in a minute, or 120 objects in a round."
     },
     {
-      "spell-name": "Heal",
+      "spell-title": "Heal",
       "spell-level": "Spell 1",
       "spell-school": "Necromancy",
       "spell-traits": "Healing, Necromancy, Positive",
@@ -1002,7 +1002,7 @@
       "spell-heightened-description0" : "The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8."
     },
     {
-      "spell-name": "Charm",
+      "spell-title": "Charm",
       "spell-level": "Spell 1",
       "spell-school": "Enchantment",
       "spell-traits": "Emotion, Enchantment, Incapacitation, Mental",
@@ -1026,7 +1026,7 @@
       "spell-heightened-description0" : "The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures."
     },
     {
-      "spell-name": "Invisibility",
+      "spell-title": "Invisibility",
       "spell-level": "Spell 2",
       "spell-school": "Illusion",
       "spell-traits": "Illusion",
@@ -1041,7 +1041,7 @@
       "spell-heightened-description0": "The spell lasts 1 minute, but it doesn't end if the target uses a hostile action."
     },
     {
-      "spell-name": "Heat Metal",
+      "spell-title": "Heat Metal",
       "spell-level": "Spell 2",
       "spell-school": "Evocation",
       "spell-traits": "Evocation, Fire",
@@ -1061,7 +1061,7 @@
       "spell-heightened-description0" : "The initial damage increases by 2d6 and the persistent damage increases by 1d4."
     },
     {
-      "spell-name": "Hideous Laughter",
+      "spell-title": "Hideous Laughter",
       "spell-level": "Spell 2",
       "spell-school": "Enchantment",
       "spell-traits": "Emotion, Enchantment, Mental",
@@ -1080,7 +1080,7 @@
       "spell-saving-critical-failure":"The target falls prone and can't use actions or reactions for 1 round. It then suffers the failure effects."
     },
     {
-      "spell-name": "Fireball",
+      "spell-title": "Fireball",
       "spell-level": "Spell 3",
       "spell-school": "Evocation",
       "spell-traits": "Evocation, Fire",
@@ -1096,7 +1096,7 @@
       "spell-heightened-description0" : "The damage increases by 2d6."
     },
     {
-      "spell-name": "Haste",
+      "spell-title": "Haste",
       "spell-level": "Spell 3",
       "spell-school": "Transmutation",
       "spell-source": "CR, 343",
@@ -1111,7 +1111,7 @@
       "spell-heightened-description0" : "You can target up to 6 creatures."
     },
     {
-      "spell-name": "Life Pact",
+      "spell-title": "Life Pact",
       "spell-level": "Spell 3",
       "spell-school": "Necromancy",
       "spell-traits": "Uncommon, Healing, Necromancy",
@@ -1126,7 +1126,7 @@
       "spell-heightened-description0": "Increase the number of Hit Points lost by 1 for each target other than the one reduced to 0 Hit Points. The target reduced to 0 Hit Points regains that many additional Hit Points."
     },
     {
-      "spell-name": "Enthrall",
+      "spell-title": "Enthrall",
       "spell-level": "Spell 3",
       "spell-school": "Enchantment",
       "spell-source": "CR, 336",

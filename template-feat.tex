@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=0.45cm,top=24mm,bottom=10mm,headheight=1cm]{geometry}
+\usepackage{ifxetex}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{setspace}
+
+% https://github.com/stephenswat/dnd-spelldeck
+
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\ifxetex
+\usepackage{fontspec}
+%\setmainfont{Mrs Eaves OT}
+\setmainfont{Priori Serif}
+\fi
+
+\definecolor{headercolor}{RGB}{88,23,13}
+\definecolor{linecolor}{RGB}{201,173,106}
+
+\sloppy
+\setlength{\headsep}{1mm}
+\setlength{\columnsep}{-4mm}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+%\pagestyle{fancy}
+\cfoot{ }
+
+\backgroundsetup{
+    contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/background}}
+}
+
+\newcommand\spell[2]
+{
+    \def\herotitle{#1}
+    \def\description{#2}
+
+    \begin{minipage}[t][1.5cm][t]{\textwidth}
+        \vspace{-18mm}
+        \par\begin{minipage}[t][0mm][t]{\textwidth}
+            \centering
+            \vspace{4mm}
+            \scshape\scriptsize\textcolor{white}{feat-type}\\ 
+            [-1.8mm]
+            \scshape\scriptsize\color{black}\
+            \Large\color{headercolor}\herotitle
+
+        \end{minipage}
+        \par
+        \vspace{8mm}    % 2mm - 8mm
+        \rule{\textwidth}{0.5pt}
+    \end{minipage}
+    \description
+}
+
+\definecolor{maroon}{RGB}{150, 67, 64}
+\definecolor{gold}{RGB}{203, 183, 123}
+
+\newtcbox{\inlinebox}[1][]{enhanced,
+ box align=base,
+ nobeforeafter,
+ colback=maroon,
+ colframe=gold,
+ size=small,
+ left=0pt,
+ right=0pt,
+ boxsep=2pt,
+ #1}
+
+\newcommand*{\desicenteredline}[1]{%
+\ifhmode\expandafter\\\else\noindent\fi
+\hspace*{-\sectionwidth}%
+\hbox to \dimexpr\sectionwidth+\linewidth\relax{\hss #1\hss}\hskip0pt\relax}
+
+\begin{document}
+\begin{spell}
+{feat-name} % Spell Name
+{
+    \begingroup
+        \SetSinglespace{0.12}\singlespacing
+        \begin{singlespace*}
+        \par\fontsize{feat-font-size}{10pt}\selectfont
+        \vspace{7mm}   % 4mm - 10mm
+        %\vspace{-8mm} % Removing 2nd bar of vals
+        % Description
+        feat-description\\
+
+        has-feat-action0 \vspace{2mm}
+        has-feat-action0 \textbf{feat-action0-title :} \includegraphics[width=0.40cm]{img/feat-action0-time.png} feat-action0-activation\\
+        has-feat-action0 has-feat-action0-trigger \textbf{Trigger:} feat-action0-trigger\\
+        has-feat-action0 feat-action0-effect\\
+
+        has-feat-action1 \vspace{2mm}
+        has-feat-action1 \textbf{feat-action1-title :} \includegraphics[width=0.40cm]{img/feat-action1-time.png} feat-action1-activation\\
+        has-feat-action1 has-feat-action1-trigger \textbf{Trigger:} feat-action1-trigger\\
+        has-feat-action1 feat-action1-effect\\
+
+        has-feat-action2 \vspace{2mm}
+        has-feat-action2 \textbf{feat-action2-title :} \includegraphics[width=0.40cm]{img/feat-action2-time.png} feat-action2-activation\\
+        has-feat-action2 has-feat-action2-trigger \textbf{Trigger:} feat-action2-trigger\\
+        has-feat-action2 feat-action2-effect\\
+
+        \vspace{1mm}
+        \rule{\textwidth}{0.5pt}
+        \end{singlespace*}
+    \endgroup
+}
+\end{spell}
+
+\end{document}

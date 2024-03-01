@@ -3,6 +3,134 @@ import os
 import re
 import subprocess
 
+class CardGenerator(metaclass = abc.ABCMeta):
+    def __init__(self, name):
+        self.name = name
+
+    def process(self):
+        open_template()
+        open_cards()
+
+        # Iterate over all cards in the .json file
+        for card in self.cardsDict["cards"]:
+            title = get_title(card)
+            cardText = self.templateText.copy()
+
+            # Skip the card if it already exists
+            if card_already_exists(title):
+                continue
+
+            insert_newlines(card)
+
+            # These functions are virtual and defined by child classes
+            card_specific_processing(card, title)
+            card_specific_attribute_replacement(card, cardText)
+
+            # Sent the output to a final .tex file and run pdflatex on it
+            write_output_file(title, cardText)
+
+
+    def open_template(self):
+        with open("template-spell.tex", 'r') as templateFile: 
+            self.templateText = templateFile.read()
+
+    def open_cards(self):
+        with open("cards-spell.json", 'r') as cards:
+            cardsDict = json.load(cards)
+
+    def get_title(self, card):
+        return card[self.name + "-title"].replace(' ', '_').lower()
+
+    def card_already_exists(self, title):
+        if self.name + "-" + title + ".pdf" in os.listdir("output"):
+            print(self.name + " - " + title + " already exists, skipping...")
+            return True
+        return False
+
+    def write_output_file(self, title, cardText):
+        with open("output/" + self.name + "-" + title + ".tex", 'w') as outputFile
+            outputFile.write(cardText)
+
+        subprocess.call("pdflatex output/" + self.name + "spell-" + title + ".tex -output-directory=output -job-name=" + self.name + "-" + title)
+
+    def insert_newlines(card):
+        for k in card.keys():
+            card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
+
+    def compute_attribute_flags(card, attributeFlag, attributeName, N = None, delimiter = '%', noDelimiter = ''):
+        def m_compute_attribute_flags(card, attributeFlag, attributeName, N, delimiter, noDelimiter):
+            if attributeName in card:
+                card[attributeFlag] = noDelimiter
+            else:
+                card[attributeFlag] = delimiter
+
+        if N == None:
+            m_compute_attribute_flags(card, attributeFlag, attributeName, N, delimiter, noDelimiter)
+
+        else:
+            for n in range(0, N):
+                # Append the number to the attribute name
+                attribName = attributeName + n
+                attribFlag = attributeFlag + n
+
+                m_compute_attribute_flags(card, attribFlag, attribName, N, delimiter, noDelimiter)
+
+    def ajust_spacing(self, title)
+        spaces = card[self.name + "-title"].count(' ')
+        
+        spacing  = "10mm" if len(title) < (20 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
+        spacing2 =  str(3 if len(title) < (20 + spaces) else 9 if len(title) < (32 + spaces) else 13) + "mm"
+
+        return spacing, spacing2
+
+    def configure_attribute(self, cardText, attributeName, attributeValue = attributeName):
+        return cardText.replace(attributeName, card.get(attributeValue, ""))
+
+    @abc.abstractmethod
+    card_specific_processing(self, card, title):
+        pass
+
+    @abc.abstractmethod
+    card_specific_attribute_replacement(self, card, cardText):
+        pass
+
+
+class SpellCardGenerator(CardGenerator):
+    @abc.abstractmethod
+    card_specific_processing(self, card, title):
+        pass
+
+    @abc.abstractmethod
+    card_specific_attribute_replacement(self, card, cardText):
+
+        attributeList = [ "spell-name", "spell-description", "spell-level", "spell-school",
+                          "has-spell-traits", "spell-traits", "spell-source",
+                          "spell-casting-time", "spell-components", "spell-range",
+                          "spell-tag0", "spell-tag1", "spell-tag2",
+                          "spell-value0", "spell-value1", "spell-value2",
+                          "has-heightened0", "has-heightened1", "has-heightened2",
+                          "has-heightened3", "has-heightened4", "has-heightened5",
+                          "has-heightened6", "has-heightened7", "has-heightened8",
+                          "has-heightened9", "spell-heightened-level0", "spell-heightened-level1",
+                          "spell-heightened-level2", "spell-heightened-level3",
+                          "spell-heightened-level4", "spell-heightened-level5",
+                          "spell-heightened-level6", "spell-heightened-level7",
+                          "spell-heightened-level8", "spell-heightened-description0",
+                          "spell-heightened-description1", "spell-heightened-description2",
+                          "spell-heightened-description3", "spell-heightened-description4",
+                          "spell-heightened-description5", "spell-heightened-description6",
+                          "spell-heightened-description7", "spell-heightened-description8",
+                          "has-spell-action", "has-spell-action-trigger",
+                          "spell-action-title", "spell-action-time", "spell-action-trigger",
+                          "spell-action-effect", "has-saving-cs", "has-saving-s", "has-saving-f",
+                          "has-saving-cf", "spell-saving-critical-success", "spell-saving-success",
+                          "spell-saving-failure", "spell-saving-critical-failure"]
+
+        for attrib in attributeList:
+            cardText = configure_attribute(cardText, attrib)
+
+
+
 def check_spell_components(card):
     # Check Spell Traits
     if "spell-traits" in card:
@@ -213,25 +341,9 @@ def make_spell_tags(card):
 def adjust_spell_fontsize(card):
     equivalentCharacters = len(card["spell-description"]) + 20 * card["spell-description"].count('\n')
 
-    if card["has-heightened0"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description0"]) + 20 + 10
-    if card["has-heightened1"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description1"]) + 20 + 10
-    if card["has-heightened2"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description2"]) + 20 + 10
-    if card["has-heightened3"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description3"]) + 20 + 10
-    if card["has-heightened4"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description4"]) + 20 + 10
-    if card["has-heightened5"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description5"]) + 20 + 10
-    if card["has-heightened6"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description6"]) + 20 + 10
-    if card["has-heightened7"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description7"]) + 20 + 10
-    if card["has-heightened8"] != "%":
-        equivalentCharacters += len(card["spell-heightened-description8"]) + 20 + 10
-
+    for n in range(0, 8):
+        if card["has-heightened" + n] != "%":
+        equivalentCharacters += len(card["spell-heightened-description" + n]) + 20 + 10
 
     if card["has-spell-action"] != "%":
         equivalentCharacters += len(card["spell-action-effect"]) + 40 + 20
@@ -252,15 +364,15 @@ def adjust_spell_fontsize(card):
     else:
         card["spell-font-size"] = "7"
 
-def insert_newlines(card):
-    for k in card.keys():
-        card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
+# def insert_newlines(card):
+#     for k in card.keys():
+#         card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
 
 def process_hero_cards():
-    with open("hero-template.tex", 'r') as inputF: 
+    with open("template-hero.tex", 'r') as inputF: 
         template = inputF.read()
 
-        with open("hero-cards.json", 'r') as cards:
+        with open("cards-hero.json", 'r') as cards:
             cards_dict = json.load(cards)
 
             for card in cards_dict["cards"]:
@@ -291,10 +403,10 @@ def process_hero_cards():
                 subprocess.call("pdflatex output/hero-" + title + ".tex -output-directory=output -job-name=" + title)
 
 def process_alchemy_cards():
-    with open("alchemy-template.tex", 'r') as inputF: 
+    with open("template-alchemy.tex", 'r') as inputF: 
         template = inputF.read()
 
-        with open("alchemy-cards.json", 'r') as cards:
+        with open("cards-alchemy.json", 'r') as cards:
             cards_dict = json.load(cards)
 
             for card in cards_dict["cards"]:
@@ -324,10 +436,10 @@ def process_alchemy_cards():
                 subprocess.call("pdflatex output/alchemy-" + title + ".tex -output-directory=output -job-name=alchemy-" + title)
 
 def process_item_cards():
-    with open("item-template.tex", 'r') as inputF: 
+    with open("template-item.tex", 'r') as inputF: 
         template = inputF.read()
 
-        with open("item-cards.json", 'r') as cards:
+        with open("cards-item.json", 'r') as cards:
             cards_dict = json.load(cards)
 
             for card in cards_dict["cards"]:
@@ -394,10 +506,10 @@ def process_item_cards():
                 subprocess.call("pdflatex output/item-" + title + ".tex -output-directory=output -job-name=item-" + title)
 
 def process_spell_cards():
-    with open("spell-template.tex", 'r') as inputF: 
+    with open("template-spell.tex", 'r') as inputF: 
         template = inputF.read()
 
-        with open("spell-cards.json", 'r') as cards:
+        with open("cards-spell.json", 'r') as cards:
             cards_dict = json.load(cards)
 
             for card in cards_dict["cards"]:

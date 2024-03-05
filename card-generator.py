@@ -2,6 +2,7 @@ import json
 import os
 import re
 import subprocess
+import abc
 
 class CardGenerator(metaclass = abc.ABCMeta):
     def __init__(self, name):
@@ -48,7 +49,7 @@ class CardGenerator(metaclass = abc.ABCMeta):
         return False
 
     def write_output_file(self, title, cardText):
-        with open("output/" + self.name + "-" + title + ".tex", 'w') as outputFile
+        with open("output/" + self.name + "-" + title + ".tex", 'w') as outputFile:
             outputFile.write(cardText)
 
         subprocess.call("pdflatex output/" + self.name + "spell-" + title + ".tex -output-directory=output -job-name=" + self.name + "-" + title)
@@ -75,7 +76,7 @@ class CardGenerator(metaclass = abc.ABCMeta):
 
                 m_compute_attribute_flags(card, attribFlag, attribName, N, delimiter, noDelimiter)
 
-    def ajust_spacing(self, title)
+    def ajust_spacing(self, title):
         spaces = card[self.name + "-title"].count(' ')
         
         spacing  = "10mm" if len(title) < (20 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
@@ -83,27 +84,29 @@ class CardGenerator(metaclass = abc.ABCMeta):
 
         return spacing, spacing2
 
-    def configure_attribute(self, cardText, attributeName, attributeValue = attributeName):
+    def configure_attribute(self, cardText, attributeName, attributeValue = None):
+        if attributeValue == None:
+            attributeValue = attributeName
         return cardText.replace(attributeName, card.get(attributeValue, ""))
 
     @abc.abstractmethod
-    card_specific_processing(self, card, title):
+    def card_specific_processing(self, card, title):
         pass
 
     @abc.abstractmethod
-    card_specific_attribute_replacement(self, card, cardText):
+    def card_specific_attribute_replacement(self, card, cardText):
         pass
 
 
 class SpellCardGenerator(CardGenerator):
     @abc.abstractmethod
-    card_specific_processing(self, card, title):
+    def card_specific_processing(self, card, title):
         pass
 
     @abc.abstractmethod
-    card_specific_attribute_replacement(self, card, cardText):
+    def card_specific_attribute_replacement(self, card, cardText):
 
-        attributeList = [ "spell-name", "spell-description", "spell-level", "spell-school",
+        attributeList = [ "spell-title", "spell-description", "spell-level", "spell-school",
                           "has-spell-traits", "spell-traits", "spell-source",
                           "spell-casting-time", "spell-components", "spell-range",
                           "spell-tag0", "spell-tag1", "spell-tag2",
@@ -245,6 +248,32 @@ def check_item_components(card):
     else:
         card["has-trait2"] = "%"
 
+    if "item-trait3" in card:
+        card["has-trait3"] = ""
+    else:
+        card["has-trait3"] = "%"
+
+    # Check runes
+    card["has-runes"] = "%"
+    if "item-rune0" in card:
+        card["has-rune0"] = ""
+        card["has-runes"] = ""
+    else:
+        card["has-rune0"] = "%"
+
+    if "item-rune1" in card:
+        card["has-rune1"] = ""
+        card["has-runes"] = ""
+    else:
+        card["has-rune1"] = "%"
+
+    if "item-rune2" in card:
+        card["has-rune2"] = ""
+        card["has-runes"] = ""
+    else:
+        card["has-rune2"] = "%"
+
+
     # Check actions
     if "item-action0-title" in card:
         card["has-item-action0"] = ""
@@ -269,6 +298,11 @@ def check_item_components(card):
     else:
         card["is-weapon"] = "%"
 
+    if "item-critical-specialization" in card:
+        card["has-critical-specialization"] = ""
+    else:
+        card["has-critical-specialization"] = "%"
+
 
 def check_traits_length(card, threshold = 20):
     length = 0
@@ -281,6 +315,9 @@ def check_traits_length(card, threshold = 20):
 
     if card["has-trait2"] == "":
         length = length + len(card["item-trait2"])
+
+    if card["has-trait3"] == "":
+        length = length + len(card["item-trait3"])
 
     if length > threshold:
         card["has-short-traits"] = "%"
@@ -342,8 +379,8 @@ def adjust_spell_fontsize(card):
     equivalentCharacters = len(card["spell-description"]) + 20 * card["spell-description"].count('\n')
 
     for n in range(0, 8):
-        if card["has-heightened" + n] != "%":
-        equivalentCharacters += len(card["spell-heightened-description" + n]) + 20 + 10
+        if card["has-heightened" + str(n)] != "%":
+            equivalentCharacters += len(card["spell-heightened-description" + str(n)]) + 20 + 10
 
     if card["has-spell-action"] != "%":
         equivalentCharacters += len(card["spell-action-effect"]) + 40 + 20
@@ -364,9 +401,9 @@ def adjust_spell_fontsize(card):
     else:
         card["spell-font-size"] = "7"
 
-# def insert_newlines(card):
-#     for k in card.keys():
-#         card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
+def insert_newlines(card):
+ for k in card.keys():
+     card[k] = card[k].replace("\n", "\\\\\n\\vspace{2.5mm}\\\\\n")
 
 def process_hero_cards():
     with open("template-hero.tex", 'r') as inputF: 
@@ -457,7 +494,7 @@ def process_item_cards():
                 check_traits_length(card)
                 check_item_rarity(card)
 
-                spaces = card["item-title"].count(' ')
+                spaces = sum(card["item-title"].count(x) for x in (' ', '+', '\''))
                 spacing  = "10mm" if len(title) < (20 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
                 spacing2 =  str(3 if len(title) < (20 + spaces) else 9 if len(title) < (32 + spaces) else 13) + "mm"
 
@@ -475,14 +512,30 @@ def process_item_cards():
                 text = text.replace("has-trait0", get("has-trait0"))
                 text = text.replace("has-trait1", get("has-trait1"))
                 text = text.replace("has-trait2", get("has-trait2"))
+                text = text.replace("has-trait3", get("has-trait3"))
                 text = text.replace("item-trait0", get("item-trait0"))
                 text = text.replace("item-trait1", get("item-trait1"))
                 text = text.replace("item-trait2", get("item-trait2"))
+                text = text.replace("item-trait3", get("item-trait3"))
                 text = text.replace("has-short-traits", get("has-short-traits"))
                 text = text.replace("has-long-traits", get("has-long-traits"))
                 text = text.replace("is-weapon", get("is-weapon"))
                 text = text.replace("item-damage", get("item-damage"))
                 text = text.replace("item-wield", get("item-wield"))
+
+                text = text.replace("has-runes", get("has-runes"))
+                text = text.replace("has-rune0", get("has-rune0"))
+                text = text.replace("has-rune1", get("has-rune1"))
+                text = text.replace("has-rune2", get("has-rune2"))
+                text = text.replace("item-rune0-description", get("item-rune0-description"))
+                text = text.replace("item-rune1-description", get("item-rune1-description"))
+                text = text.replace("item-rune2-description", get("item-rune2-description"))
+                text = text.replace("item-rune0", get("item-rune0"))
+                text = text.replace("item-rune1", get("item-rune1"))
+                text = text.replace("item-rune2", get("item-rune2"))
+
+                text = text.replace("has-critical-specialization", get("has-critical-specialization"))
+                text = text.replace("item-critical-specialization", get("item-critical-specialization"))
 
                 text = text.replace("has-item-action0", get("has-item-action0"))
                 text = text.replace("has-item-action1", get("has-item-action1"))
@@ -516,8 +569,8 @@ def process_spell_cards():
                 def get(string):
                     return card.get(string, "")
 
-                spaces = card["spell-name"].count(' ')
-                title = card["spell-name"].replace(' ', '_').lower()
+                spaces = card["spell-title"].count(' ')
+                title = card["spell-title"].replace(' ', '_').lower()
 
                 if "spell-" + title + ".pdf" in os.listdir("output"):
                     print(title + " already exists, skipping...")
@@ -531,7 +584,7 @@ def process_spell_cards():
                 insert_newlines(card)
 
 
-                text = template.replace("spell-name", get("spell-name"))
+                text = template.replace("spell-title", get("spell-title"))
                 text = text.replace("spell-description", get("spell-description"))
                 text = text.replace("spell-level", get("spell-level"))
                 text = text.replace("spell-school", get("spell-school"))

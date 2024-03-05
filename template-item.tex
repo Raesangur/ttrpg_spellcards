@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=1cm,top=24mm,bottom=1mm,headheight=1cm]{geometry}
+\usepackage[paperheight=12.7cm,paperwidth=7.62cm,margin=0.5cm,top=22mm,bottom=1mm,headheight=1cm]{geometry}
 \usepackage{ifxetex}
 \usepackage{fancyhdr}
 \usepackage{background}
@@ -45,6 +45,7 @@
 \definecolor{rare-color}{RGB}{12, 20, 102}
 \definecolor{unique-color}{RGB}{128, 0, 128}
 \definecolor{damage-color}{RGB}{72, 72, 72}
+\definecolor{rune-color}{RGB}{89, 138, 187}
 
 \newcommand{\traitbox}[2][maroon]{
     \textcolor{#1}{[}\hspace{-2pt}\inlinebox{#1}
@@ -96,11 +97,13 @@
             has-short-traits has-trait0 \traitbox{item-trait0}
             has-short-traits has-trait1 \traitbox{item-trait1}
             has-short-traits has-trait2 \traitbox{item-trait2}
+            has-short-traits has-trait3 \traitbox{item-trait3}
         }\\
         has-long-traits \desicenteredline{
         has-long-traits     has-trait0 \traitbox{item-trait0}
         has-long-traits     has-trait1 \traitbox{item-trait1}
         has-long-traits     has-trait2 \traitbox{item-trait2}
+        has-long-traits     has-trait3 \traitbox{item-trait3}
         has-long-traits }\\
 
         is-weapon \desicenteredline{
@@ -108,16 +111,30 @@
         is-weapon      \traitbox[damage-color]{item-wield}
         is-weapon  }\\
 
+        has-runes \desicenteredline{
+        has-rune0      \traitbox[rune-color]{item-rune0}
+        has-rune1      \traitbox[rune-color]{item-rune1}
+        has-rune2      \traitbox[rune-color]{item-rune2}
+        has-runes  }\\
+
         % Description
         item-description
+        has-critical-specialization \\
+        has-critical-specialization \textbf{Critical Specialization:} item-critical-specialization
+
+        % has-runes \vspace{1.25mm}
+        % has-runes \rule{\textwidth}{0.5pt}
+        % has-rune0 \\ \textbf{item-rune0:} item-rune0-description
+        % has-rune1 \\ \textbf{item-rune1:} item-rune1-description
+        % has-rune2 \\ \textbf{item-rune2:} item-rune2-description
         
-        has-item-action0 \vspace{1.5mm}
+        has-item-action0 \vspace{1.25mm}
         has-item-action0 \rule{\textwidth}{0.5pt}
         has-item-action0 \textbf{item-action0-title \includegraphics[height=0.2cm]{img/item-action0-time.png}: item-action0-traits}  
         has-item-action0 has-trigger-item-action0 \\ \textbf{Trigger:} item-action0-trigger\\
         item-action0-description
 
-        has-item-action1 \vspace{1.5mm}
+        has-item-action1 \vspace{1.25mm}
         has-item-action1 \rule{\textwidth}{0.5pt}
         has-item-action1 \textbf{item-action1-title \includegraphics[height=0.2cm]{img/item-action1-time.png}: item-action1-traits}  
         has-item-action1 has-trigger-item-action1 \\ \textbf{Trigger:} item-action1-trigger\\

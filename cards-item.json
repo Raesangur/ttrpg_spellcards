@@ -147,6 +147,33 @@
       "item-damage": "1d8 Slashing",
       "item-wield": "2-hand sword",
       "item-description": "A long, thin scimitar-like elven-forged blade. Its guard inscribed with old elven glyphs, warding you against magic.\\\\\\rule{\\textwidth}{0.5pt}\\\\\\textbf{Spellguard Blade:} When you are benefiting from the +1 circumstance bonus to AC from this weapon's parry trait, you also apply that circumstance bonus to your saving throws against spells that target you.\\\\\\rule{\\textwidth}{0.5pt}\\\\\\textbf{Elven Grace:} As you build momentum from wielding this weapon, it becomes more dangerous. When you attack with it more than once on your turn, the second attack gains a +1 Item bonus to its damage, and each subsequent attack increases its damage by +1."
+    },
+    {
+      "item-title": "Bronzeson's Dagger +1",
+      "item-type": "Barbarian",
+      "item-trait1": "Agile",
+      "item-trait2": "Versatile S",
+      "item-trait3": "Thrown 10ft",
+      "item-damage": "2d4 Slashing",
+      "item-wield": "1-hand dagger",
+      "item-description": "A shiny blade coated in fine silver. This ancient dagger bears on its pommel the symbol of the Bronzeson’s Family, a dual-headed axe. You feel a great connection to your lineage as you wield this blade.",
+
+      "item-action0-title": "Familiar Target",
+      "item-action0-time" : "1",
+      "item-action0-description" : "Once a day, as an action, you can pick a single target. All their resistances are nullified against you. Your weapon takes the properties of their greatest weakness. This effect remains as long as you are raging.",
+
+      "item-action1-title" : "Demoralizing Targetting",
+      "item-action1-time" : "free",
+      "item-action1-description" : "When you pick a target, you may attempt a Demoralize check against them for free. \\\\ \\begin{center} \\vspace{-2.54mm} OR \\vspace{-2.54mm} \\end{center} \\textbf{Targetted Rage \\includegraphics[height=0.2cm]{img/free.png}:}\\\\ When you pick a target, you may enter a Rage in the same action.",
+
+      "item-critical-specialization" : "The target takes 1d6 persistent bleed damage. You gain an item bonus to this bleed damage equal to the weapon's item bonus to attack rolls.",
+
+      "item-rune0": "Frost",
+      "item-rune0-description": "This weapon is empowered with freezing ice. It deals an additional 1d6 cold damage on a successful Strike. On a critical hit, the target is also slowed 1 until the end of your next turn unless it succeeds at a DC 24 Fortitude save.",
+      "item-rune1": "Crushing",
+      "item-rune1-description": "Weapons with this rune empower your strength, and attacks with these weapons leave your foe staggered. When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn.",
+      "item-rune2": "Returning",
+      "item-rune2-description": "When you make a thrown Strike with this weapon, it flies back to your hand after the Strike is complete. If your hands are full when the weapon returns, it falls to the ground in your space."
     }
   ]
 }

@@ -338,6 +338,21 @@ def check_item_rarity(card):
         if card["item-rarity"].lower() == "unique":
             card["rarity-color"] = "unique-color"
 
+def process_item_runes(card):
+    if "item-rune0" in card:
+        ch = card["item-rune0"][0].lower()
+        print(ch)
+        card["item-rune0-image"] = ch
+
+    if "item-rune1" in card:
+        ch = card["item-rune1"][0].lower()
+        print(ch)
+        card["item-rune1-image"] = ch
+
+    if "item-rune2" in card:
+        ch = card["item-rune2"][0].lower()
+        print(ch)
+        card["item-rune2-image"] = ch
 
 def make_spell_tags(card):
     existing_tags = {"spell-duration": "Duration",
@@ -493,6 +508,7 @@ def process_item_cards():
                 insert_newlines(card)
                 check_traits_length(card)
                 check_item_rarity(card)
+                process_item_runes(card)
 
                 spaces = sum(card["item-title"].count(x) for x in (' ', '+', '\''))
                 spacing  = "10mm" if len(title) < (20 + spaces) else "16mm" if len(title) < (32 + spaces) else "20mm"
@@ -527,6 +543,9 @@ def process_item_cards():
                 text = text.replace("has-rune0", get("has-rune0"))
                 text = text.replace("has-rune1", get("has-rune1"))
                 text = text.replace("has-rune2", get("has-rune2"))
+                text = text.replace("item-rune0-image", get("item-rune0-image"))
+                text = text.replace("item-rune1-image", get("item-rune1-image"))
+                text = text.replace("item-rune2-image", get("item-rune2-image"))
                 text = text.replace("item-rune0-description", get("item-rune0-description"))
                 text = text.replace("item-rune1-description", get("item-rune1-description"))
                 text = text.replace("item-rune2-description", get("item-rune2-description"))

@@ -172,7 +172,7 @@
       "item-title": "Jorgung's Hammer",
       "item-type": "Barbarian",
       "item-level": "Level 3",
-      "item-rarity": "Rare",
+      "item-rarity": "Unique",
       "item-trait1": "Reach",
       "item-trait2": "Shove",
       "item-trait3": "Razing",
@@ -187,10 +187,39 @@
       "item-critical-specialization" : "The target is knocked prone.",
 
       "item-rune0": "Crushing",
-      "item-rune0-description": "Weapons with this rune empower your strength, and attacks with these weapons leave your foe staggered. When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn.",
-      "item-rune1": "Frost",
-      "item-rune2": "Test"
+      "item-rune0-description": "Weapons with this rune empower your strength, and attacks with these weapons leave your foe staggered. When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn."
+    },
+    {
+      "item-title": "Jorgung's Jetpack",
+      "item-type": "Loot",
+      "item-level": "Level 3",
+      "item-rarity": "Rare",
+      "item-trait1": "Move",
+      "item-description": "A heavy tank, with powerful heaters and pressure reliefs pointed down at either sides. When the tank is filled with water, ",
 
+      "item-action0-title": "Fly",
+      "item-action0-time" : "1",
+      "item-action0-traits" : "[Move]",
+      "item-action0-description" : "You move through the air up to 30ft.\\\\Moving upwards uses the rules for moving through difficult terrain and you can only go up 30ft from the ground at all times.\\\\You can move straight down 10ft for every 5ft of movement you spend.\\\\You can use an action to Fly 0ft to hover in place. If you're airborne at the end of your turn and didn't use a Fly action, you fall."
+    },
+    {
+      "item-title": "Coldest Iron +1",
+      "item-type": "Barbarian",
+      "item-level": "Level 4",
+      "item-rarity": "Rare",
+      "item-trait1": "Sweep",
+      "item-trait2": "Cold",
+      "item-trait3": "2-hand 2d10",
+      "item-damage": "2d8 Slashing",
+      "item-wield": "1-hand+ battleaxe",
+      "item-description": "A beautiful snowflake-shaped battleaxe head, forged from cold-iron and made even colder with Frost runes on its long fur-covered handle.",
+
+      "item-magic-school": "Conjuration",
+
+      "item-critical-specialization" : "Choose one creature adjacent to the initial target and within reach. If its AC is lower than your attack roll result for the critical hit, you deal damage to that creature equal to the result of the weapon damage die you rolled (including extra dice for its striking rune, if any). This amount isn't doubled, and no bonuses or other additional dice apply to this damage.",
+
+      "item-rune0": "Frost",
+      "item-rune0-description": "Weapons with this rune empower your strength, and attacks with these weapons leave your foe staggered. When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn."
     }
   ]
 }

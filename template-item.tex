@@ -46,6 +46,8 @@
 \definecolor{unique-color}{RGB}{128, 0, 128}
 \definecolor{damage-color}{RGB}{72, 72, 72}
 \definecolor{rune-color}{RGB}{89, 138, 187}
+\definecolor{magic-color}{RGB}{153, 57, 251}
+
 
 \newcommand{\traitbox}[2][maroon]{
     \textcolor{#1}{[}\hspace{-2pt}\inlinebox{#1}
@@ -112,6 +114,9 @@
         is-weapon  }\\
 
         has-runes \desicenteredline{
+        has-magic      \traitbox[magic-color]{item-magic-school
+        has-magic-school    \includegraphics[height=0.20cm]{runes/item-magic-school.png}
+                        }
         has-rune0      \traitbox[rune-color]{item-rune0}
         has-rune1      \traitbox[rune-color]{item-rune1}
         has-rune2      \traitbox[rune-color]{item-rune2}

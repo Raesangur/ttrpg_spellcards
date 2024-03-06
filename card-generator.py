@@ -255,6 +255,15 @@ def check_item_components(card):
 
     # Check runes
     card["has-runes"] = "%"
+    card["has-magic-school"] = "%"
+    if "item-magic-school" in card:
+        card["has-runes"] = ""
+        card["has-magic"] = ""
+        if card["item-magic-school"] != "None":
+            card["has-magic-school"] = ""
+    else:
+        card["has-magic"] = "%"
+
     if "item-rune0" in card:
         card["has-rune0"] = ""
         card["has-runes"] = ""
@@ -539,6 +548,9 @@ def process_item_cards():
                 text = text.replace("item-damage", get("item-damage"))
                 text = text.replace("item-wield", get("item-wield"))
 
+                text = text.replace("has-magic-school", get("has-magic-school"))
+                text = text.replace("has-magic", get("has-magic"))
+                text = text.replace("item-magic-school", get("item-magic-school"))
                 text = text.replace("has-runes", get("has-runes"))
                 text = text.replace("has-rune0", get("has-rune0"))
                 text = text.replace("has-rune1", get("has-rune1"))

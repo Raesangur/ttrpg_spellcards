@@ -203,7 +203,7 @@
       "item-action0-description" : "You move through the air up to 30ft.\\\\Moving upwards uses the rules for moving through difficult terrain and you can only go up 30ft from the ground at all times.\\\\You can move straight down 10ft for every 5ft of movement you spend.\\\\You can use an action to Fly 0ft to hover in place. If you're airborne at the end of your turn and didn't use a Fly action, you fall."
     },
     {
-      "item-title": "Coldest Iron +1",
+      "item-title": "Cerulean Fury +1",
       "item-type": "Barbarian",
       "item-level": "Level 4",
       "item-rarity": "Rare",
@@ -220,6 +220,20 @@
 
       "item-rune0": "Frost",
       "item-rune0-description": "Weapons with this rune empower your strength, and attacks with these weapons leave your foe staggered. When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn."
+    },
+    {
+      "item-title": "Striking Gauntlet +1",
+      "item-type": "Barbarian",
+      "item-rarity": "Uncommon",
+      "item-trait1": "Agile",
+      "item-trait2": "Free-Hand",
+      "item-damage": "2d4 Bludgeonning",
+      "item-wield": "1-hand Gauntlet",
+      "item-description": "A pair of these metal gloves comes with full plate, half plate, and splint armor; they can also be purchased separately and worn with other types of armor. They not only protect your hands but also transform your hands into lethal weapons.\\\\This weapon doesn't take up your hand, usually because it is built into your armor. A free-hand weapon can't be Disarmed. You can use the hand covered by your free-hand weapon to wield other items, perform manipulate actions, and so on. You can't attack with a free-hand weapon if you're wielding anything in that hand or otherwise using that hand. When you're not wielding anything and not otherwise using the hand, you can use abilities that require you to have a hand free as well as those that require you to be wielding a weapon in that hand. Each of your hands can have only one free-hand weapon on it.",
+
+      "item-magic-school": "None",
+
+      "item-critical-specialization" : "Brawling: The target must succeed at a Fortitude save against your class DC or be slowed 1 until the end of your next turn."
     }
   ]
 }

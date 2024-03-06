@@ -261,6 +261,8 @@ def check_item_components(card):
         card["has-magic"] = ""
         if card["item-magic-school"] != "None":
             card["has-magic-school"] = ""
+        else:
+            card["item-magic-school"] = "Magical"
     else:
         card["has-magic"] = "%"
 

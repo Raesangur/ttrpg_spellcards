@@ -130,9 +130,9 @@ cardFrontsPath = "./backs/"
 cardFrontsExtensions = "_front.png"
 
 schoolList = [
-    "[abjuration]", "[conjuration]", "[divination]", "[enchantment]", "[evocation]",
-    "[illusion]", "[necromancy]", "[transmutation]", "hero", "barbarian", "loky",
-    "alchemy", "metamagic", "-adelaide-", "adelaide2", "loot", "christmas",
+    "abjuration", "conjuration", "divination", "enchantment", "evocation",
+    "illusion", "necromancy", "transmutation", "hero", "barbarian", "loky",
+    "alchemy", "metamagic", "adelaide", "adelaide2", "loot", "christmas",
     "scintilla", "vampire"
 ]
 
@@ -141,6 +141,9 @@ schoolList = [
 class CardType:
 
     def __init__(self, school):
+
+        school[0].replace('(', '')
+        school[0].replace(')', '')
         if school[0] == "scintilla":
             self.cardWidth = 1012
             self.cardHeight = 637

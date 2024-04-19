@@ -260,21 +260,7 @@
 
       "item-critical-specialization" : "Brawling: The target must succeed at a Fortitude save against your class DC or be slowed 1 until the end of your next turn."
     },
-    {
-      "item-title": "Dread Studded Leather +1",
-      "item-type": "Loot",
-      "item-trait0": "Emotion",
-      "item-trait1": "Fear",
-      "item-trait2": "Mental",
-      "item-trait3": "Visual",
-      "item-rarity": "Uncommon",
-      "item-description": "This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.",
-
-      "item-magic-school": "Enchantment",
-
-      "item-rune0": "Dread",
-      "item-rune0-description": "Eerie symbols cover your armor, inspiring terror in your foes. Frightened enemies within 30 feet that can see you must attempt a DC 20 Will save at the end of their turn; on a failure, the value of their frightened condition doesn't decrease below 1 that turn."
-    },
+    
     {
       "item-title": "Scattergun",
       "item-type": "Loot",

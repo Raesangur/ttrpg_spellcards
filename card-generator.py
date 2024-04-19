@@ -620,7 +620,7 @@ def process_spell_cards():
                 text = template.replace("spell-title", get("spell-title"))
                 text = text.replace("spell-description", get("spell-description"))
                 text = text.replace("spell-level", get("spell-level"))
-                text = text.replace("spell-school", '[' + get("spell-school") + ']')
+                text = text.replace("spell-school", get("spell-school"))
                 text = text.replace("has-spell-traits", get("has-spell-traits"))
                 text = text.replace("spell-traits", get("spell-traits"))
                 text = text.replace("spell-source", get("spell-source"))

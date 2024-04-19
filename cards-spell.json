@@ -1259,8 +1259,8 @@
     {
       "spell-title": "Vital Beacon",
       "spell-level": "Spell 4",
-      "spell-school": "Necromancy, Positive",
-      "spell-traits": "Healing",
+      "spell-school": "Necromancy",
+      "spell-traits": "Positive, Healing",
       "spell-source": "PC, 366",
       "spell-casting-time": "1min",
       "spell-duration":"Until next daily preparations",

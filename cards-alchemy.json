@@ -95,6 +95,14 @@
       "alchemy-bulk":        "L",
       "alchemy-usage":       "1 hand, Interact",
       "alchemy-description": "The liquid in this test tube is as clear as water. You can drop in a sample collected from the environment or a creature to reveal what kind of undead has been in contact with the sample in the past 24 hours. The water changes color, as seen on the table, or remains clear if it doesn't detect any traces of undead. The higher the undead's level or number of undead in contact with the sample, the more intense the color. This isn't a foolproof way to identify a disguised creature as undead, since any contact with undead causes the sample to change colors. If an undead has been disguising its undead nature or its presence in an area, the GM can roll a secret DC 20 Deception or Stealth check for the creature when the dye is activated. On a success, the creature avoided leaving traces. This can't protect the undead from discovery if it actively uses its undead abilities on an area or creature, though it can attempt to remove any evidence with activities like Cover Tracks and Conceal an Object."
+    },
+    {
+      "alchemy-title":       "Imperfect Time Scorpion Venom",
+      "alchemy-type":        "Consumable",
+      "alchemy-activation":  "1.png",
+      "alchemy-bulk":        "L",
+      "alchemy-usage":       "2 hand, Interact",
+      "alchemy-description": "This blue and sticky substance shines softly. Some say staring at your reflexion in it for too long can make you mad, as visions of the past and future you flicker in the mesmerizing liquid. Affects time in a weird way for the victim of the venom.\\\\\n\n\\textbf{Saving Throw:} DC 25 Willpower\n\n\\textbf{Critical Success:} Time stops for everyone except the victim, free to move in stopped time for 1 round.\n\n\\textbf{Success:} Nothing happens as the victim resists the venom. \n\n\\textbf{Failure:} The victim remains frozen in place for 1 full round, whilst time flows as normal for everyone else. The victim is aware of everything happenning. \n\n\\textbf{Critical Failure:} As Failure, but the victim is unaware of their surroundings whilst frozen for 2 rounds."
     }
   ]
 }

@@ -24,6 +24,7 @@ def create_images(files, back_xOffset=0, back_yOffset=0):
         text = PdfReader(filename).pages[0].extract_text().lower()
         school = sorted([word for word in schoolList if word in text])
         print(school)
+        print(filename)
         cardType = CardType(school)  # Get card type from school of magic
 
         # Get front and back pictures
@@ -129,8 +130,8 @@ cardFrontsPath = "./backs/"
 cardFrontsExtensions = "_front.png"
 
 schoolList = [
-    "abjuration", "conjuration", "divination", "enchantment", "evocation",
-    "illusion", "-necromancy-", "transmutation", "hero", "barbarian", "loky",
+    "[abjuration]", "[conjuration]", "[divination]", "[enchantment]", "[evocation]",
+    "[illusion]", "[necromancy]", "[transmutation]", "hero", "barbarian", "loky",
     "alchemy", "metamagic", "-adelaide-", "adelaide2", "loot", "christmas",
     "scintilla", "vampire"
 ]
@@ -141,7 +142,6 @@ class CardType:
 
     def __init__(self, school):
         if school[0] == "scintilla":
-            print("Student Card")
             self.cardWidth = 1012
             self.cardHeight = 637
             self.firstCardX = 250
@@ -149,7 +149,6 @@ class CardType:
             self.hasFront = False
             self.hasBack = True
         else:
-            print("Regular Card")
             self.cardWidth = 900
             self.cardHeight = 1500
             self.firstCardX = 250

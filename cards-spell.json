@@ -1286,6 +1286,59 @@
       "spell-saving-failure":"As success, but when it takes the additional damage, it also takes 2d6 persistent bleed damage.",
       "spell-heightened-level0": "+2",
       "spell-heightened-description0": "The additional damage increases by 1d6 and the persistent bleed damage increases by 1d6."
+    },
+    {
+      "spell-title": "Rip the Spirit",
+      "spell-level": "Spell 5",
+      "spell-school": "Necromancy",
+      "spell-traits": "Death, Negative",
+      "spell-source": "SoM, 126",
+      "spell-casting-time": "1",
+      "spell-components": "S, V, M",
+      "spell-range": "30ft",
+      "spell-targets": "1 living creature",
+      "spell-saving-throw": "Fortitude",
+      "spell-description": "You supernaturally rip the spirit from a living creature's body, dooming the target to pain and death.\n\\includegraphics[height=0.30cm]{img/1.png} \\textbf{(somatic)} The spell targets one living creature in range.\n\\includegraphics[height=0.30cm]{img/2.png} \\textbf{(somatic, verbal)} The spell targets one living creature in range and the damage is 10d6 negative instead of 5d6.\n\\includegraphics[height=0.30cm]{img/3.png} \\textbf{(material, somatic, verbal)} The spell targets all living creatures in a 30-foot emanation.",
+      "spell-saving-failure": "drained 1",
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0": "The amount of damage increases by 1d6, or by 2d6 for the 2-action version.",
+      "spell-is-signature": "true"
+    },
+    {
+      "spell-title": "Sending",
+      "spell-level": "Spell 5",
+      "spell-school": "Divination",
+      "spell-traits": "Mental",
+      "spell-source": "CR, 367",
+      "spell-casting-time": "3",
+      "spell-components": "S, V, M",
+      "spell-range": "planetary",
+      "spell-targets": "1 familiar creature",
+      "spell-description": "You send the creature a mental message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer."
+    },
+    {
+      "spell-title": "Quickened Casting",
+      "spell-level": "Feat 10",
+      "spell-school": "Metamagic",
+      "spell-traits": "Concentrate, Spellshape",
+      "spell-source": "PR, 105",
+      "spell-components": "-",
+      "spell-casting-time": "free",
+      "spell-description": "\\textbf{Frequency: } Once per day\nIf your next action is to cast a cantrip or a spell that is at least 2 ranks lower than the highest-rank spell slot you have, reduce the number of actions to cast it by 1 (minimum 1 action)\n\\textbf{Metamagic: }Actions with the metamagic trait, usually from metamagic feats, tweak the properties of your spells. You must use a metamagic action directly before Casting the Spell you want to alter. If you use any action (including free actions and reactions) other than Cast a Spell directly after, you waste the benefits of the metamagic action. Any additional effects added by a metamagic action are part of the spell’s effect, not of the metamagic action itself."
+    },
+    {
+      "spell-title": "Inevitable Disaster",
+      "spell-level": "Spell 5",
+      "spell-school": "Divination",
+      "spell-traits": "Curse, Prediction",
+      "spell-source": "SoM, 111",
+      "spell-casting-time": "2",
+      "spell-range": "60ft",
+      "spell-targets": "1 creature",
+      "spell-saving-throw": "Fortitude",
+      "spell-description": "You briefly glimpse cause and effect, putting into motion a chain of events that will visit doom on your enemy at some point in the future, though you're not quite sure when or how the doom will occur. Some kind of strange accident occurs 1d4 rounds later, dealing 55 damage to the creature, with a basic Fortitude save. This happens regardless of where the target is located at the time, even if it travels to another plane. The GM should roll to determine when the damage occurs secretly and determine the form of the accident as well as the type of damage it deals; generally, the accident should be one that deals physical damage of some type (for instance, a tree branch might fall on the foe and deal bludgeoning damage, or a window might break and fling sharp slashing glass at them), though other damage types might be appropriate in more unusual environments.",
+      "spell-heightened-level0": "+1",
+      "spell-heightened-description0": "The damage increases by 10."
     }
   ]
 }

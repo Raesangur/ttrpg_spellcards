@@ -133,7 +133,7 @@ schoolList = [
     "abjuration", "conjuration", "divination", "enchantment", "evocation",
     "illusion", "necromancy", "transmutation", "hero", "barbarian", "loky",
     "alchemy", "metamagic", "adelaide", "adelaide2", "loot", "christmas",
-    "scintilla", "vampire"
+    "scintilla", "vampire", "tarot"
 ]
 
 
@@ -156,7 +156,7 @@ class CardType:
             self.cardHeight = 1500
             self.firstCardX = 250
             self.firstCardY = 100
-            self.hasFront = True
+            self.hasFront = False if school[0] == "tarot" else True
             self.hasBack = True
 
 

@@ -1,6 +1,351 @@
 {
   "cards": [
     {
+      "item-title": "The Deck of Everything",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Deck of Everything is the ultimate form of the Deck of Many Things. It consists of 54 unique cards, each with a passive and boon and an activated ability. To make use of these effects, you must spend an action to invest \\includegraphics[height=0.2cm]{img/1.png} to the card. You can have up to 5 cards invested at once. Once a card is invested, the passive boon is active until the card is deinvested \\includegraphics[height=0.2cm]{img/free.png}, and the activated abilities can be used."
+    },
+    {
+      "item-title": "The Avalanche",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Evocation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Avalanche represents unmitigated disasters, destruction that overruns all in its path. As long as The Avalanche is invested, you gain a +1 item bonus to damage rolls with Strikes that inflict bludgeoning damage. This increases to a +2 item bonus if you're at least 14th level, and a +3 item bonus if you're at least 18th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You wave the card in the air and hurl staggering volumes of ice, snow, and rocks out into the world. This magical avalanche buries your foes. Choose up to 4 creatures within 60 feet, each of whom must attempt a Reflex save against your class DC. Regardless of their saving throw, the creature's space becomes greater difficult terrain from the mounds of ice, snow, and rubble.",
+
+      "item-saving-critical-success": "The creature is unaffected.",
+      "item-saving-success":"The creature takes 5d8 bludgeoning damage and is pushed into an adjacent space of its choice.",
+      "item-saving-failure":"The creature takes 10d8 bludgeoning damage, is knocked prone, and is restrained.",
+      "item-saving-critical-failure":"The creature takes 20d8 bludgeoning damage, is knocked prone, and is immobilized."
+    },
+    {
+      "item-title": "The Big Sky",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Big Sky represents widespread change or liberation. As long as you have The Big Sky invested, you gain a +2 item bonus to Perception checks made while you are flying outside during the day and to any check made to Escape. The bonus increases to +3 if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\For 10 minutes, you and up to four creatures you touch ignore difficult terrain and effects that would give a circumstance penalty to Speed. If you are at least 17th level, the targets also ignore greater difficult terrain."
+    },
+    {
+      "item-title": "The Bronze Dwarf",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Brass Dwarf represents invulnerability. When you invest The Brass Dwarf, you gain resistance to fire equal to your level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\Choose acid, cold, electricity, fire, mental, poison, or sonic. You can't choose the damage type for which The Brass Dwarf currently gives you resistance. You gain resistance to the damage you chose equal to your level, and you lose the prior resistance that The Brass Dwarf gave you. For 1 minute, you gain weakness equal to half your level to the damage type of the prior resistance."
+    },
+    {
+      "item-title": "The Cricket",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Transmutation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Cricket represents speed and quick passage. As long as The Cricket is invested, it grants you a +10-foot item bonus to all your Speeds. This increases to a +20-foot item bonus if you are at least 19th level or higher.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\Your feet begin to glow and shimmer as if they were vibrating. Stride up to three times your Speed. You can Burrow, Climb, Fly, or Swim instead of Striding if you have the corresponding movement type. This movement doesn't trigger reactions and you can move through creatures' spaces as if they weren't there during this movement."
+    },
+    {
+      "item-title": "The Crows",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Conjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Crows represent taking things through violence or force, particularly when done through agility and swiftness rather than brawn. As long as The Crows is invested, you can attempt to Grapple targets with Acrobatics checks, and if you're at least trained in Thievery, to Disarm with Thievery checks. When you do so, you gain a +2 item bonus on the attempt, or a +3 item bonus if you're at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Teleportation, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You hold the card in your hand, and with a flick of the wrist it vanishes, only to be replaced by an object of your choice within 30 feet. The object must be 2 Bulk or less. If that object is unattended, it teleports into your hand automatically. If the object is attended by a creature, you must make a Thievery check against the creature's Reflex DC.",
+
+      "item-saving-critical-success": "The object teleports into your hand.",
+      "item-saving-success":"The object vanishes from the target's possession and lands on the ground at a point at a midway point between you two.",
+      "item-saving-failure":"The object does not vanish, but the creature's grip on it falters and if it doesn't spend an Interact action on its next turn to grip the item, it drops to the ground.",
+      "item-saving-critical-failure":"You fail to manipulate the object entirely."
+    },
+    {
+      "item-title": "The Cyclone",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Evocation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Cyclone represents tumultuous evil plots. As long as it is invested, The Cyclone bolsters you with helpful winds that grant you a +2 item bonus to Athletics checks made to Climb, High Jump, Long Jump, and Disarm. This increases to a +3 item bonus if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You cast whirlwind. You do not treat the squares in the whirlwind as difficult terrain, but all other creatures do. The level of the spell is one-half your level, rounded down (minimum 8th level), and the save DC is your class DC."
+    },
+    {
+      "item-title": "The Desert",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Evocation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Desert signifies enduring passage through trying circumstances. As long as The Desert is invested, you are immune to the effects of temperatures ranging from extreme cold to extreme heat, and can hold your breath and go without food and water for twice as long as normal.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You wave the card in the air to create desert winds that blast sand so scouring it strips flesh from bone. The sand created by this effect vanishes an instant later, but the effects on those caught in the area linger. Creatures in a 60-foot cone take 7d6 piercing damage and 7d6 fire damage (with a basic Fortitude save equal to your class DC). A creature who fails this save also becomes fatigued and enfeebled for 1 minute, and a creature who critically fails this save becomes enfeebled 2 for 1 minute and fatigued until they get a night's rest (or the fatigue is removed by other means). The damage increases to 8d6 piercing and 8d6 fire if you're at least 15th level, to 9d6 piercing and 9d6 fire if you're at least 17th level, and to 10d6 piercing and 10d6 fire if you're at least 19th level."
+    },
+    {
+      "item-title": "The Eclipse",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Evocation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Eclipse represents self-doubt and loss of purpose, as well as a loss of faith. As long as The Eclipse is invested, you gain a +2 item bonus on Religion checks. This increases to a +3 bonus if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\A foe that you're aware of and who is within 60 feet achieves a critical success on a saving throw or a Strike; Effect You produce an aura of doubt that overwhelms all foes in a 30-foot emanation and reduces bright light in that area to dim light, as if the region were under an eclipse. The triggering creature's critical success is reduced to a regular success. All further saving throws or Strikes attempted by enemies within the emanation suffer a -2 item penalty; saving throws or Strikes attempted by the triggering enemy suffer a -3 penalty instead. You can sustain this aura of doubt for up to 1 minute."
+    },
+    {
+      "item-title": "The Fiend",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Illusion",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Fiend represents the inevitability of great calamities and pervasive dangers. As long as you have The Fiend invested, when you repeat a non-Strike action you previously took in the same round, you gain a +2 item bonus to checks to perform that action. This increases to a +3 item bonus if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You wave the card to create a vision of destruction around you; you cast phantasmal calamity, except the area is a 20-foot emanation. The level of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC. You are immune to the effects of your own phantasmal calamity."
+    },
+    {
+      "item-title": "The Fool",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Enchantment",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Fool represents grave foolishness, grand naivete, and exceptional greed. As long as you have The Fool invested, anytime you gain the stupefied condition, reduce its value by 1. You also gain a +2 item bonus to all saving throws against effects that cause the stupefied condition. This bonus increases to +3 if you're at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Mental, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You display The Fool to your foes in a clumsy, awkward, and embarrassing way. Choose up to four creatures within 60 feet. These four creatures must attempt a Will save against your class DC.",
+
+      "item-saving-critical-success": "The creature is unaffected.",
+      "item-saving-success":"The creature is distracted by your antics and is stupefied 1 until the start of your next turn.",
+      "item-saving-failure":"The creature is stupefied 2.",
+      "item-saving-critical-failure":"The creature is stupefied 3. In addition, for 1 minute, the creature is confused."
+    },
+    {
+      "item-title": "The Hidden Truth",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Hidden Truth represents the act of observing something beyond the obvious to gain obscure lore. As long as this card is invested, you gain a +2 item bonus to Lore checks made to Recall Knowledge, and to all checks made to Research while using the Research subsystem from the Gamemastery Guide. This increases to a +3 bonus if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You wave the card to create a vision of destruction around you; you cast phantasmal calamity, except the area is a 20-foot emanation. The level of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC. You are immune to the effects of your own phantasmal calamity."
+    },
+    {
+      "item-title": "The Joke",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Transmutation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Joke represents solving a problem not with strength, but with cleverness or artifice. As long as you have The Joke invested, you can attempt an appropriate Lore check instead of an Athletics check made to Climb, Force Open, Grapple, High Jump, Long Jump, or Swim. For example, you could make a Mountain Lore check to climb a cliff in the mountains, or Sailing Lore check to climb the rigging on a ship.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You perform a quick but amusing card trick with The Joke meant to distract others. You cast hideous laughter on up to 10 creatures in range of the spell. The level of the spell is one-half your level rounded down (minimum 6th level), and the save DC is your class DC."
+    },
+    {
+      "item-title": "The Lost",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Lost symbolizes loss of identity and a life filled with emptiness. As long as The Lost is invested, you gain resistance to mental damage equal to your level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "reaction",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\\\textbf{Trigger:} You fail a saving throw against a mental effect\\\\You reflexively flood your mind with emptiness, stripping away any element of identity that the mental effect might be trying to affect. Increase the result of your failed saving throw by one degree of success."
+    },
+    {
+      "item-title": "The Joke",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Necromancy",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Midwife represents the arrival of new life or new information, particularly via the aid of another. As long as you have The Midwife invested, it grants a +2 item bonus to Medicine checks. This increases to a +3 bonus if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "reaction",
+      "item-action0-traits" : "[Command, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\\\textbf{Trigger:} A creature you can sense within 60 feet would die or be destroyed\\\\You prevent the target from dying or being destroyed and restore to the target 6d8+24 Hit Points. This effect can prevent a death effect or disintegrate from slaying a target. The amount of healing granted increases to 7d8+28 if you're at least 15th level, 8d8+32 if you're at least 17th level, and 9d8+36 if you're at least 19th level."
+    },
+    {
+      "item-title": "The Sickness",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Necromancy",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Sickness represents disease of the body or soul. As long as The Sickness is invested, it grants you a +2 item bonus to saving throws against disease. If you roll a success on a save against a disease, you get a critical success instead. If you are 20th-level, the item bonus increases to +3.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You flick a corner of the card, as if casting aside a tiny pest or fleck of filth from its surface; you cast Abyssal plague. If you are at least 15th-level, you can instead choose to cast spiritual epidemic. Regardless of which spell you cast, the level of the spell is half your level, rounded down (minimum 6th level), and the save DC is equal to your class DC."
+    },
+    {
+      "item-title": "The Survivor",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Necromancy",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Survivor represents rebirth through ordeal. When you have The Survivor invested, you gain Diehard as a bonus feat. If you already possess this feat, you gain a +2 item bonus to all recovery checks. This item bonus increases to +3 if you are at least 17th-level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\\\textbf{Trigger:} You are reduced to 0 Hit Points\\\\You somehow manage to survive what could have been a fatal blow. Instead of being reduced to 0 Hit Points, you drop to 1 Hit Point instead and immediately restore an additional 4d8+16 Hit Points. The amount of Hit Point restored increases to 5d8+20 if you are at least 15th level, 6d8+24 if you're at least 17th level, and 7d8+28 if you're at least 19th level."
+    },
+    {
+      "item-title": "The Teamster",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Teamster represents the driving force to push on, no matter the circumstance. As long as you have The Teamster invested, all single-target effects that target you and require a saving throw gain the incapacitation trait. If the effect originates from a creature or effect of a level higher than yours, it doesn't gain the incapacitation trait in this way.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "free",
+      "item-action0-traits" : "[Envision, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\\\textbf{Trigger:} You are affected by an ongoing condition\\\\You push through your largest hindrance. Select one of the following conditions currently affecting you: blinded, clumsy, confused, controlled, dazzled, deafened, doomed, drained, dying, enfeebled, fascinated, fatigued, frightened, grappled, immobilized, paralyzed, persistent damage, petrified, restrained, sickened, slowed, stunned, stupefied, unconscious, or wounded. If the source of the condition is more than 4 levels lower than your current level, The Teamster automatically counters the condition. Otherwise, The Teamster attempts to counter the condition, with a counteract modifier of +31."
+    },
+
+    {
+      "item-title": "The Theater",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Divination",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Theater represents prophecy and how prophets can't change the unfolding pageantry of fate. As long as you have The Theater invested and as long as you are not already doomed, when you would gain the doomed condition, attempt a DC 10 flat check. On a success, you do not gain the doomed condition.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "reaction",
+      "item-action0-traits" : "[Envision, Fortune, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per hour\\\\\\textbf{Trigger:} You are targeted by a misfortune effect\\\\The Theater attempts to counter the misfortune effect before it affects you. It has a counteract level equal to your level divided by 2 (rounded up), and a counteract modifier of your Class DC -10."
+    },
+    {
+      "item-title": "The Twin",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Illusion",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Twin represents a duality of purpose or identity. As long as you have The Twin invested, it helps to defend you against damage to your mind or your body. When you invest The Twin, the card's artwork changes to look like you, and as you are exposed to afflictions, your card twin helps to protect you by absorbing them into itself. You gain a +3 item bonus to saves against curses, diseases, poison, and transmutation effects.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "3",
+      "item-action0-traits" : "[Interact, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You twirl The Twin between your fingers and create a shadowy duplicate of yourself, who appears adjacent to you and has the same statistics as you and has 2 actions. You can sustain this effect for up to one minute. It always acts immediately after your turn, and must use identical actions to the ones you used, in exactly the same order. However, it can use the actions differently, such as Striding to a different position. If the twin is unable to mimic an action, the action is wasted. The duplicate can't use any actions that can be used only a limited number of times per day (including casting any spell other than a cantrip). The duplicate isn't truly alive and can't be healed in any way. If the duplicate ever reaches 0 Hit Points, it is instantly destroyed, and you take 10d6 mental damage (DC 38 basic Will save)."
+    },
+    {
+      "item-title": "The Tyrant",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Transmutation",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "As long as you have The Tyrant invested, you gain a +2 item bonus to Intimidation checks made to Demoralize. This bonus increases to +3 if you are at least 17th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "2",
+      "item-action0-traits" : "[Interact, Envision, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You hold the card up to your lips and exhale onto it; you cast dragon form. The level of the spell is half your level, rounded down (minimum 6th level)."
+    },
+    {
+      "item-title": "The Waxworks",
+      "item-type": "Tarot",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Necromancy",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "The Waxworks represents helplessness and entropy. As long as you have this card invested, you gain a +2 item bonus to saving throws against effects that render you clumsy, doomed, drained, enfeebled, or fatigued. The item bonus increases to +3 if you are 20th level.",
+
+      "item-action0-title" : "Activate",
+      "item-action0-time" : "2",
+      "item-action0-traits" : "[Interact, Envision, Magical]",
+      "item-action0-description" : "\\\\\\textbf{Frequency:} Once per day\\\\You cause two 30-foot lines of hot wax to extend out of the card as you present it. The two lines must both start at you and extend in different directions. If you are at least 15th level, you can create a third line, and if you're at least 19th level you can create a fourth line. All creatures in the area must attempt a Fortitude save against your class DC.",
+
+      "item-saving-critical-success": "The creature is unaffected.",
+      "item-saving-success":"The creature takes 2d6 persistent fire damage and 2d6 persistent mental damage. An affected creature or adjacent ally can reduce both of these values by 1d6 by spending an Interact action to scrape off the goo. Until the damage is reduced to 1d6 per type, the affected creature is also confused (this is an emotion and mental effect).",
+      "item-saving-failure":"As success, but 4d6 persistent fire damage and 4d6 persistent mental damage.",
+      "item-saving-critical-failure":"As success, but 6d6 persistent fire damage and 6d6 persistent mental damage, and the creature's speed is slowed 1 until the damage is reduced to 1d6 per type."
+    },
+    {
       "item-title": "Silon's Watch",
       "item-type": "Loot",
       "item-level": "Level 3",
@@ -260,7 +605,6 @@
 
       "item-critical-specialization" : "Brawling: The target must succeed at a Fortitude save against your class DC or be slowed 1 until the end of your next turn."
     },
-    
     {
       "item-title": "Scattergun",
       "item-type": "Loot",
@@ -272,6 +616,148 @@
       "item-description": "\\textbf{Range: 50ft \\hfill Reload: 1}\\\\The scattergun is a powerful steam-powered weapon, firing large lumps of metal with the pressure generated by steam, creating a devastating burst so destructive that one might find themselves tatching painful ricochets with firing at a too-close target.\\\\\\textbf{Concussive:} These weapons smash as much as puncture. When determining a creature's resistance or immunity to damage from this weapon, use the weaker of the target's resistance or immunity to piercing or to bludgeoning.\\\\\\textbf{Kickback:} A kickback weapon is extra powerful and difficult to use due to its high recoil. A kickback weapon deals 1 additional damage with all attacks. Firing a kickback weapon gives a -2 circumstance penalty to the attack roll, but characters with 14 or more Strength ignore the penalty.\\\\\\textbf{Scatter:} This weapon fires a cluster of pellets in a wide spray. Scatter always has an area listed with it, indicating the radius of the spray. On a hit, the primary target of attacks with a scatter weapon take the listed damage, and the target and all other creatures within the listed radius around it take 1 point of splash damage per weapon damage die.",
 
       "item-critical-specialization" : "Firearm: The target must succeed at a Fortitude save against your class DC or be stunned 1."
+    },
+    {
+      "item-title": "Magic-Eating Blade",
+      "item-type": "Vampire",
+      "item-level": "Level 18",
+      "item-rarity": "Unique",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Finesse",
+      "item-trait3": "Parry",
+      "item-damage": "1d8 Slashing",
+      "item-wield": "2-hand sword",
+      "item-description": "A long, thin scimitar-like elven-forged blade. Its guard inscribed with old elven glyphs, warding you against magic.\\\\\\rule{\\textwidth}{0.5pt}\\\\\\textbf{Spellguard Blade:} When you are benefiting from the +1 circumstance bonus to AC from this weapon's parry trait, you also apply that circumstance bonus to your saving throws against spells that target you.\\\\\\rule{\\textwidth}{0.5pt}\\\\\\textbf{Elven Grace:} As you build momentum from wielding this weapon, it becomes more dangerous. When you attack with it more than once on your turn, the second attack gains a +1 Item bonus to its damage, and each subsequent attack increases its damage by +1.",
+
+      "item-action0-title" : "Disturb Spell",
+      "item-action0-time" : "reaction",
+      "item-action0-traits" : "[Abjuration, Magical]",
+      "item-action0-description" : "Whilst wielding this sword, you can influence the magical effect of a spell targetting you. You can cast Counterspell against this spell. A critical failure on the Counteract check destroys this weapon."
+    },
+
+    {
+      "item-title": "Bronzeson's Half Axe +3 Striking (Major)",
+      "item-type": "Barbarian",
+      "item-rarity": "Unique",
+      "item-level": "Level 19",
+      "item-trait1": "Sweep",
+      "item-trait2": "Transmutation",
+      "item-trait3": "Reach",
+      "item-damage": "4d8+13 Slashing + 1d6 Cold",
+      "item-wield": "2-hand battle axe",
+      "item-description": "A mix of various powerful weapon, this axe is almost in its full form. Its head bears the symbol of the Bronzespoon.",
+      "item-magic-school": "Transmutation",
+
+      "item-critical-specialization" : "The target takes 1d6+3 persistent bleed damage.",
+
+      "item-rune0": "Frost",
+      "item-rune0-description": "When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn.",
+
+      "item-rune1": "Speed",
+      "item-rune1-description": "While wielding this weapon, you gain the quickened condition, but you can use the additional action only to make a Strike.",
+
+      "item-rune2": "Keen",
+      "item-rune2-description": "Attacks with this weapon are a critical hit on a 19 on the die as long as that result is a success."
+    },
+
+    {
+      "item-title": "Bronzeson's Half Axe +3 Striking ( Major )",
+      "item-type": "Barbarian",
+      "item-rarity": "Unique",
+      "item-level": "Level 19",
+      "item-trait1": "Sweep",
+      "item-trait2": "Transmutation",
+      "item-trait3": "Reach",
+      "item-damage": "4d8+13 Slashing + 1d6 Cold",
+      "item-wield": "2-hand battle axe",
+      "item-description": "A mix of various powerful weapon, this axe is almost in its full form. Its head bears the symbol of the Bronzespoon.",
+
+      "item-action0-title": "Familiar Target",
+      "item-action0-time" : "1",
+      "item-action0-description" : "As an action, you can pick a target. All their resistances are nullified against you. Your weapon takes the properties of their greatest weakness. This effect remains as long as you are raging. You can also choose the weapon's material.",
+
+      "item-action1-title" : "Reflect Spell",
+      "item-action1-time" : "reaction",
+      "item-action1-description" : "Once a day, you can bounce a spell targetting you back at its caster.",
+
+      "item-action2-title" : "Extend Axe",
+      "item-action2-time" : "2",
+      "item-action2-description" : "The head of the axe detaches, hanging by a chain hidden in the handle, giving you an impossible reach of 120ft as you Strike with the weapon."
+    },
+
+    {
+      "item-title": "Bronzeson's BattleAxe +3 Striking (Major)",
+      "item-type": "Barbarian",
+      "item-rarity": "Unique",
+      "item-level": "Level 19",
+      "item-trait1": "Sweep",
+      "item-trait2": "Transmutation",
+      "item-trait3": "Reach",
+      "item-damage": "4d8+13 Slashing + 1d6 Cold",
+      "item-wield": "2-hand battle axe",
+      "item-description": "This weapon was created 5000 years ago by the best dwarven smith, to kill the Emperor, and was unmatched until it was reconstructed even stronger in the modern era.",
+      "item-magic-school": "Transmutation",
+
+      "item-critical-specialization" : "The target takes 1d6+3 persistent bleed damage.",
+
+      "item-rune0": "Frost",
+      "item-rune0-description": "When you critically hit a target with this weapon, your target becomes clumsy 1 and enfeebled 1 until the end of your next turn.",
+
+      "item-rune1": "Speed",
+      "item-rune1-description": "While wielding this weapon, you gain the quickened condition, but you can use the additional action only to make a Strike.",
+
+      "item-rune2": "Keen",
+      "item-rune2-description": "Attacks with this weapon are a critical hit on a 19 on the die as long as that result is a success."
+    },
+
+    {
+      "item-title": "Bronzeson's Battleaxe +3 Striking ( Major )",
+      "item-type": "Barbarian",
+      "item-rarity": "Unique",
+      "item-level": "Level 19",
+      "item-trait1": "Sweep",
+      "item-trait2": "Transmutation",
+      "item-trait3": "Reach",
+      "item-damage": "4d8+13 Slashing + 1d6 Cold",
+      "item-wield": "2-hand battle axe",
+      "item-description": " ",
+
+      "item-action0-title": "A Weapon to Kill a God",
+      "item-action0-time" : "1",
+      "item-action0-description" : "As an action, before hitting a target with this weapon, choose a weapon material. If the target is immune or resistant to the selected damage type, remove its immunity or resistance for 1 day if you succeed in hitting the target.",
+
+      "item-action1-title": "Perfected Weapon",
+      "item-action1-time" : "1",
+      "item-action1-description" : "As an action, before hitting a target with this weapon, choose a weapon material. If the target is weak to the selected damage type, its weakness is doubled for the purpose of calculating the Strike's damage.",
+
+      "item-action2-title" : "Reflect Spell",
+      "item-action2-time" : "reaction",
+      "item-action2-description" : "Once a day, you can bounce a spell targetting you back at its caster.",
+
+      "item-action3-title" : "Extend Axe",
+      "item-action3-time" : "2",
+      "item-action3-description" : "The head of the axe detaches, hanging by a chain hidden in the handle, giving you an impossible reach of 120ft as you Strike with the weapon."
+    },
+
+    {
+      "item-title": "Heartstone",
+      "item-type": "Adelaide",
+      "item-level": "Level 15",
+      "item-rarity": "Rare",
+      "item-trait1": "Abjuration",
+      "item-trait2": "Invested",
+      "item-trait3": "Occult",
+      "item-description": "This dark gemstone grants its wearer a +2 item bonus to saving throws and the ability to discern a target's alignment at will by peering through the gemstone. It also grants its user the ability to Detect Poison and Detect Disease in the same way.\\\\This heartstone allows its user to use the following additional occult innate spells: Ethereal Jaunth (9th) and Bind Soul at will; Shadow Blast (6th level) and Plane Shift twice per day, as well as Spirit Blast once per day."
+    },
+    {
+      "item-title": "Albedia's Eye",
+      "item-type": "Adelaide",
+      "item-level": "Level 20",
+      "item-rarity": "Unique",
+      "item-trait1": "Divination",
+      "item-trait2": "Invested",
+      "item-trait3": "Magical",
+      "item-description": "This pale blue eye grants you a +3 item bonus to Perception checks, but most importantly, it sees through illusions, allowing you to observe things within 60ft as they actually are, as per Truesight. The eye attempts to counteract any illusion, morph or polymorph effect."
     }
   ]
 }

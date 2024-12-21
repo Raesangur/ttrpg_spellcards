@@ -62,9 +62,9 @@ def create_images(files, back_xOffset=0, back_yOffset=0):
         x = i % 2
         xb = (i + 1) % 2
 
-        xOff = cardType.firstCardX * (x + 1) + cardType.cardWidth * x
+        xOff  = cardType.firstCardX * (x + 1)  + cardType.cardWidth * x
         xOffb = cardType.firstCardX * (xb + 1) + cardType.cardWidth * xb
-        yOff = cardType.firstCardY * (y + 1) + cardType.cardHeight * y
+        yOff  = cardType.firstCardY * (y + 1)  + cardType.cardHeight * y
         blankImage[yOff:yOff + img.shape[0],
                    xOff:xOff + img.shape[1]] = cv2.add(
                        img, front) if cardType.hasFront else img
@@ -130,10 +130,10 @@ cardFrontsPath = "./backs/"
 cardFrontsExtensions = "_front.png"
 
 schoolList = [
-    "abjuration", "conjuration", "divination", "enchantment", "evocation",
-    "illusion", "necromancy", "transmutation", "hero", "barbarian", "loky",
+    "-abjuration", "-conjuration", "-divination", "-enchantment", "-evocation",
+    "-illusion", "-necromancy", "-transmutation", "hero", "barbarian", "loky",
     "alchemy", "metamagic", "adelaide", "adelaide2", "loot", "christmas",
-    "scintilla", "vampire", "tarot"
+    "scintilla", "vampire", "tarot", "fey"
 ]
 
 

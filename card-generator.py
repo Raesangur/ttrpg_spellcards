@@ -304,6 +304,24 @@ def check_item_components(card):
     else:
         card["has-trigger-item-action1"] = "%"
 
+    if "item-action2-title" in card:
+        card["has-item-action2"] = ""
+    else:
+        card["has-item-action2"] = "%"
+    if "item-action2-trigger" in card:
+        card["has-trigger-item-action2"] = ""
+    else:
+        card["has-trigger-item-action2"] = "%"
+
+    if "item-action3-title" in card:
+        card["has-item-action3"] = ""
+    else:
+        card["has-item-action3"] = "%"
+    if "item-action3-trigger" in card:
+        card["has-trigger-item-action3"] = ""
+    else:
+        card["has-trigger-item-action3"] = "%"
+
     if "item-damage" in card:
         card["is-weapon"] = ""
     else:
@@ -313,6 +331,27 @@ def check_item_components(card):
         card["has-critical-specialization"] = ""
     else:
         card["has-critical-specialization"] = "%"
+
+    # Check Saving Throws
+    if "item-saving-critical-success" in card:
+        card["has-saving-cs"] = ""
+    else:
+        card["has-saving-cs"] = "%"
+
+    if "item-saving-success" in card:
+        card["has-saving-s"] = ""
+    else:
+        card["has-saving-s"] = "%"
+
+    if "item-saving-failure" in card:
+        card["has-saving-f"] = ""
+    else:
+        card["has-saving-f"] = "%"
+
+    if "item-saving-critical-failure" in card:
+        card["has-saving-cf"] = ""
+    else:
+        card["has-saving-cf"] = "%"
 
 
 def check_traits_length(card, threshold = 20):
@@ -570,20 +609,43 @@ def process_item_cards():
                 text = text.replace("has-critical-specialization", get("has-critical-specialization"))
                 text = text.replace("item-critical-specialization", get("item-critical-specialization"))
 
-                text = text.replace("has-item-action0", get("has-item-action0"))
-                text = text.replace("has-item-action1", get("has-item-action1"))
+                text = text.replace("has-item-action0",         get("has-item-action0"))
                 text = text.replace("has-trigger-item-action0", get("has-trigger-item-action0"))
-                text = text.replace("has-trigger-item-action1", get("has-trigger-item-action1"))
-                text = text.replace("item-action0-title", get("item-action0-title"))
-                text = text.replace("item-action1-title", get("item-action1-title"))
-                text = text.replace("item-action0-traits", get("item-action0-traits"))
-                text = text.replace("item-action1-traits", get("item-action1-traits"))
-                text = text.replace("item-action0-time", get("item-action0-time"))
-                text = text.replace("item-action1-time", get("item-action1-time"))
+                text = text.replace("item-action0-title",       get("item-action0-title"))
+                text = text.replace("item-action0-traits",      get("item-action0-traits"))
+                text = text.replace("item-action0-time",        get("item-action0-time"))
                 text = text.replace("item-action0-description", get("item-action0-description"))
+                text = text.replace("item-action0-trigger",     get("item-action0-trigger"))
+                text = text.replace("has-item-action1",         get("has-item-action1"))
+                text = text.replace("has-trigger-item-action1", get("has-trigger-item-action1"))
+                text = text.replace("item-action1-title",       get("item-action1-title"))
+                text = text.replace("item-action1-traits",      get("item-action1-traits"))
+                text = text.replace("item-action1-time",        get("item-action1-time"))
                 text = text.replace("item-action1-description", get("item-action1-description"))
-                text = text.replace("item-action0-trigger", get("item-action0-trigger"))
-                text = text.replace("item-action1-trigger", get("item-action1-trigger"))
+                text = text.replace("item-action1-trigger",     get("item-action1-trigger"))
+                text = text.replace("has-item-action2",         get("has-item-action2"))
+                text = text.replace("has-trigger-item-action2", get("has-trigger-item-action2"))
+                text = text.replace("item-action2-title",       get("item-action2-title"))
+                text = text.replace("item-action2-traits",      get("item-action2-traits"))
+                text = text.replace("item-action2-time",        get("item-action2-time"))
+                text = text.replace("item-action2-description", get("item-action2-description"))
+                text = text.replace("item-action2-trigger",     get("item-action2-trigger"))
+                text = text.replace("has-item-action3",         get("has-item-action3"))
+                text = text.replace("has-trigger-item-action3", get("has-trigger-item-action3"))
+                text = text.replace("item-action3-title",       get("item-action3-title"))
+                text = text.replace("item-action3-traits",      get("item-action3-traits"))
+                text = text.replace("item-action3-time",        get("item-action3-time"))
+                text = text.replace("item-action3-description", get("item-action3-description"))
+                text = text.replace("item-action3-trigger",     get("item-action3-trigger"))
+
+                text = text.replace("has-saving-cs", get("has-saving-cs"))
+                text = text.replace("has-saving-s", get("has-saving-s"))
+                text = text.replace("has-saving-f", get("has-saving-f"))
+                text = text.replace("has-saving-cf", get("has-saving-cf"))
+                text = text.replace("item-saving-critical-success", get("item-saving-critical-success"))
+                text = text.replace("item-saving-success", get("item-saving-success"))
+                text = text.replace("item-saving-failure", get("item-saving-failure"))
+                text = text.replace("item-saving-critical-failure", get("item-saving-critical-failure"))
 
                 outputF = open("output/item-" + title + ".tex", 'w')
                 outputF.write(text)
